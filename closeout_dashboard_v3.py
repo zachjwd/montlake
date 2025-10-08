@@ -1,3 +1,18 @@
+"""
+Montlake Closeout Dashboard Generator (v3)
+
+This script generates an interactive dashboard for tracking project closeout requirements.
+Output is written to /Users/z/Desktop/montlake_closeout.html
+
+IMPORTANT: To update GitHub Pages:
+1. Run this script from /Users/z/Desktop/montlake-closeout/ directory
+2. Copy output to index.html: cp /Users/z/Desktop/montlake_closeout.html index.html
+3. Commit and push: git add -A && git commit -m "Update dashboard" && git push
+
+The script must be run from the montlake-closeout directory to ensure the copy
+command works correctly for GitHub Pages deployment.
+"""
+
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
