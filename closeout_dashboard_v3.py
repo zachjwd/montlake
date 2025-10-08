@@ -86,8 +86,8 @@ section_stats['Completion_Pct'] = (section_stats['Completed'] / section_stats['T
 section_stats = section_stats[section_stats['Section'].notna()]
 section_stats = section_stats.sort_values('Completion_Pct', ascending=True)
 
-# Get top 15 sections with most items and sort by section number
-top_sections = section_stats.nlargest(15, 'Total')
+# Show all sections and sort by section number
+top_sections = section_stats.copy()
 # Create a numeric sort key by extracting and converting the section number
 def section_sort_key(section):
     import re
@@ -97,6 +97,11 @@ def section_sort_key(section):
     return (999, 999)
 top_sections['sort_key'] = top_sections['Section'].apply(section_sort_key)
 top_sections = top_sections.sort_values('sort_key', ascending=False).drop('sort_key', axis=1)
+
+# Split sections into two columns (flip so left has lower numbers)
+mid_point = len(top_sections) // 2
+sections_col1 = top_sections.iloc[mid_point:]  # Right half (lower numbers) goes to col1
+sections_col2 = top_sections.iloc[:mid_point]  # Left half (higher numbers) goes to col2
 
 # Calculate completion by Deliverable Type
 deliverable_stats = df.groupby('Deliverable Type').agg({
@@ -129,7 +134,7 @@ def group_responsible_party(party):
     else:
         return party_str
 
-df['Grouped_Party'] = df['Responsible Party'].apply(group_responsible_party)
+df['Grouped_Party'] = df['Responsibilty'].apply(group_responsible_party)
 
 party_stats = df.groupby('Grouped_Party').agg({
     'Is_Complete': 'sum',
@@ -888,7 +893,7 @@ category_fig.add_trace(go.Bar(
 
 category_fig.update_layout(
     barmode='stack',
-    title=dict(text='By Category', font=dict(size=16), x=0.5, xanchor='center'),
+    title=dict(text='', font=dict(size=16), x=0.5, xanchor='center'),
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
@@ -896,7 +901,7 @@ category_fig.update_layout(
     bargap=0.1,
     plot_bgcolor='white',
     paper_bgcolor='white',
-    margin=dict(l=250, r=20, t=50, b=80)
+    margin=dict(l=250, r=20, t=10, b=80)
 )
 
 # Category completion percentage
@@ -971,57 +976,57 @@ milestone_fig.add_trace(go.Bar(
 
 milestone_fig.update_layout(
     barmode='stack',
-    title=dict(text='By Milestone', font=dict(size=16), x=0.5, xanchor='center'),
+    title=dict(text='', font=dict(size=16), x=0.5, xanchor='center'),
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
     showlegend=False,
     plot_bgcolor='white',
     paper_bgcolor='white',
-    margin=dict(l=250, r=20, t=50, b=80)
+    margin=dict(l=250, r=20, t=10, b=80)
 )
 
 # Milestone tab will be combined with overview - removed standalone tab
 
-# ===== SECTION TAB =====
-section_fig = go.Figure()
+# ===== SECTION TAB - SPLIT INTO TWO COLUMNS =====
+section_fig_col1 = go.Figure()
 
-section_fig.add_trace(go.Bar(
+section_fig_col1.add_trace(go.Bar(
     name='Completed',
-    y=top_sections['Section'].tolist(),
-    x=top_sections['Completed'].tolist(),
+    y=sections_col1['Section'].tolist(),
+    x=sections_col1['Completed'].tolist(),
     orientation='h',
     marker_color=COLOR_COMPLETE,
-    text=top_sections['Completed'].tolist(),
+    text=sections_col1['Completed'].tolist(),
     textposition='inside',
     hovertemplate='<b>%{y}</b><br>Completed: %{x}<extra></extra>'
 ))
 
-section_fig.add_trace(go.Bar(
+section_fig_col1.add_trace(go.Bar(
     name='In Progress',
-    y=top_sections['Section'].tolist(),
-    x=top_sections['In Progress'].tolist(),
+    y=sections_col1['Section'].tolist(),
+    x=sections_col1['In Progress'].tolist(),
     orientation='h',
     marker_color=COLOR_IN_PROGRESS,
-    text=top_sections['In Progress'].tolist(),
+    text=sections_col1['In Progress'].tolist(),
     textposition='inside',
     hovertemplate='<b>%{y}</b><br>In Progress: %{x}<extra></extra>'
 ))
 
-section_fig.add_trace(go.Bar(
+section_fig_col1.add_trace(go.Bar(
     name='Not Started',
-    y=top_sections['Section'].tolist(),
-    x=top_sections['Not Started'].tolist(),
+    y=sections_col1['Section'].tolist(),
+    x=sections_col1['Not Started'].tolist(),
     orientation='h',
     marker_color=COLOR_NOT_STARTED,
-    text=top_sections['Not Started'].tolist(),
+    text=sections_col1['Not Started'].tolist(),
     textposition='inside',
     hovertemplate='<b>%{y}</b><br>Not Started: %{x}<extra></extra>'
 ))
 
-section_fig.update_layout(
+section_fig_col1.update_layout(
     barmode='stack',
-    title=dict(text='By Section', font=dict(size=16), x=0.5, xanchor='center'),
+    title=dict(text='', font=dict(size=16), x=0.5, xanchor='center'),
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
@@ -1029,7 +1034,55 @@ section_fig.update_layout(
     bargap=0.1,
     plot_bgcolor='white',
     paper_bgcolor='white',
-    margin=dict(l=250, r=20, t=50, b=80)
+    margin=dict(l=350, r=20, t=10, b=80)
+)
+
+section_fig_col2 = go.Figure()
+
+section_fig_col2.add_trace(go.Bar(
+    name='Completed',
+    y=sections_col2['Section'].tolist(),
+    x=sections_col2['Completed'].tolist(),
+    orientation='h',
+    marker_color=COLOR_COMPLETE,
+    text=sections_col2['Completed'].tolist(),
+    textposition='inside',
+    hovertemplate='<b>%{y}</b><br>Completed: %{x}<extra></extra>'
+))
+
+section_fig_col2.add_trace(go.Bar(
+    name='In Progress',
+    y=sections_col2['Section'].tolist(),
+    x=sections_col2['In Progress'].tolist(),
+    orientation='h',
+    marker_color=COLOR_IN_PROGRESS,
+    text=sections_col2['In Progress'].tolist(),
+    textposition='inside',
+    hovertemplate='<b>%{y}</b><br>In Progress: %{x}<extra></extra>'
+))
+
+section_fig_col2.add_trace(go.Bar(
+    name='Not Started',
+    y=sections_col2['Section'].tolist(),
+    x=sections_col2['Not Started'].tolist(),
+    orientation='h',
+    marker_color=COLOR_NOT_STARTED,
+    text=sections_col2['Not Started'].tolist(),
+    textposition='inside',
+    hovertemplate='<b>%{y}</b><br>Not Started: %{x}<extra></extra>'
+))
+
+section_fig_col2.update_layout(
+    barmode='stack',
+    title=dict(text='', font=dict(size=16), x=0.5, xanchor='center'),
+    xaxis=dict(title='Number of Requirements'),
+    yaxis=dict(title='', automargin=False),
+    height=500,
+    showlegend=False,
+    bargap=0.1,
+    plot_bgcolor='white',
+    paper_bgcolor='white',
+    margin=dict(l=350, r=20, t=10, b=80)
 )
 
 # Section chart will be combined with deliverable tab - removed standalone section tab
@@ -1072,7 +1125,7 @@ deliverable_fig.add_trace(go.Bar(
 
 deliverable_fig.update_layout(
     barmode='stack',
-    title=dict(text='By Deliverable Type', font=dict(size=16), x=0.5, xanchor='center'),
+    title=dict(text='', font=dict(size=16), x=0.5, xanchor='center'),
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
@@ -1080,7 +1133,7 @@ deliverable_fig.update_layout(
     bargap=0.1,
     plot_bgcolor='white',
     paper_bgcolor='white',
-    margin=dict(l=250, r=20, t=50, b=80)
+    margin=dict(l=250, r=20, t=10, b=80)
 )
 
 # Config to hide Plotly modebar
@@ -1124,14 +1177,14 @@ party_fig.add_trace(go.Bar(
 
 party_fig.update_layout(
     barmode='stack',
-    title=dict(text='By Responsible Party', font=dict(size=16), x=0.5, xanchor='center'),
+    title=dict(text='', font=dict(size=16), x=0.5, xanchor='center'),
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
     showlegend=False,
     plot_bgcolor='white',
     paper_bgcolor='white',
-    margin=dict(l=250, r=20, t=50, b=80)
+    margin=dict(l=250, r=20, t=10, b=80)
 )
 
 # ===== UNIFIED VIEW WITH TAB-STYLE CHART SELECTOR =====
@@ -1141,37 +1194,47 @@ charts_html += f"""
     <button class="tab" onclick="showChart('sections')">📑 Sections</button>
     <button class="tab" onclick="showChart('categories')">🏷️ Categories</button>
     <button class="tab" onclick="showChart('deliverables')">📦 Deliverable Types</button>
-    <button class="tab" onclick="showChart('party')">👥 Responsible Party</button>
+    <button class="tab" onclick="showChart('party')">👥 Responsibility</button>
     <button class="tab" onclick="showChart('all')">📋 All Requirements</button>
 </div>
 
 <div style="background: white; margin: 0 30px 30px 30px; padding: 30px; border-radius: 0 0 12px 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <!-- Chart Containers (centered with consistent width) -->
-    <div id="chart-milestones" class="chart-view active" style="display: flex; justify-content: center;">
+    <div id="chart-milestones" class="chart-view active" style="display: flex; flex-direction: column; align-items: center;">
+        <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Milestone</div>
         <div style="width: 700px;">
             {milestone_fig.to_html(include_plotlyjs=False, div_id='milestone_chart', config=plotly_config)}
         </div>
     </div>
 
-    <div id="chart-party" class="chart-view" style="display: none; justify-content: center;">
+    <div id="chart-party" class="chart-view" style="display: none; flex-direction: column; align-items: center;">
+        <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Responsibility</div>
         <div style="width: 700px;">
             {party_fig.to_html(include_plotlyjs=False, div_id='party_chart', config=plotly_config)}
         </div>
     </div>
 
-    <div id="chart-sections" class="chart-view" style="display: none; justify-content: center;">
-        <div style="width: 700px;">
-            {section_fig.to_html(include_plotlyjs=False, div_id='section_chart', config=plotly_config)}
+    <div id="chart-sections" class="chart-view" style="display: none; flex-direction: column; align-items: center;">
+        <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Section</div>
+        <div style="display: flex; gap: 20px; width: 100%; max-width: 1400px;">
+            <div style="flex: 1;">
+                {section_fig_col1.to_html(include_plotlyjs=False, div_id='section_chart_col1', config=plotly_config)}
+            </div>
+            <div style="flex: 1;">
+                {section_fig_col2.to_html(include_plotlyjs=False, div_id='section_chart_col2', config=plotly_config)}
+            </div>
         </div>
     </div>
 
-    <div id="chart-categories" class="chart-view" style="display: none; justify-content: center;">
+    <div id="chart-categories" class="chart-view" style="display: none; flex-direction: column; align-items: center;">
+        <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Category</div>
         <div style="width: 700px;">
             {category_fig.to_html(include_plotlyjs=False, div_id='category_chart', config=plotly_config)}
         </div>
     </div>
 
-    <div id="chart-deliverables" class="chart-view" style="display: none; justify-content: center;">
+    <div id="chart-deliverables" class="chart-view" style="display: none; flex-direction: column; align-items: center;">
+        <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Deliverable Type</div>
         <div style="width: 700px;">
             {deliverable_fig.to_html(include_plotlyjs=False, div_id='deliverable_chart', config=plotly_config)}
         </div>
@@ -1248,7 +1311,7 @@ for _, row in df_for_js.iterrows():
         'Simple Description': str(row['Simple Description']),
         'Specification': str(row['Specification']),
         'Category': str(row['Category']),
-        'Responsible Party': str(row['Responsible Party']),
+        'Responsible Party': str(row['Responsibilty']),
         'WSDOT Lead': str(row['WSDOT Lead']),
         'Notes': str(row['Notes']),
         'Milestone': str(row['Milestone']),
@@ -1566,7 +1629,8 @@ html_footer = f"""
             // Setup drill-down for all charts
             setupChartDrilldown('milestone_chart', 'Milestone', 'Milestone');
             setupChartDrilldown('party_chart', 'Responsible Party', 'Responsible Party');
-            setupChartDrilldown('section_chart', 'Section', 'Section');
+            setupChartDrilldown('section_chart_col1', 'Section', 'Section');
+            setupChartDrilldown('section_chart_col2', 'Section', 'Section');
             setupChartDrilldown('category_chart', 'Category', 'Category');
             setupChartDrilldown('deliverable_chart', 'Deliverable Type', 'Deliverable Type');
         }});
