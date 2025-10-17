@@ -38,7 +38,7 @@ df['Status'] = df['Status'].fillna('Not Started')
 
 # Define completion status
 completed_statuses = ['Complete']
-in_progress_statuses = ['Ongoing', 'Due', 'In Progress', 'Past Due']
+in_progress_statuses = ['Ongoing', 'Due', 'In Progress', 'Past Due', 'Located']
 df['Is_Complete'] = df['Status'].isin(completed_statuses)
 df['Is_InProgress'] = df['Status'].isin(in_progress_statuses)
 df['Is_NotStarted'] = ~(df['Is_Complete'] | df['Is_InProgress'])
@@ -1495,9 +1495,9 @@ html_footer = f"""
                             if (statusClicked === 'Completed') {{
                                 return matchesFilter && row['Status'] === 'Complete';
                             }} else if (statusClicked === 'In Progress') {{
-                                return matchesFilter && (row['Status'] === 'Ongoing' || row['Status'] === 'Due');
+                                return matchesFilter && ['In Progress', 'Due', 'Past Due', 'Ongoing', 'Located'].includes(row['Status']);
                             }} else if (statusClicked === 'Not Started') {{
-                                return matchesFilter && !['Complete', 'Ongoing', 'Due'].includes(row['Status']);
+                                return matchesFilter && row['Status'] === 'Not Started';
                             }} else {{
                                 return matchesFilter;
                             }}
