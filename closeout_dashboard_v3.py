@@ -1638,10 +1638,7 @@ html_footer = f"""
                     }}
                 }});
 
-                // Scroll to the table
-                $('html, body').animate({{
-                    scrollTop: $('#drilldown').offset().top - 20
-                }}, 500);
+                // Auto-scroll disabled to prevent interference with chart zoom interactions
             }}
 
             // Setup drill-down for all charts
