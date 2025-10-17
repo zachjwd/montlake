@@ -1419,7 +1419,7 @@ html_footer = f"""
                     order: [[3, 'asc']], // Sort by Subsection (column index 3) by default
                     pageLength: 25,
                     colReorder: true,
-                    autoWidth: false,
+                    autoWidth: true,
                     scrollX: true,
                     responsive: false,
                     scrollCollapse: true,
@@ -1446,7 +1446,8 @@ html_footer = f"""
                     ],
                     initComplete: function() {{
                         var api = this.api();
-                        var defaultVisible = [0, 2, 3, 4, 5, 6];
+                        // Default visible columns: Status, Section, Subsection, Timing/Deadline, Simple Description
+                        var defaultVisible = [0, 2, 3, 4, 5];
                         api.columns().every(function(index) {{
                             this.visible(defaultVisible.includes(index));
                         }});
@@ -1585,7 +1586,7 @@ html_footer = f"""
                     order: [[3, 'asc']], // Sort by Subsection (column index 3) by default
                     pageLength: 25,
                     colReorder: true,
-                    autoWidth: false,
+                    autoWidth: true,
                     scrollX: true,
                     responsive: false,
                     scrollCollapse: true,
@@ -1615,8 +1616,8 @@ html_footer = f"""
                     initComplete: function() {{
                         var api = this.api();
 
-                        // Default visible columns: 0-Status, 2-Section, 3-Subsection, 4-Timing/Deadline, 5-Simple Description, 6-Specification
-                        var defaultVisible = [0, 2, 3, 4, 5, 6];
+                        // Default visible columns: 0-Status, 2-Section, 3-Subsection, 4-Timing/Deadline, 5-Simple Description
+                        var defaultVisible = [0, 2, 3, 4, 5];
 
                         // Clear old localStorage and use defaults
                         localStorage.removeItem('chartTableColumns');
@@ -1650,6 +1651,17 @@ html_footer = f"""
             setupChartDrilldown('section_chart_col2', 'Section', 'Section');
             setupChartDrilldown('category_chart', 'Phase', 'Phase');
             setupChartDrilldown('deliverable_chart', 'Format', 'Format');
+
+            // Handle window resize to adjust DataTable columns
+            var resizeTimer;
+            $(window).on('resize', function() {{
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {{
+                    if ($.fn.DataTable.isDataTable('#drilldown_table')) {{
+                        $('#drilldown_table').DataTable().columns.adjust().draw();
+                    }}
+                }}, 250);
+            }});
         }});
     </script>
 
