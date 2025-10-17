@@ -50,16 +50,16 @@ in_progress_items = df['Is_InProgress'].sum()
 not_started_items = df['Is_NotStarted'].sum()
 overall_completion = (completed_items / total_items * 100) if total_items > 0 else 0
 
-# Calculate completion by Category
+# Calculate completion by Phase
 category_stats = df.groupby('Category').agg({
     'Is_Complete': 'sum',
     'Is_InProgress': 'sum',
     'Is_NotStarted': 'sum',
     'Req ID': 'count'
 }).reset_index()
-category_stats.columns = ['Category', 'Completed', 'In Progress', 'Not Started', 'Total']
+category_stats.columns = ['Phase', 'Completed', 'In Progress', 'Not Started', 'Total']
 category_stats['Completion_Pct'] = (category_stats['Completed'] / category_stats['Total'] * 100).round(1)
-category_stats = category_stats[category_stats['Category'].notna()]
+category_stats = category_stats[category_stats['Phase'].notna()]
 category_stats = category_stats.sort_values('Total', ascending=False)
 
 # Calculate completion by Milestone
@@ -73,22 +73,23 @@ milestone_stats.columns = ['Milestone', 'Completed', 'In Progress', 'Not Started
 milestone_stats['Completion_Pct'] = (milestone_stats['Completed'] / milestone_stats['Total'] * 100).round(1)
 milestone_stats = milestone_stats[milestone_stats['Milestone'].notna()]
 
-# Define chronological order for milestones
+# Define chronological order for milestones (top to bottom)
 milestone_order = [
     'Substantial Completion',
     'Physical Completion',
-    'Final Completion',
-    'Final Acceptance',
-    'King County Metro Acceptance',
-    'Warranty Period'
+    'Handover',
+    'Completion',
+    'Final Acceptance'
 ]
 
-# Create order mapping (reversed for bottom-to-top display)
+# Create order mapping for chronological display (top to bottom in chart)
 milestone_stats['Order'] = milestone_stats['Milestone'].apply(
     lambda x: milestone_order.index(x) if x in milestone_order else 999
 )
-milestone_stats = milestone_stats.sort_values('Order', ascending=False)
+milestone_stats = milestone_stats.sort_values('Order', ascending=True)
 milestone_stats = milestone_stats.drop('Order', axis=1)
+# Reverse for horizontal bar chart display (first item appears at bottom)
+milestone_stats = milestone_stats.iloc[::-1]
 
 # Calculate completion by Section (top issues)
 section_stats = df.groupby('Section').agg({
@@ -119,16 +120,16 @@ mid_point = len(top_sections) // 2
 sections_col1 = top_sections.iloc[mid_point:]  # Right half (lower numbers) goes to col1
 sections_col2 = top_sections.iloc[:mid_point]  # Left half (higher numbers) goes to col2
 
-# Calculate completion by Deliverable Type
+# Calculate completion by Format
 deliverable_stats = df.groupby('Deliverable Type').agg({
     'Is_Complete': 'sum',
     'Is_InProgress': 'sum',
     'Is_NotStarted': 'sum',
     'Req ID': 'count'
 }).reset_index()
-deliverable_stats.columns = ['Deliverable Type', 'Completed', 'In Progress', 'Not Started', 'Total']
+deliverable_stats.columns = ['Format', 'Completed', 'In Progress', 'Not Started', 'Total']
 deliverable_stats['Completion_Pct'] = (deliverable_stats['Completed'] / deliverable_stats['Total'] * 100).round(1)
-deliverable_stats = deliverable_stats[deliverable_stats['Deliverable Type'].notna()]
+deliverable_stats = deliverable_stats[deliverable_stats['Format'].notna()]
 deliverable_stats = deliverable_stats.sort_values('Total', ascending=False).head(15)
 
 # Calculate max x-axis value for consistent scaling across all three charts
@@ -876,7 +877,7 @@ category_fig = go.Figure()
 
 category_fig.add_trace(go.Bar(
     name='Completed',
-    y=category_stats['Category'].tolist(),
+    y=category_stats['Phase'].tolist(),
     x=category_stats['Completed'].tolist(),
     orientation='h',
     marker_color=COLOR_COMPLETE,
@@ -887,7 +888,7 @@ category_fig.add_trace(go.Bar(
 
 category_fig.add_trace(go.Bar(
     name='In Progress',
-    y=category_stats['Category'].tolist(),
+    y=category_stats['Phase'].tolist(),
     x=category_stats['In Progress'].tolist(),
     orientation='h',
     marker_color=COLOR_IN_PROGRESS,
@@ -898,7 +899,7 @@ category_fig.add_trace(go.Bar(
 
 category_fig.add_trace(go.Bar(
     name='Not Started',
-    y=category_stats['Category'].tolist(),
+    y=category_stats['Phase'].tolist(),
     x=category_stats['Not Started'].tolist(),
     orientation='h',
     marker_color=COLOR_NOT_STARTED,
@@ -924,7 +925,7 @@ category_fig.update_layout(
 category_pct_fig = go.Figure()
 
 category_pct_fig.add_trace(go.Bar(
-    y=category_stats['Category'].tolist(),
+    y=category_stats['Phase'].tolist(),
     x=category_stats['Completion_Pct'],
     orientation='h',
     marker=dict(
@@ -939,7 +940,7 @@ category_pct_fig.add_trace(go.Bar(
 ))
 
 category_pct_fig.update_layout(
-    title=dict(text='Completion Percentage by Category', font=dict(size=20)),
+    title=dict(text='Completion Percentage by Phase', font=dict(size=20)),
     xaxis=dict(title='Completion %', range=[0, max(110, category_stats['Completion_Pct'].max() + 10)]),
     yaxis=dict(title=''),
     height=500,
@@ -1108,7 +1109,7 @@ deliverable_fig = go.Figure()
 
 deliverable_fig.add_trace(go.Bar(
     name='Completed',
-    y=deliverable_stats['Deliverable Type'].tolist(),
+    y=deliverable_stats['Format'].tolist(),
     x=deliverable_stats['Completed'].tolist(),
     orientation='h',
     marker_color=COLOR_COMPLETE,
@@ -1119,7 +1120,7 @@ deliverable_fig.add_trace(go.Bar(
 
 deliverable_fig.add_trace(go.Bar(
     name='In Progress',
-    y=deliverable_stats['Deliverable Type'].tolist(),
+    y=deliverable_stats['Format'].tolist(),
     x=deliverable_stats['In Progress'].tolist(),
     orientation='h',
     marker_color=COLOR_IN_PROGRESS,
@@ -1130,7 +1131,7 @@ deliverable_fig.add_trace(go.Bar(
 
 deliverable_fig.add_trace(go.Bar(
     name='Not Started',
-    y=deliverable_stats['Deliverable Type'].tolist(),
+    y=deliverable_stats['Format'].tolist(),
     x=deliverable_stats['Not Started'].tolist(),
     orientation='h',
     marker_color=COLOR_NOT_STARTED,
@@ -1208,8 +1209,8 @@ charts_html += f"""
 <div class="tabs">
     <button class="tab active" onclick="showChart('milestones')">📅 Milestones</button>
     <button class="tab" onclick="showChart('sections')">📑 Sections</button>
-    <button class="tab" onclick="showChart('categories')">🏷️ Categories</button>
-    <button class="tab" onclick="showChart('deliverables')">📦 Deliverable Types</button>
+    <button class="tab" onclick="showChart('categories')">🏷️ Phase</button>
+    <button class="tab" onclick="showChart('deliverables')">📦 Format</button>
     <button class="tab" onclick="showChart('party')">👥 Responsibility</button>
     <button class="tab" onclick="showChart('all')">📋 All Requirements</button>
 </div>
@@ -1243,14 +1244,14 @@ charts_html += f"""
     </div>
 
     <div id="chart-categories" class="chart-view" style="display: none; flex-direction: column; align-items: center;">
-        <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Category</div>
+        <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Phase</div>
         <div style="width: 700px;">
             {category_fig.to_html(include_plotlyjs=False, div_id='category_chart', config=plotly_config)}
         </div>
     </div>
 
     <div id="chart-deliverables" class="chart-view" style="display: none; flex-direction: column; align-items: center;">
-        <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Deliverable Type</div>
+        <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Format</div>
         <div style="width: 700px;">
             {deliverable_fig.to_html(include_plotlyjs=False, div_id='deliverable_chart', config=plotly_config)}
         </div>
@@ -1295,7 +1296,7 @@ charts_html += f"""
                     <th>Timing/Deadline</th>
                     <th>Simple Description</th>
                     <th>Specification</th>
-                    <th>Category</th>
+                    <th>Phase</th>
                     <th>Responsible Party</th>
                     <th>WSDOT Lead</th>
                     <th>Notes</th>
@@ -1326,12 +1327,12 @@ for _, row in df_for_js.iterrows():
         'Timing/Deadline': str(row['Timing/Deadline']),
         'Simple Description': str(row['Simple Description']),
         'Specification': str(row['Specification']),
-        'Category': str(row['Category']),
+        'Phase': str(row['Category']),
         'Responsible Party': str(row['Responsibility']),
         'WSDOT Lead': str(row['WSDOT Lead']),
         'Notes': str(row['Notes']),
         'Milestone': str(row['Milestone']),
-        'Deliverable Type': str(row['Deliverable Type'])
+        'Format': str(row['Deliverable Type'])
     }
     original_data_list.append(row_dict)
 
@@ -1398,7 +1399,7 @@ html_footer = f"""
                     tr += '<td>' + (row['Timing/Deadline'] || '') + '</td>';
                     tr += '<td>' + (row['Simple Description'] || '') + '</td>';
                     tr += '<td>' + (row['Specification'] || '') + '</td>';
-                    tr += '<td>' + (row['Category'] || '') + '</td>';
+                    tr += '<td>' + (row['Phase'] || '') + '</td>';
                     tr += '<td>' + (row['Responsible Party'] || '') + '</td>';
                     tr += '<td>' + (row['WSDOT Lead'] || '') + '</td>';
                     tr += '<td>' + (row['Notes'] || '') + '</td>';
@@ -1564,7 +1565,7 @@ html_footer = f"""
                     tr += '<td>' + (row['Timing/Deadline'] || '') + '</td>';
                     tr += '<td>' + (row['Simple Description'] || '') + '</td>';
                     tr += '<td>' + (row['Specification'] || '') + '</td>';
-                    tr += '<td>' + (row['Category'] || '') + '</td>';
+                    tr += '<td>' + (row['Phase'] || '') + '</td>';
                     tr += '<td>' + (row['Responsible Party'] || '') + '</td>';
                     tr += '<td>' + (row['WSDOT Lead'] || '') + '</td>';
                     tr += '<td>' + (row['Notes'] || '') + '</td>';
@@ -1606,7 +1607,7 @@ html_footer = f"""
                         {{ width: '110px', targets: 4 }}, // Timing/Deadline
                         {{ width: '250px', targets: 5 }}, // Simple Description
                         {{ width: '350px', targets: 6 }}, // Specification
-                        {{ width: '100px', targets: 7 }}, // Category
+                        {{ width: '100px', targets: 7 }}, // Phase
                         {{ width: '120px', targets: 8 }}, // Responsible Party
                         {{ width: '120px', targets: 9 }}, // WSDOT Lead
                         {{ width: '200px', targets: 10 }}  // Notes
@@ -1647,8 +1648,8 @@ html_footer = f"""
             setupChartDrilldown('party_chart', 'Responsible Party', 'Responsible Party');
             setupChartDrilldown('section_chart_col1', 'Section', 'Section');
             setupChartDrilldown('section_chart_col2', 'Section', 'Section');
-            setupChartDrilldown('category_chart', 'Category', 'Category');
-            setupChartDrilldown('deliverable_chart', 'Deliverable Type', 'Deliverable Type');
+            setupChartDrilldown('category_chart', 'Phase', 'Phase');
+            setupChartDrilldown('deliverable_chart', 'Format', 'Format');
         }});
     </script>
 
@@ -1677,5 +1678,5 @@ print(f"   Completed: {completed_items} ({overall_completion:.1f}%)")
 print(f"   In Progress: {in_progress_items} ({(in_progress_items/total_items*100):.1f}%)")
 print(f"   Not Started: {not_started_items} ({(not_started_items/total_items*100):.1f}%)")
 print(f"\n📊 Charts Available:")
-print(f"   - Milestones, Responsible Party, Sections, Categories, Deliverable Types")
+print(f"   - Milestones, Responsible Party, Sections, Phase, Format")
 print(f"   - All charts have interactive drill-down capability")
