@@ -914,6 +914,7 @@ category_fig.update_layout(
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
+    autosize=True,
     showlegend=False,
     bargap=0.1,
     plot_bgcolor='white',
@@ -997,6 +998,7 @@ milestone_fig.update_layout(
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
+    autosize=True,
     showlegend=False,
     plot_bgcolor='white',
     paper_bgcolor='white',
@@ -1047,6 +1049,7 @@ section_fig_col1.update_layout(
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
+    autosize=True,
     showlegend=False,
     bargap=0.1,
     plot_bgcolor='white',
@@ -1095,6 +1098,7 @@ section_fig_col2.update_layout(
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
+    autosize=True,
     showlegend=False,
     bargap=0.1,
     plot_bgcolor='white',
@@ -1146,6 +1150,7 @@ deliverable_fig.update_layout(
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
+    autosize=True,
     showlegend=False,
     bargap=0.1,
     plot_bgcolor='white',
@@ -1198,6 +1203,7 @@ party_fig.update_layout(
     xaxis=dict(title='Number of Requirements'),
     yaxis=dict(title='', automargin=False),
     height=500,
+    autosize=True,
     showlegend=False,
     plot_bgcolor='white',
     paper_bgcolor='white',
@@ -1219,14 +1225,14 @@ charts_html += f"""
     <!-- Chart Containers (centered with consistent width) -->
     <div id="chart-milestones" class="chart-view active" style="display: flex; flex-direction: column; align-items: center;">
         <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Milestone</div>
-        <div style="width: 700px;">
+        <div style="width: 100%; max-width: 900px; padding: 0 20px;">
             {milestone_fig.to_html(include_plotlyjs=False, div_id='milestone_chart', config=plotly_config)}
         </div>
     </div>
 
     <div id="chart-party" class="chart-view" style="display: none; flex-direction: column; align-items: center;">
         <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Responsibility</div>
-        <div style="width: 700px;">
+        <div style="width: 100%; max-width: 900px; padding: 0 20px;">
             {party_fig.to_html(include_plotlyjs=False, div_id='party_chart', config=plotly_config)}
         </div>
     </div>
@@ -1245,21 +1251,21 @@ charts_html += f"""
 
     <div id="chart-categories" class="chart-view" style="display: none; flex-direction: column; align-items: center;">
         <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Phase</div>
-        <div style="width: 700px;">
+        <div style="width: 100%; max-width: 900px; padding: 0 20px;">
             {category_fig.to_html(include_plotlyjs=False, div_id='category_chart', config=plotly_config)}
         </div>
     </div>
 
     <div id="chart-deliverables" class="chart-view" style="display: none; flex-direction: column; align-items: center;">
         <div style="text-align: center; margin-bottom: 10px; font-size: 16px; color: #333;">By Format</div>
-        <div style="width: 700px;">
+        <div style="width: 100%; max-width: 900px; padding: 0 20px;">
             {deliverable_fig.to_html(include_plotlyjs=False, div_id='deliverable_chart', config=plotly_config)}
         </div>
     </div>
 
     <!-- All Requirements - shows table in place of chart -->
     <div id="chart-all" class="chart-view" style="display: none;">
-        <div id="all-requirements-table-container" style="display: none;">
+        <div id="all-requirements-table-container" style="display: none; padding: 0 20px; width: 100%; box-sizing: border-box; overflow-x: auto;">
         </div>
     </div>
 
@@ -1649,14 +1655,25 @@ html_footer = f"""
             setupChartDrilldown('category_chart', 'Phase', 'Phase');
             setupChartDrilldown('deliverable_chart', 'Format', 'Format');
 
-            // Handle window resize to adjust DataTable columns
+            // Handle window resize to adjust DataTable columns and Plotly charts
             var resizeTimer;
             $(window).on('resize', function() {{
                 clearTimeout(resizeTimer);
                 resizeTimer = setTimeout(function() {{
+                    // Adjust DataTables
                     if ($.fn.DataTable.isDataTable('#drilldown_table')) {{
                         $('#drilldown_table').DataTable().columns.adjust().draw();
                     }}
+
+                    // Relayout Plotly charts
+                    var chartIds = ['milestone_chart', 'party_chart', 'section_chart_col1', 'section_chart_col2',
+                                   'category_chart', 'deliverable_chart'];
+                    chartIds.forEach(function(chartId) {{
+                        var chartElement = document.getElementById(chartId);
+                        if (chartElement) {{
+                            Plotly.Plots.resize(chartElement);
+                        }}
+                    }});
                 }}, 250);
             }});
         }});
