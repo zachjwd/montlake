@@ -149,7 +149,7 @@ def group_responsible_party(party):
     else:
         return party_str
 
-df['Grouped_Party'] = df['Responsibilty'].apply(group_responsible_party)
+df['Grouped_Party'] = df['Responsibility'].apply(group_responsible_party)
 
 party_stats = df.groupby('Grouped_Party').agg({
     'Is_Complete': 'sum',
@@ -1326,7 +1326,7 @@ for _, row in df_for_js.iterrows():
         'Simple Description': str(row['Simple Description']),
         'Specification': str(row['Specification']),
         'Category': str(row['Category']),
-        'Responsible Party': str(row['Responsibilty']),
+        'Responsible Party': str(row['Responsibility']),
         'WSDOT Lead': str(row['WSDOT Lead']),
         'Notes': str(row['Notes']),
         'Milestone': str(row['Milestone']),
