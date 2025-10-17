@@ -21,7 +21,8 @@ from datetime import datetime
 import numpy as np
 
 # Read data (headers now in row 1)
-df = pd.read_csv('/Users/z/Desktop/Montlake - Closeout.csv', encoding='latin-1')
+# Updated to read from current_updated.csv in the repository
+df = pd.read_csv('current_updated.csv', encoding='latin-1')
 
 # Filter out non-applicable rows
 # Remove rows where Req ID is blank
@@ -37,7 +38,7 @@ df['Status'] = df['Status'].fillna('Not Started')
 
 # Define completion status
 completed_statuses = ['Complete']
-in_progress_statuses = ['Ongoing', 'Due']
+in_progress_statuses = ['Ongoing', 'Due', 'In Progress', 'Past Due']
 df['Is_Complete'] = df['Status'].isin(completed_statuses)
 df['Is_InProgress'] = df['Status'].isin(in_progress_statuses)
 df['Is_NotStarted'] = ~(df['Is_Complete'] | df['Is_InProgress'])
