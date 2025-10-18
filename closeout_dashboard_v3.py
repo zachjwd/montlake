@@ -21,8 +21,8 @@ from datetime import datetime
 import numpy as np
 
 # Read data (headers now in row 1)
-# Updated to read from current_updated.csv in the repository
-df = pd.read_csv('current_updated.csv', encoding='latin-1')
+# Updated to read from Montlake - Closeout_101725.csv in the repository
+df = pd.read_csv('Montlake - Closeout_101725.csv', encoding='utf-8-sig')
 
 # Filter out non-applicable rows
 # Remove rows where Req ID is blank
