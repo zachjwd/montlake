@@ -19,7 +19,7 @@ echo ""
 
 # Function to find CSV files
 find_csv_files() {
-    find "$DESKTOP_DIR" "$DOWNLOADS_DIR" -maxdepth 1 -name "*.csv" -type f 2>/dev/null | grep -i "montlake\|closeout" | sort -t '/' -k NF
+    find "$DESKTOP_DIR" "$DOWNLOADS_DIR" -maxdepth 1 -name "*.csv" -type f 2>/dev/null | grep -i "montlake\|closeout" | sort
 }
 
 # If CSV path provided as argument, use it
@@ -32,7 +32,9 @@ if [ -n "$1" ]; then
 else
     # Search for CSV files
     echo "🔍 Searching for Montlake/Closeout CSV files..."
-    CSV_FILES=($(find_csv_files))
+
+    # Read files into array properly handling spaces
+    mapfile -t CSV_FILES < <(find_csv_files)
 
     if [ ${#CSV_FILES[@]} -eq 0 ]; then
         echo "❌ No Montlake/Closeout CSV files found in Desktop or Downloads"
@@ -64,14 +66,17 @@ echo ""
 echo "📁 Using file: $(basename "$CSV_FILE")"
 ORIGINAL_NAME=$(basename "$CSV_FILE")
 
-# Backup old CSV if it exists (Git will track this)
-if [ -f "$REPO_DIR/$CSV_NAME" ]; then
-    echo "💾 Current CSV will be backed up in Git history"
+# Copy new CSV to repo with standard name (if not already there)
+if [ "$(realpath "$CSV_FILE")" = "$REPO_DIR/$CSV_NAME" ]; then
+    echo "📋 Using existing $CSV_NAME in repository..."
+else
+    # Backup old CSV if it exists (Git will track this)
+    if [ -f "$REPO_DIR/$CSV_NAME" ]; then
+        echo "💾 Current CSV will be backed up in Git history"
+    fi
+    echo "📋 Copying CSV to repository..."
+    cp "$CSV_FILE" "$REPO_DIR/$CSV_NAME"
 fi
-
-# Copy new CSV to repo with standard name
-echo "📋 Copying CSV to repository..."
-cp "$CSV_FILE" "$REPO_DIR/$CSV_NAME"
 
 # Update Python script to use standard CSV name if needed
 if ! grep -q "current_closeout.csv" closeout_dashboard_v3.py; then
