@@ -73,6 +73,10 @@ def simplify_status(status):
 
 tracker_df['Review_Status'] = tracker_df['Review_Status'].apply(simplify_status)
 
+# Add Notes column if it doesn't exist
+if 'Notes' not in tracker_df.columns:
+    tracker_df['Notes'] = ''
+
 # Reorder columns for clarity
 columns = [
     'Doc_Number',
@@ -80,6 +84,7 @@ columns = [
     'Contract_Section',
     'Category',
     'Review_Status',
+    'Notes',
     'Filename',
     'Appendix_Number',
     'Priority',
