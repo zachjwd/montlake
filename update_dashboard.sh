@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Montlake All Dashboards Update Script
-# Updates both closeout requirements and document review dashboards
+# Updates both closeout dashboard and requirements dashboard
 # Usage: ./update_dashboard.sh [path-to-closeout-csv]
 # If no path provided, will search Desktop and Downloads for CSV files
 
@@ -102,20 +102,20 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Copy to index.html
+# Copy to dashboard directory
 echo "   ✅ Closeout dashboard created"
-cp /Users/z/Desktop/montlake_closeout.html index.html
+cp /Users/z/Desktop/montlake_closeout.html dashboard/closeout_dashboard.html
 
-# Generate document review dashboard
-echo "2️⃣  Generating document review dashboard..."
-python3 scripts/generate_review_dashboard.py
+# Generate requirements dashboard
+echo "2️⃣  Generating requirements dashboard..."
+python3 scripts/generate_requirements_dashboard.py
 
 if [ $? -ne 0 ]; then
-    echo "❌ Error generating review dashboard"
+    echo "❌ Error generating requirements dashboard"
     exit 1
 fi
 
-echo "   ✅ Review dashboard created"
+echo "   ✅ Requirements dashboard created"
 
 # Show changes
 echo ""
@@ -131,7 +131,7 @@ fi
 
 # Commit changes
 echo "💾 Committing changes..."
-git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_review_dashboard.py index.html review-dashboard.html
+git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_requirements_dashboard.py dashboard/closeout_dashboard.html dashboard/requirements_dashboard.html data/review_tracker.csv data/requirements_tracker.csv
 
 # Check if there are changes to commit
 if git diff --staged --quiet; then
@@ -146,11 +146,11 @@ else
     echo ""
     echo "✅ All dashboards updated successfully!"
     echo ""
-    echo "📈 Dashboards will be live at:"
-    echo "   Closeout Requirements: https://zachjwd.github.io/montlake/"
-    echo "   Document Review:       https://zachjwd.github.io/montlake/review-dashboard.html"
+    echo "📈 Dashboards available at:"
+    echo "   Closeout Dashboard:     dashboard/closeout_dashboard.html"
+    echo "   Requirements Dashboard: dashboard/requirements_dashboard.html"
     echo ""
-    echo "⏱️  GitHub Pages usually updates within 1-2 minutes"
+    echo "   (If GitHub Pages is enabled, they will be live shortly)"
 fi
 
 echo ""
