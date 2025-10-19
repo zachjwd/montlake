@@ -102,9 +102,10 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Copy to dashboard directory
+# Copy to dashboard directory and root (for GitHub Pages homepage)
 echo "   ✅ Closeout dashboard created"
 cp /Users/z/Desktop/montlake_closeout.html dashboard/closeout_dashboard.html
+cp /Users/z/Desktop/montlake_closeout.html index.html
 
 # Generate requirements dashboard
 echo "2️⃣  Generating requirements dashboard..."
@@ -131,7 +132,7 @@ fi
 
 # Commit changes
 echo "💾 Committing changes..."
-git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_requirements_dashboard.py dashboard/closeout_dashboard.html dashboard/requirements_dashboard.html data/requirements_tracker.csv
+git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_requirements_dashboard.py dashboard/closeout_dashboard.html dashboard/requirements_dashboard.html data/requirements_tracker.csv index.html
 
 # Check if there are changes to commit
 if git diff --staged --quiet; then
