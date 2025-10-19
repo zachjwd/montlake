@@ -192,9 +192,9 @@ now = datetime.now()
 time_part = now.strftime('%B %d, %Y at %I:%M')
 am_pm = now.strftime('%p')
 
-# Add title
+# Add title with smart link that works from Desktop and dashboard folder
 title_text = f"""<b style='font-size:32px'>MONTLAKE PROJECT CLOSEOUT DASHBOARD</b><br>
-<span style='font-size:14px; color:gray'>Executive Summary - Generated {time_part} <a href="javascript:void(0)" onclick="window.location.href=window.location.href.includes('file://') ? 'file:///Users/z/Desktop/git/montlake-closeout/dashboard/documents_dashboard.html' : 'dashboard/documents_dashboard.html'" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Documents Dashboard">{am_pm}</a></span>"""
+<span style='font-size:14px; color:gray'>Executive Summary - Generated {time_part} <a href="#" onclick="var url = window.location.pathname.includes('/dashboard/') ? 'documents_dashboard.html' : 'git/montlake-closeout/dashboard/documents_dashboard.html'; window.location.href = url; return false;" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Documents Dashboard">{am_pm}</a></span>"""
 
 # Create a multi-page HTML with tabs
 html_header = f"""
@@ -757,7 +757,7 @@ html_header = f"""
 <body>
     <div class="header">
         <h1>MONTLAKE PROJECT CLOSEOUT DASHBOARD</h1>
-        <p>Executive Summary - Generated {time_part} <a href="javascript:void(0)" onclick="window.location.href=window.location.href.includes('file://') ? 'file:///Users/z/Desktop/git/montlake-closeout/dashboard/documents_dashboard.html' : 'dashboard/documents_dashboard.html'" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Documents Dashboard">{am_pm}</a></p>
+        <p>Executive Summary - Generated {time_part} <a href="#" onclick="var url = window.location.pathname.includes('/dashboard/') ? 'documents_dashboard.html' : 'git/montlake-closeout/dashboard/documents_dashboard.html'; window.location.href = url; return false;" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Documents Dashboard">{am_pm}</a></p>
         <div class="project-timeline">
             <div class="timeline-container">
                 <div class="timeline-line"></div>
@@ -1295,6 +1295,7 @@ charts_html += f"""
             <thead>
                 <tr>
                     <th>Status</th>
+                    <th>Source</th>
                     <th>Status Notes</th>
                     <th>Section</th>
                     <th>Subsection</th>
@@ -1326,6 +1327,7 @@ for _, row in df_for_js.iterrows():
 
     row_dict = {
         'Status': str(row['Status']),
+        'Source': str(row['Source']),
         'Status Notes': str(row['Status Notes']),
         'Section': str(row['Section']),
         'Subsection': subsection_combined,
@@ -1398,6 +1400,7 @@ html_footer = f"""
                 originalData.forEach(function(row) {{
                     var tr = '<tr>';
                     tr += '<td>' + (row['Status'] || '') + '</td>';
+                    tr += '<td>' + (row['Source'] || '') + '</td>';
                     tr += '<td>' + (row['Status Notes'] || '') + '</td>';
                     tr += '<td>' + (row['Section'] || '') + '</td>';
                     tr += '<td>' + (row['Subsection'] || '') + '</td>';
@@ -1437,22 +1440,23 @@ html_footer = f"""
                         }}
                     ],
                     columnDefs: [
-                        {{ width: '90px', targets: 0 }},
-                        {{ width: '150px', targets: 1 }},
-                        {{ width: '90px', targets: 2 }},
-                        {{ width: '200px', targets: 3 }},
-                        {{ width: '110px', targets: 4 }},
-                        {{ width: '250px', targets: 5 }},
-                        {{ width: '350px', targets: 6 }},
-                        {{ width: '100px', targets: 7 }},
-                        {{ width: '120px', targets: 8 }},
-                        {{ width: '120px', targets: 9 }},
-                        {{ width: '200px', targets: 10 }}
+                        {{ width: '90px', targets: 0 }},   // Status
+                        {{ width: '150px', targets: 1 }},  // Source
+                        {{ width: '150px', targets: 2 }},  // Status Notes
+                        {{ width: '90px', targets: 3 }},   // Section
+                        {{ width: '200px', targets: 4 }},  // Subsection
+                        {{ width: '110px', targets: 5 }},  // Timing/Deadline
+                        {{ width: '250px', targets: 6 }},  // Simple Description
+                        {{ width: '350px', targets: 7 }},  // Specification
+                        {{ width: '100px', targets: 8 }},  // Phase
+                        {{ width: '120px', targets: 9 }},  // Responsible Party
+                        {{ width: '120px', targets: 10 }}, // WSDOT Lead
+                        {{ width: '200px', targets: 11 }}  // Notes
                     ],
                     initComplete: function() {{
                         var api = this.api();
-                        // Default visible columns: Status, Section, Subsection, Timing/Deadline, Simple Description
-                        var defaultVisible = [0, 2, 3, 4, 5];
+                        // Default visible columns: Status, Source, Section, Subsection, Timing/Deadline, Simple Description
+                        var defaultVisible = [0, 1, 3, 4, 5, 6];
                         api.columns().every(function(index) {{
                             this.visible(defaultVisible.includes(index));
                         }});
@@ -1565,6 +1569,7 @@ html_footer = f"""
                 filteredData.forEach(function(row) {{
                     var tr = '<tr>';
                     tr += '<td>' + (row['Status'] || '') + '</td>';
+                    tr += '<td>' + (row['Source'] || '') + '</td>';
                     tr += '<td>' + (row['Status Notes'] || '') + '</td>';
                     tr += '<td>' + (row['Section'] || '') + '</td>';
                     tr += '<td>' + (row['Subsection'] || '') + '</td>';
@@ -1606,23 +1611,24 @@ html_footer = f"""
                         }}
                     ],
                     columnDefs: [
-                        {{ width: '90px', targets: 0 }},  // Status
-                        {{ width: '150px', targets: 1 }}, // Status Notes
-                        {{ width: '90px', targets: 2 }}, // Section
-                        {{ width: '200px', targets: 3 }}, // Subsection
-                        {{ width: '110px', targets: 4 }}, // Timing/Deadline
-                        {{ width: '250px', targets: 5 }}, // Simple Description
-                        {{ width: '350px', targets: 6 }}, // Specification
-                        {{ width: '100px', targets: 7 }}, // Phase
-                        {{ width: '120px', targets: 8 }}, // Responsible Party
-                        {{ width: '120px', targets: 9 }}, // WSDOT Lead
-                        {{ width: '200px', targets: 10 }}  // Notes
+                        {{ width: '90px', targets: 0 }},   // Status
+                        {{ width: '150px', targets: 1 }},  // Source
+                        {{ width: '150px', targets: 2 }},  // Status Notes
+                        {{ width: '90px', targets: 3 }},   // Section
+                        {{ width: '200px', targets: 4 }},  // Subsection
+                        {{ width: '110px', targets: 5 }},  // Timing/Deadline
+                        {{ width: '250px', targets: 6 }},  // Simple Description
+                        {{ width: '350px', targets: 7 }},  // Specification
+                        {{ width: '100px', targets: 8 }},  // Phase
+                        {{ width: '120px', targets: 9 }},  // Responsible Party
+                        {{ width: '120px', targets: 10 }}, // WSDOT Lead
+                        {{ width: '200px', targets: 11 }}  // Notes
                     ],
                     initComplete: function() {{
                         var api = this.api();
 
-                        // Default visible columns: 0-Status, 2-Section, 3-Subsection, 4-Timing/Deadline, 5-Simple Description
-                        var defaultVisible = [0, 2, 3, 4, 5];
+                        // Default visible columns: 0-Status, 1-Source, 3-Section, 4-Subsection, 5-Timing/Deadline, 6-Simple Description
+                        var defaultVisible = [0, 1, 3, 4, 5, 6];
 
                         // Clear old localStorage and use defaults
                         localStorage.removeItem('chartTableColumns');
