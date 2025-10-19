@@ -74,13 +74,10 @@ for _, req in req_df.iterrows():
 
         if reviewed == total_files:
             review_status = 'Reviewed'
-            status = 'Complete'
         elif reviewed > 0:
             review_status = 'In Progress'
-            status = 'In Progress'
         else:
             review_status = 'Not Started'
-            status = 'Have Document'
 
         # Get file info (use first file as representative)
         first_file = matching_files.iloc[0]
@@ -92,14 +89,11 @@ for _, req in req_df.iterrows():
             'Category': req['category'],
             'Document_Type': req['document_type'],
             'Contract_Section': req['Contract_Section'],
-            'Status': status,
             'Review_Status': review_status,
+            'Notes': req['notes'] if pd.notna(req['notes']) else '',
             'Files_Count': total_files,
-            'Files_Reviewed': reviewed,
-            'Priority': first_file['Priority'] if 'Priority' in first_file else '',
             'Representative_File': first_file['Filename'],
-            'File_Path': first_file['Full_Path'] if 'Full_Path' in first_file else '',
-            'Notes': req['notes'] if pd.notna(req['notes']) else ''
+            'File_Path': first_file['Full_Path'] if 'Full_Path' in first_file else ''
         })
     else:
         # We don't have this requirement
@@ -110,14 +104,11 @@ for _, req in req_df.iterrows():
             'Category': req['category'],
             'Document_Type': req['document_type'],
             'Contract_Section': req['Contract_Section'],
-            'Status': 'Missing',
             'Review_Status': 'Not Started',
+            'Notes': req['notes'] if pd.notna(req['notes']) else '',
             'Files_Count': 0,
-            'Files_Reviewed': 0,
-            'Priority': '',
             'Representative_File': '',
-            'File_Path': '',
-            'Notes': req['notes'] if pd.notna(req['notes']) else ''
+            'File_Path': ''
         })
 
 requirements_tracker_df = pd.DataFrame(requirements_tracker)
@@ -132,21 +123,18 @@ print("=" * 100)
 print("REQUIREMENTS COVERAGE")
 print("=" * 100)
 total = len(requirements_tracker_df)
-complete = len(requirements_tracker_df[requirements_tracker_df['Status'] == 'Complete'])
-in_progress = len(requirements_tracker_df[requirements_tracker_df['Status'] == 'In Progress'])
-have_doc = len(requirements_tracker_df[requirements_tracker_df['Status'] == 'Have Document'])
-missing = len(requirements_tracker_df[requirements_tracker_df['Status'] == 'Missing'])
-
-have_total = complete + in_progress + have_doc
+reviewed = len(requirements_tracker_df[requirements_tracker_df['Review_Status'] == 'Reviewed'])
+in_progress = len(requirements_tracker_df[requirements_tracker_df['Review_Status'] == 'In Progress'])
+not_started = len(requirements_tracker_df[requirements_tracker_df['Review_Status'] == 'Not Started'])
+have_files = len(requirements_tracker_df[requirements_tracker_df['Files_Count'] > 0])
 
 print(f"Total Required Deliverables:    {total}")
-print(f"  ✅ Complete (Reviewed):        {complete:4} ({complete/total*100:5.1f}%)")
+print(f"  ✅ Reviewed:                   {reviewed:4} ({reviewed/total*100:5.1f}%)")
 print(f"  🔄 In Progress:                {in_progress:4} ({in_progress/total*100:5.1f}%)")
-print(f"  📄 Have Document (Not Rev):    {have_doc:4} ({have_doc/total*100:5.1f}%)")
-print(f"  ❌ Missing:                    {missing:4} ({missing/total*100:5.1f}%)")
+print(f"  📋 Not Started:                {not_started:4} ({not_started/total*100:5.1f}%)")
 print()
-print(f"📦 Deliverables We Have:         {have_total}/{total} ({have_total/total*100:.1f}%)")
-print(f"✅ Deliverables Reviewed:        {complete}/{total} ({complete/total*100:.1f}%)")
+print(f"📦 Deliverables We Have Files:   {have_files}/{total} ({have_files/total*100:.1f}%)")
+print(f"✅ Deliverables Reviewed:        {reviewed}/{total} ({reviewed/total*100:.1f}%)")
 print()
 
 # Coverage by Contract Section
@@ -155,12 +143,12 @@ print("-" * 100)
 for section in sorted(requirements_tracker_df['Contract_Section'].unique()):
     section_reqs = requirements_tracker_df[requirements_tracker_df['Contract_Section'] == section]
     section_total = len(section_reqs)
-    section_have = len(section_reqs[section_reqs['Status'] != 'Missing'])
-    section_complete = len(section_reqs[section_reqs['Status'] == 'Complete'])
+    section_have = len(section_reqs[section_reqs['Files_Count'] > 0])
+    section_reviewed = len(section_reqs[section_reqs['Review_Status'] == 'Reviewed'])
 
     print(f"{section}")
-    print(f"  {section_have}/{section_total} have ({section_have/section_total*100:.1f}%) | "
-          f"{section_complete} complete ({section_complete/section_total*100:.1f}%)")
+    print(f"  {section_have}/{section_total} have files ({section_have/section_total*100:.1f}%) | "
+          f"{section_reviewed} reviewed ({section_reviewed/section_total*100:.1f}%)")
 
 print()
 print("✅ Requirements tracker created!")
