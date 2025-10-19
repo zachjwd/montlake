@@ -131,7 +131,7 @@ fi
 
 # Commit changes
 echo "💾 Committing changes..."
-git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_requirements_dashboard.py dashboard/closeout_dashboard.html dashboard/requirements_dashboard.html data/review_tracker.csv data/requirements_tracker.csv
+git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_requirements_dashboard.py dashboard/closeout_dashboard.html dashboard/requirements_dashboard.html data/requirements_tracker.csv
 
 # Check if there are changes to commit
 if git diff --staged --quiet; then

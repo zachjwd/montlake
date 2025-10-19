@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
 """
-Review-Focused Montlake Closeout Dashboard
-Shows all 741 documents we have and their review status
+Requirements Dashboard Generator
+Shows all required deliverables and their review status
 """
 
 import pandas as pd
 from datetime import datetime
 
-print("📊 Generating Review Dashboard...")
+print("📊 Generating Requirements Dashboard...")
 print()
 
-# Read review tracker
-df = pd.read_csv('data/review_tracker.csv')
-print(f"✅ Loaded {len(df)} documents")
+# Read requirements tracker
+df = pd.read_csv('data/requirements_tracker.csv')
+print(f"✅ Loaded {len(df)} requirements")
 
 # Calculate basic stats
 total = len(df)
 reviewed = len(df[df['Review_Status'] == 'Reviewed'])
-needs_review = len(df[df['Review_Status'] == 'Needs Review'])
+in_progress = len(df[df['Review_Status'] == 'In Progress'])
+not_started = len(df[df['Review_Status'] == 'Not Started'])
 
 # Calculate section-weighted progress
 sections = df['Contract_Section'].unique()
@@ -248,8 +249,8 @@ html = f"""<!DOCTYPE html>
 
             <div class="stat-card">
                 <div class="label">Review Status</div>
-                <div class="value">{needs_review}</div>
-                <div class="detail">Needs Review | {reviewed} Reviewed</div>
+                <div class="value">{not_started}</div>
+                <div class="detail">Not Started | {in_progress} In Progress | {reviewed} Reviewed</div>
             </div>
         </div>
 
@@ -262,7 +263,7 @@ for section in sorted(df['Contract_Section'].unique()):
     section_docs = df[df['Contract_Section'] == section]
     section_total = len(section_docs)
     section_reviewed = len(section_docs[section_docs['Review_Status'] == 'Reviewed'])
-    section_needs_review = len(section_docs[section_docs['Review_Status'] == 'Needs Review'])
+    section_not_reviewed = section_total - section_reviewed
     section_pct = (section_reviewed / section_total * 100) if section_total > 0 else 0
 
     section_id = section.replace('.', '').replace(' ', '-').replace('(', '').replace(')', '')
@@ -276,7 +277,7 @@ for section in sorted(df['Contract_Section'].unique()):
                     <div class="section-stats">
                         <span>{section_reviewed}/{section_total} reviewed ({section_pct:.0f}%)</span>
                         <span>|</span>
-                        <span>{section_needs_review} need review</span>
+                        <span>{section_not_reviewed} not reviewed</span>
                         <span class="expand-icon" id="icon-{section_id}">▶</span>
                     </div>
                 </div>
@@ -351,6 +352,6 @@ with open(output_file, 'w') as f:
 print(f"✅ Dashboard generated: {output_file}")
 print()
 print(f"📊 Overall Progress: {overall_section_weighted:.1f}% (section-weighted)")
-print(f"📋 Documents: {reviewed}/{total} reviewed ({reviewed/total*100:.1f}%)")
-print(f"✅ Reviewed: {reviewed} | 📋 Needs Review: {needs_review}")
+print(f"📋 Requirements: {reviewed}/{total} reviewed ({reviewed/total*100:.1f}%)")
+print(f"✅ Reviewed: {reviewed} | 🔄 In Progress: {in_progress} | 📋 Not Started: {not_started}")
 print()
