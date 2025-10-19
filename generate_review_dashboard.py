@@ -200,10 +200,12 @@ for _, row in df.iterrows():
         'Notes': row['Notes'],
         'Reviewer': str(row['Reviewer']) if pd.notna(row['Reviewer']) else '',
         'Review_Date': str(row['Review_Date']) if pd.notna(row['Review_Date']) else '',
-        'Follow_Up': str(row['Follow_Up_Required']) if pd.notna(row['Follow_Up_Required']) else ''
+        'Follow_Up': str(row['Follow_Up_Required']) if pd.notna(row['Follow_Up_Required']) else '',
+        'Full_Path': str(row['Full_Path']) if pd.notna(row['Full_Path']) else ''
     })
 
 table_data_json = json.dumps(table_data)
+plotly_config_json = json.dumps(plotly_config)
 
 # Generate HTML
 html_content = f"""
@@ -371,6 +373,7 @@ html_content = f"""
                         <th>Reviewer</th>
                         <th>Date</th>
                         <th>Follow-Up</th>
+                        <th>File Path</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
@@ -385,17 +388,18 @@ html_content = f"""
 
     <script>
         // Render charts
+        var plotlyConfig = {plotly_config_json};
         var gaugeConfig = {gauge_fig.to_json()};
-        Plotly.newPlot('gauge-chart', gaugeConfig.data, gaugeConfig.layout, {plotly_config});
+        Plotly.newPlot('gauge-chart', gaugeConfig.data, gaugeConfig.layout, plotlyConfig);
 
         var statusConfig = {status_fig.to_json()};
-        Plotly.newPlot('status-chart', statusConfig.data, statusConfig.layout, {plotly_config});
+        Plotly.newPlot('status-chart', statusConfig.data, statusConfig.layout, plotlyConfig);
 
         var priorityConfig = {priority_fig.to_json()};
-        Plotly.newPlot('priority-chart', priorityConfig.data, priorityConfig.layout, {plotly_config});
+        Plotly.newPlot('priority-chart', priorityConfig.data, priorityConfig.layout, plotlyConfig);
 
         var categoryConfig = {category_fig.to_json()};
-        Plotly.newPlot('category-chart', categoryConfig.data, categoryConfig.layout, {plotly_config});
+        Plotly.newPlot('category-chart', categoryConfig.data, categoryConfig.layout, plotlyConfig);
 
         // Initialize DataTable
         var tableData = {table_data_json};
@@ -425,13 +429,20 @@ html_content = f"""
                     {{ data: 'Notes' }},
                     {{ data: 'Reviewer' }},
                     {{ data: 'Review_Date' }},
-                    {{ data: 'Follow_Up' }}
+                    {{ data: 'Follow_Up' }},
+                    {{
+                        data: 'Full_Path',
+                        render: function(data) {{
+                            if (data && data.length > 60) {{
+                                return '<span title="' + data + '">' + data.substring(0, 60) + '...</span>';
+                            }}
+                            return data;
+                        }}
+                    }}
                 ],
                 order: [[0, 'asc'], [1, 'asc']],
                 pageLength: 25,
-                responsive: true,
-                dom: 'Bfrtip',
-                buttons: ['copy', 'csv', 'excel']
+                responsive: true
             }});
         }});
     </script>
