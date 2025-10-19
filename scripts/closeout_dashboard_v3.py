@@ -21,8 +21,8 @@ from datetime import datetime
 import numpy as np
 
 # Read data (headers now in row 1)
-# Reads from current_closeout.csv (updated by update_dashboard.sh script)
-df = pd.read_csv('current_closeout.csv', encoding='utf-8-sig')
+# Reads from data/current_closeout.csv (updated by update_dashboard.sh script)
+df = pd.read_csv('data/current_closeout.csv', encoding='utf-8-sig')
 
 # Filter out non-applicable rows
 # Remove rows where Req ID is blank

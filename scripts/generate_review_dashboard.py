@@ -17,7 +17,7 @@ print("📊 Generating Document Review Dashboard...")
 print()
 
 # Read tracker data
-tracker_file = 'contract_documents_complete_tracker.csv'
+tracker_file = 'data/contract_documents_complete_tracker.csv'
 try:
     df = pd.read_csv(tracker_file, encoding='utf-8-sig')
 except FileNotFoundError:

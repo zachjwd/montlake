@@ -10,8 +10,8 @@ set -e
 REPO_DIR="/Users/z/Desktop/git/montlake-closeout"
 DESKTOP_DIR="/Users/z/Desktop/git"
 DOWNLOADS_DIR="/Users/z/Downloads"
-CLOSEOUT_CSV="current_closeout.csv"
-REVIEW_CSV="contract_documents_complete_tracker.csv"
+CLOSEOUT_CSV="data/current_closeout.csv"
+REVIEW_CSV="data/contract_documents_complete_tracker.csv"
 
 cd "$REPO_DIR"
 
@@ -84,9 +84,9 @@ else
 fi
 
 # Update Python script to use standard CSV name if needed
-if ! grep -q "current_closeout.csv" closeout_dashboard_v3.py; then
+if ! grep -q "data/current_closeout.csv" scripts/closeout_dashboard_v3.py; then
     echo "🔧 Updating Python script to use standard CSV name..."
-    sed -i '' "s/pd.read_csv('[^']*\.csv'/pd.read_csv('$CLOSEOUT_CSV'/g" closeout_dashboard_v3.py
+    sed -i '' "s|pd.read_csv('[^']*current_closeout\.csv'|pd.read_csv('$CLOSEOUT_CSV'|g" scripts/closeout_dashboard_v3.py
 fi
 
 echo ""
@@ -95,7 +95,7 @@ echo ""
 
 # Generate closeout requirements dashboard
 echo "1️⃣  Generating closeout requirements dashboard..."
-python3 closeout_dashboard_v3.py
+python3 scripts/closeout_dashboard_v3.py
 
 if [ $? -ne 0 ]; then
     echo "❌ Error generating closeout dashboard"
@@ -108,7 +108,7 @@ cp /Users/z/Desktop/montlake_closeout.html index.html
 
 # Generate document review dashboard
 echo "2️⃣  Generating document review dashboard..."
-python3 generate_review_dashboard.py
+python3 scripts/generate_review_dashboard.py
 
 if [ $? -ne 0 ]; then
     echo "❌ Error generating review dashboard"
@@ -131,7 +131,7 @@ fi
 
 # Commit changes
 echo "💾 Committing changes..."
-git add $CLOSEOUT_CSV $REVIEW_CSV closeout_dashboard_v3.py generate_review_dashboard.py index.html review-dashboard.html
+git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_review_dashboard.py index.html review-dashboard.html
 
 # Check if there are changes to commit
 if git diff --staged --quiet; then
