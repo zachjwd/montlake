@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Montlake Dashboard Update Script
-# Usage: ./update_dashboard.sh [path-to-csv]
+# Montlake All Dashboards Update Script
+# Updates both closeout requirements and document review dashboards
+# Usage: ./update_dashboard.sh [path-to-closeout-csv]
 # If no path provided, will search Desktop and Downloads for CSV files
 
 set -e
@@ -9,12 +10,13 @@ set -e
 REPO_DIR="/Users/z/Desktop/git/montlake-closeout"
 DESKTOP_DIR="/Users/z/Desktop/git"
 DOWNLOADS_DIR="/Users/z/Downloads"
-CSV_NAME="current_closeout.csv"
+CLOSEOUT_CSV="current_closeout.csv"
+REVIEW_CSV="contract_documents_complete_tracker.csv"
 
 cd "$REPO_DIR"
 
-echo "🔍 Montlake Dashboard Update Tool"
-echo "=================================="
+echo "🔍 Montlake All Dashboards Update Tool"
+echo "========================================"
 echo ""
 
 # Function to find CSV files
@@ -34,7 +36,10 @@ else
     echo "🔍 Searching for Montlake/Closeout CSV files..."
 
     # Read files into array properly handling spaces
-    mapfile -t CSV_FILES < <(find_csv_files)
+    CSV_FILES=()
+    while IFS= read -r file; do
+        CSV_FILES+=("$file")
+    done < <(find_csv_files)
 
     if [ ${#CSV_FILES[@]} -eq 0 ]; then
         echo "❌ No Montlake/Closeout CSV files found in Desktop or Downloads"
@@ -63,39 +68,54 @@ else
 fi
 
 echo ""
-echo "📁 Using file: $(basename "$CSV_FILE")"
+echo "📁 Using closeout CSV: $(basename "$CSV_FILE")"
 ORIGINAL_NAME=$(basename "$CSV_FILE")
 
-# Copy new CSV to repo with standard name (if not already there)
-if [ "$(realpath "$CSV_FILE")" = "$REPO_DIR/$CSV_NAME" ]; then
-    echo "📋 Using existing $CSV_NAME in repository..."
+# Copy new closeout CSV to repo with standard name (if not already there)
+if [ "$(realpath "$CSV_FILE")" = "$REPO_DIR/$CLOSEOUT_CSV" ]; then
+    echo "📋 Using existing $CLOSEOUT_CSV in repository..."
 else
     # Backup old CSV if it exists (Git will track this)
-    if [ -f "$REPO_DIR/$CSV_NAME" ]; then
+    if [ -f "$REPO_DIR/$CLOSEOUT_CSV" ]; then
         echo "💾 Current CSV will be backed up in Git history"
     fi
-    echo "📋 Copying CSV to repository..."
-    cp "$CSV_FILE" "$REPO_DIR/$CSV_NAME"
+    echo "📋 Copying closeout CSV to repository..."
+    cp "$CSV_FILE" "$REPO_DIR/$CLOSEOUT_CSV"
 fi
 
 # Update Python script to use standard CSV name if needed
 if ! grep -q "current_closeout.csv" closeout_dashboard_v3.py; then
     echo "🔧 Updating Python script to use standard CSV name..."
-    sed -i '' "s/pd.read_csv('[^']*\.csv'/pd.read_csv('$CSV_NAME'/g" closeout_dashboard_v3.py
+    sed -i '' "s/pd.read_csv('[^']*\.csv'/pd.read_csv('$CLOSEOUT_CSV'/g" closeout_dashboard_v3.py
 fi
 
-# Generate dashboard
-echo "🎨 Generating dashboard..."
+echo ""
+echo "🎨 Generating dashboards..."
+echo ""
+
+# Generate closeout requirements dashboard
+echo "1️⃣  Generating closeout requirements dashboard..."
 python3 closeout_dashboard_v3.py
 
 if [ $? -ne 0 ]; then
-    echo "❌ Error generating dashboard"
+    echo "❌ Error generating closeout dashboard"
     exit 1
 fi
 
 # Copy to index.html
-echo "📄 Updating index.html..."
+echo "   ✅ Closeout dashboard created"
 cp /Users/z/Desktop/montlake_closeout.html index.html
+
+# Generate document review dashboard
+echo "2️⃣  Generating document review dashboard..."
+python3 generate_review_dashboard.py
+
+if [ $? -ne 0 ]; then
+    echo "❌ Error generating review dashboard"
+    exit 1
+fi
+
+echo "   ✅ Review dashboard created"
 
 # Show changes
 echo ""
@@ -111,7 +131,7 @@ fi
 
 # Commit changes
 echo "💾 Committing changes..."
-git add $CSV_NAME closeout_dashboard_v3.py index.html
+git add $CLOSEOUT_CSV $REVIEW_CSV closeout_dashboard_v3.py generate_review_dashboard.py index.html review-dashboard.html
 
 # Check if there are changes to commit
 if git diff --staged --quiet; then
@@ -124,9 +144,12 @@ else
     git push
 
     echo ""
-    echo "✅ Dashboard updated successfully!"
+    echo "✅ All dashboards updated successfully!"
     echo ""
-    echo "📈 Dashboard will be live at: https://zachjwd.github.io/montlake/"
+    echo "📈 Dashboards will be live at:"
+    echo "   Closeout Requirements: https://zachjwd.github.io/montlake/"
+    echo "   Document Review:       https://zachjwd.github.io/montlake/review-dashboard.html"
+    echo ""
     echo "⏱️  GitHub Pages usually updates within 1-2 minutes"
 fi
 
@@ -134,6 +157,6 @@ echo ""
 echo "💡 Version tracking:"
 echo "   - All CSV versions are saved in Git history"
 echo "   - To see history: git log --oneline"
-echo "   - To see a previous CSV: git show <commit-hash>:$CSV_NAME"
+echo "   - To see a previous CSV: git show <commit-hash>:$CLOSEOUT_CSV"
 echo "   - To revert to previous version: git revert <commit-hash>"
 echo ""
