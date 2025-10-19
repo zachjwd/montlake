@@ -19,6 +19,17 @@ echo "🔍 Montlake All Dashboards Update Tool"
 echo "========================================"
 echo ""
 
+# Sync documents tracker from Google Sheets
+echo "📥 Syncing documents tracker from Google Sheets..."
+python3 scripts/sync_from_sheets.py
+
+if [ $? -ne 0 ]; then
+    echo "❌ Error syncing from Google Sheets"
+    exit 1
+fi
+
+echo ""
+
 # Function to find CSV files
 find_csv_files() {
     find "$DESKTOP_DIR" "$DOWNLOADS_DIR" -maxdepth 1 -name "*.csv" -type f 2>/dev/null | grep -i "montlake\|closeout" | sort
@@ -93,8 +104,8 @@ echo ""
 echo "🎨 Generating dashboards..."
 echo ""
 
-# Generate closeout requirements dashboard
-echo "1️⃣  Generating closeout requirements dashboard..."
+# Generate closeout documents dashboard
+echo "1️⃣  Generating closeout documents dashboard..."
 python3 scripts/closeout_dashboard_v3.py
 
 if [ $? -ne 0 ]; then
@@ -107,16 +118,16 @@ echo "   ✅ Closeout dashboard created"
 cp /Users/z/Desktop/montlake_closeout.html dashboard/closeout_dashboard.html
 cp /Users/z/Desktop/montlake_closeout.html index.html
 
-# Generate requirements dashboard
-echo "2️⃣  Generating requirements dashboard..."
-python3 scripts/generate_requirements_dashboard.py
+# Generate documents dashboard
+echo "2️⃣  Generating documents dashboard..."
+python3 scripts/generate_documents_dashboard.py
 
 if [ $? -ne 0 ]; then
-    echo "❌ Error generating requirements dashboard"
+    echo "❌ Error generating documents dashboard"
     exit 1
 fi
 
-echo "   ✅ Requirements dashboard created"
+echo "   ✅ Documents dashboard created"
 
 # Show changes
 echo ""
@@ -132,7 +143,7 @@ fi
 
 # Commit changes
 echo "💾 Committing changes..."
-git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_requirements_dashboard.py dashboard/closeout_dashboard.html dashboard/requirements_dashboard.html data/requirements_tracker.csv index.html
+git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_documents_dashboard.py dashboard/closeout_dashboard.html dashboard/documents_dashboard.html data/documents_tracker.csv index.html
 
 # Check if there are changes to commit
 if git diff --staged --quiet; then
@@ -148,8 +159,8 @@ else
     echo "✅ All dashboards updated successfully!"
     echo ""
     echo "📈 Dashboards available at:"
-    echo "   Closeout Dashboard:     dashboard/closeout_dashboard.html"
-    echo "   Requirements Dashboard: dashboard/requirements_dashboard.html"
+    echo "   Closeout Dashboard:  dashboard/closeout_dashboard.html"
+    echo "   Documents Dashboard: dashboard/documents_dashboard.html"
     echo ""
     echo "   (If GitHub Pages is enabled, they will be live shortly)"
 fi

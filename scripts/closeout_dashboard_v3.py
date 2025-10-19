@@ -187,9 +187,14 @@ fig.add_trace(go.Scatter(
     hoverinfo='skip'
 ))
 
+# Format timestamp with linked AM/PM
+now = datetime.now()
+time_part = now.strftime('%B %d, %Y at %I:%M')
+am_pm = now.strftime('%p')
+
 # Add title
 title_text = f"""<b style='font-size:32px'>MONTLAKE PROJECT CLOSEOUT DASHBOARD</b><br>
-<span style='font-size:14px; color:gray'>Executive Summary - Generated {datetime.now().strftime('%B %d, %Y at %I:%M %p')}</span>"""
+<span style='font-size:14px; color:gray'>Executive Summary - Generated {time_part} <a href="javascript:void(0)" onclick="window.location.href=window.location.href.includes('file://') ? 'file:///Users/z/Desktop/git/montlake-closeout/dashboard/documents_dashboard.html' : 'dashboard/documents_dashboard.html'" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Documents Dashboard">{am_pm}</a></span>"""
 
 # Create a multi-page HTML with tabs
 html_header = f"""
@@ -752,7 +757,7 @@ html_header = f"""
 <body>
     <div class="header">
         <h1>MONTLAKE PROJECT CLOSEOUT DASHBOARD</h1>
-        <p>Executive Summary - Generated {datetime.now().strftime('%B %d, %Y at %I:%M %p')}</p>
+        <p>Executive Summary - Generated {time_part} <a href="javascript:void(0)" onclick="window.location.href=window.location.href.includes('file://') ? 'file:///Users/z/Desktop/git/montlake-closeout/dashboard/documents_dashboard.html' : 'dashboard/documents_dashboard.html'" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Documents Dashboard">{am_pm}</a></p>
         <div class="project-timeline">
             <div class="timeline-container">
                 <div class="timeline-line"></div>

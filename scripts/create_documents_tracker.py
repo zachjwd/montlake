@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-Create requirements-based tracker
+Create documents tracker
 Uses the 784 required deliverables as the master list
 Links to actual files when we have them
 """
 
 import pandas as pd
 
-print("📋 Creating Requirements-Based Tracker...")
+print("📋 Creating Documents Tracker...")
 print()
 
-# Load requirements (the 784 deliverables)
+# Load documents (the 784 deliverables)
 req_df = pd.read_csv('/Users/z/Downloads/Montlake Docs - Sheet1 (2).csv')
 print(f"✅ Loaded {len(req_df)} required deliverables")
 
@@ -54,10 +54,10 @@ req_df['Contract_Section'] = req_df.apply(
     axis=1
 )
 
-# Create requirements tracker
-requirements_tracker = []
+# Create documents tracker
+documents_tracker = []
 
-print("🔄 Linking requirements to files...")
+print("🔄 Linking documents to files...")
 print()
 
 for _, req in req_df.iterrows():
@@ -67,7 +67,7 @@ for _, req in req_df.iterrows():
     matching_files = tracker_df[tracker_df['Doc_Number'] == doc_num]
 
     if len(matching_files) > 0:
-        # We have file(s) for this requirement
+        # We have file(s) for this document
         # Get review status from files
         reviewed = len(matching_files[matching_files['Review_Status'] == 'Reviewed'])
         total_files = len(matching_files)
@@ -82,7 +82,7 @@ for _, req in req_df.iterrows():
         # Get file info (use first file as representative)
         first_file = matching_files.iloc[0]
 
-        requirements_tracker.append({
+        documents_tracker.append({
             'Doc_Number': doc_num,
             'Document_Name': req['document_name'],
             'Full_Name': req['full_name'] if pd.notna(req['full_name']) else '',
@@ -96,8 +96,8 @@ for _, req in req_df.iterrows():
             'File_Path': first_file['Full_Path'] if 'Full_Path' in first_file else ''
         })
     else:
-        # We don't have this requirement
-        requirements_tracker.append({
+        # We don't have this document
+        documents_tracker.append({
             'Doc_Number': doc_num,
             'Document_Name': req['document_name'],
             'Full_Name': req['full_name'] if pd.notna(req['full_name']) else '',
@@ -111,22 +111,22 @@ for _, req in req_df.iterrows():
             'File_Path': ''
         })
 
-requirements_tracker_df = pd.DataFrame(requirements_tracker)
+documents_tracker_df = pd.DataFrame(documents_tracker)
 
-# Save the requirements tracker
-requirements_tracker_df.to_csv('data/requirements_tracker.csv', index=False)
-print(f"💾 Saved requirements tracker: data/requirements_tracker.csv")
+# Save the documents tracker
+documents_tracker_df.to_csv('data/documents_tracker.csv', index=False)
+print(f"💾 Saved documents tracker: data/documents_tracker.csv")
 print()
 
 # Statistics
 print("=" * 100)
-print("REQUIREMENTS COVERAGE")
+print("DOCUMENTS COVERAGE")
 print("=" * 100)
-total = len(requirements_tracker_df)
-reviewed = len(requirements_tracker_df[requirements_tracker_df['Review_Status'] == 'Reviewed'])
-in_progress = len(requirements_tracker_df[requirements_tracker_df['Review_Status'] == 'In Progress'])
-not_started = len(requirements_tracker_df[requirements_tracker_df['Review_Status'] == 'Not Started'])
-have_files = len(requirements_tracker_df[requirements_tracker_df['Files_Count'] > 0])
+total = len(documents_tracker_df)
+reviewed = len(documents_tracker_df[documents_tracker_df['Review_Status'] == 'Reviewed'])
+in_progress = len(documents_tracker_df[documents_tracker_df['Review_Status'] == 'In Progress'])
+not_started = len(documents_tracker_df[documents_tracker_df['Review_Status'] == 'Not Started'])
+have_files = len(documents_tracker_df[documents_tracker_df['Files_Count'] > 0])
 
 print(f"Total Required Deliverables:    {total}")
 print(f"  ✅ Reviewed:                   {reviewed:4} ({reviewed/total*100:5.1f}%)")
@@ -140,16 +140,16 @@ print()
 # Coverage by Contract Section
 print("COVERAGE BY CONTRACT SECTION:")
 print("-" * 100)
-for section in sorted(requirements_tracker_df['Contract_Section'].unique()):
-    section_reqs = requirements_tracker_df[requirements_tracker_df['Contract_Section'] == section]
-    section_total = len(section_reqs)
-    section_have = len(section_reqs[section_reqs['Files_Count'] > 0])
-    section_reviewed = len(section_reqs[section_reqs['Review_Status'] == 'Reviewed'])
+for section in sorted(documents_tracker_df['Contract_Section'].unique()):
+    section_docs = documents_tracker_df[documents_tracker_df['Contract_Section'] == section]
+    section_total = len(section_docs)
+    section_have = len(section_docs[section_docs['Files_Count'] > 0])
+    section_reviewed = len(section_docs[section_docs['Review_Status'] == 'Reviewed'])
 
     print(f"{section}")
     print(f"  {section_have}/{section_total} have files ({section_have/section_total*100:.1f}%) | "
           f"{section_reviewed} reviewed ({section_reviewed/section_total*100:.1f}%)")
 
 print()
-print("✅ Requirements tracker created!")
+print("✅ Documents tracker created!")
 print()

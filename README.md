@@ -17,7 +17,7 @@ update-montlake
 ```
 
 This will:
-1. Generate closeout requirements dashboard
+1. Generate closeout documents dashboard
 2. Generate document review dashboard
 3. Commit changes to Git
 4. Push to GitHub (dashboards update in 1-2 minutes)

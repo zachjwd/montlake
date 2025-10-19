@@ -37,6 +37,11 @@ for section in sections:
 
 overall_section_weighted = (section_progress_sum / len(sections)) * 100
 
+# Format timestamp with linked AM/PM
+now = datetime.now()
+time_part = now.strftime('%B %d, %Y at %I:%M')
+am_pm = now.strftime('%p')
+
 # Generate HTML
 html = f"""<!DOCTYPE html>
 <html>
@@ -225,7 +230,7 @@ html = f"""<!DOCTYPE html>
     <div class="container">
         <div class="header">
             <h1>Montlake Closeout Review Dashboard</h1>
-            <p>Tracking {total} Documents | Updated {datetime.now().strftime('%B %d, %Y at %I:%M %p')}</p>
+            <p>Tracking {total} Documents | Updated {time_part} <a href="closeout_dashboard.html" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Closeout Dashboard">{am_pm}</a></p>
         </div>
 
         <div class="stats-grid">

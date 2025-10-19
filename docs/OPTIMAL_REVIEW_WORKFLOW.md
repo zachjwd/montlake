@@ -383,7 +383,7 @@ Bad: "This document talks about operations and maintenance..."
 ### Works with your existing `update-montlake` command:
 
 ```bash
-# Update closeout requirements dashboard
+# Update closeout documents dashboard
 update-montlake
 
 # Update document review dashboard
