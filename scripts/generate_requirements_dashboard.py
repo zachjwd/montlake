@@ -285,9 +285,13 @@ for section in sorted(df['Contract_Section'].unique()):
 """
 
     # Group by category within section
-    categories = section_docs['Category'].unique()
+    # Fill NaN categories with "Standard Documents"
+    section_docs_copy = section_docs.copy()
+    section_docs_copy['Category'] = section_docs_copy['Category'].fillna('Standard Documents')
+
+    categories = section_docs_copy['Category'].unique()
     for category in sorted(categories):
-        cat_docs = section_docs[section_docs['Category'] == category]
+        cat_docs = section_docs_copy[section_docs_copy['Category'] == category]
 
         if len(cat_docs) > 0:
             html += f"""
