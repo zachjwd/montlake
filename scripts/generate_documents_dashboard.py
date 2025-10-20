@@ -55,28 +55,31 @@ html = f"""<!DOCTYPE html>
         }}
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: #f5f7fa;
-            padding: 20px;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }}
+        .header {{
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+        .header h1 {{
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+        }}
+        .header p {{
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 14px;
         }}
         .container {{
             max-width: 1400px;
             margin: 0 auto;
-        }}
-        .header {{
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }}
-        .header h1 {{
-            font-size: 32px;
-            margin-bottom: 8px;
-        }}
-        .header p {{
-            opacity: 0.9;
-            font-size: 14px;
+            padding: 20px;
         }}
         .stats-grid {{
             display: grid;
@@ -179,6 +182,11 @@ html = f"""<!DOCTYPE html>
             border-left: 3px solid #e2e8f0;
             font-size: 13px;
             display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }}
+        .doc-item-header {{
+            display: flex;
             justify-content: space-between;
             align-items: center;
         }}
@@ -196,6 +204,12 @@ html = f"""<!DOCTYPE html>
         .doc-name {{
             flex: 1;
             color: #1e293b;
+        }}
+        .doc-notes {{
+            font-size: 12px;
+            color: #64748b;
+            font-style: italic;
+            padding-left: 20px;
         }}
         .status-badge {{
             padding: 4px 12px;
@@ -227,12 +241,12 @@ html = f"""<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Montlake Closeout Review Dashboard</h1>
-            <p>Tracking {total} Documents | Updated {time_part} <a href="closeout_dashboard.html" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Closeout Dashboard">{am_pm}</a></p>
-        </div>
+    <div class="header">
+        <h1>MONTLAKE CLOSEOUT - CONTRACT DOCUMENTS REVIEW</h1>
+        <p>Tracking {total} Documents | Updated {time_part} <a href="index.html" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Closeout Dashboard">{am_pm}</a></p>
+    </div>
 
+    <div class="container">
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="label">Overall Progress (Section-Weighted)</div>
@@ -260,7 +274,7 @@ html = f"""<!DOCTYPE html>
         </div>
 
         <div class="section">
-            <h2 style="margin-bottom: 20px; color: #1e293b;">Contract Sections</h2>
+            <h2 style="margin-bottom: 20px; color: #1e293b;">Contract Documents</h2>
 """
 
 # Group by contract section
@@ -310,14 +324,23 @@ for section in sorted(df['Contract_Section'].unique()):
                 status_class = 'reviewed' if review_status == 'Reviewed' else 'needs-review'
                 doc_name = doc['Document_Name']
                 doc_num = doc['Doc_Number']
+                notes = doc.get('Notes', '')
 
                 html += f"""
                             <li class="doc-item {status_class}">
-                                <div style="display: flex; align-items: center; flex: 1;">
-                                    <span class="doc-number">[{doc_num}]</span>
-                                    <span class="doc-name">{doc_name}</span>
-                                </div>
-                                <span class="status-badge {status_class}">{review_status}</span>
+                                <div class="doc-item-header">
+                                    <div style="display: flex; align-items: center; flex: 1;">
+                                        <span class="doc-number">[{doc_num}]</span>
+                                        <span class="doc-name">{doc_name}</span>
+                                    </div>
+                                    <span class="status-badge {status_class}">{review_status}</span>
+                                </div>"""
+
+                if notes and str(notes).strip():
+                    html += f"""
+                                <div class="doc-notes">{notes}</div>"""
+
+                html += """
                             </li>
 """
 
@@ -334,6 +357,13 @@ for section in sorted(df['Contract_Section'].unique()):
 html += """
         </div>
     </div>
+
+    <footer style="position: fixed; bottom: 0; left: 0; right: 0; padding: 15px; background: #1e3a8a; color: white; text-align: center; font-size: 14px; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1);">
+        <a href="mailto:zach.archer@consultant.wsdot.wa.gov" style="color: #93c5fd; text-decoration: none; margin: 0 10px;">zach.archer@consultant.wsdot.wa.gov</a> |
+        <a href="mailto:lisa.danks@consultant.wsdot.wa.gov" style="color: #93c5fd; text-decoration: none; margin: 0 10px;">lisa.danks@consultant.wsdot.wa.gov</a> |
+        <a href="mailto:kristin.wells@consultant.wsdot.wa.gov" style="color: #93c5fd; text-decoration: none; margin: 0 10px;">kristin.wells@consultant.wsdot.wa.gov</a>
+    </footer>
+    <div style="height: 60px;"></div>
 
     <script>
         function toggleSection(sectionId) {
@@ -354,7 +384,7 @@ html += """
 """
 
 # Write HTML file
-output_file = 'dashboard/documents_dashboard.html'
+output_file = 'contractdocs.html'
 with open(output_file, 'w') as f:
     f.write(html)
 
