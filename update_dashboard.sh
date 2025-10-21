@@ -113,9 +113,8 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Copy to dashboard directory and root (for GitHub Pages homepage)
+# Copy to root (for GitHub Pages homepage)
 echo "   ✅ Closeout dashboard created"
-cp /Users/z/Desktop/montlake_closeout.html dashboard/closeout_dashboard.html
 cp /Users/z/Desktop/montlake_closeout.html index.html
 
 # Generate documents dashboard
@@ -143,7 +142,7 @@ fi
 
 # Commit changes
 echo "💾 Committing changes..."
-git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_documents_dashboard.py dashboard/closeout_dashboard.html dashboard/documents_dashboard.html data/documents_tracker.csv index.html
+git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_documents_dashboard.py data/documents_tracker.csv index.html contractdocs.html
 
 # Check if there are changes to commit
 if git diff --staged --quiet; then
@@ -159,8 +158,8 @@ else
     echo "✅ All dashboards updated successfully!"
     echo ""
     echo "📈 Dashboards available at:"
-    echo "   Closeout Dashboard:  dashboard/closeout_dashboard.html"
-    echo "   Documents Dashboard: dashboard/documents_dashboard.html"
+    echo "   Closeout Dashboard:         index.html"
+    echo "   Contract Documents Dashboard: contractdocs.html"
     echo ""
     echo "   (If GitHub Pages is enabled, they will be live shortly)"
 fi
