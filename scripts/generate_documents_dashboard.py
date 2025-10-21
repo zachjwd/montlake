@@ -14,6 +14,10 @@ print()
 df = pd.read_csv('data/documents_tracker.csv')
 print(f"✅ Loaded {len(df)} documents")
 
+# Standardize Review_Status capitalization (handle "In progress" vs "In Progress")
+df['Review_Status'] = df['Review_Status'].str.strip()
+df.loc[df['Review_Status'].str.lower() == 'in progress', 'Review_Status'] = 'In Progress'
+
 # Calculate basic stats
 total = len(df)
 reviewed = len(df[df['Review_Status'] == 'Reviewed'])
