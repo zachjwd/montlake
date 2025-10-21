@@ -5,7 +5,28 @@ Shows all required deliverables and their review status
 """
 
 import pandas as pd
+import re
 from datetime import datetime
+
+def extract_appendix_code(file_path):
+    """
+    Extract appendix code from file path.
+    Examples:
+      .../Appendix A1/... → A1
+      .../Appendix D34/Appendix D34.A/... → D34.A
+      .../Appendix A4/Appendix A4.1.../... → A4.1
+    """
+    if pd.isna(file_path):
+        return None
+
+    # Find all "Appendix XX" patterns in the path
+    matches = re.findall(r'Appendix ([A-Z][A-Z0-9.-]+)', str(file_path))
+
+    if not matches:
+        return None
+
+    # Return the most specific (longest) appendix code found
+    return max(matches, key=len)
 
 print("📊 Generating Documents Dashboard...")
 print()
@@ -17,6 +38,9 @@ print(f"✅ Loaded {len(df)} documents")
 # Standardize Review_Status capitalization (handle "In progress" vs "In Progress")
 df['Review_Status'] = df['Review_Status'].str.strip()
 df.loc[df['Review_Status'].str.lower() == 'in progress', 'Review_Status'] = 'In Progress'
+
+# Extract appendix codes from file paths
+df['Appendix_Code'] = df['File_Path'].apply(extract_appendix_code)
 
 # Calculate basic stats
 total = len(df)
@@ -175,6 +199,47 @@ html = f"""<!DOCTYPE html>
             margin-bottom: 10px;
             font-size: 14px;
         }}
+        .appendix-group {{
+            margin: 8px 0;
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #e2e8f0;
+        }}
+        .appendix-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 12px;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.2s;
+            border-radius: 4px;
+        }}
+        .appendix-header:hover {{
+            background: #f8fafc;
+        }}
+        .appendix-title {{
+            font-weight: 600;
+            color: #1e293b;
+            font-size: 13px;
+            flex: 1;
+        }}
+        .appendix-content {{
+            display: none;
+            padding: 10px 12px 12px;
+            border-top: 1px solid #e2e8f0;
+        }}
+        .appendix-content.active {{
+            display: block;
+        }}
+        .appendix-details {{
+            font-size: 12px;
+            color: #64748b;
+            line-height: 1.6;
+        }}
+        .appendix-details strong {{
+            color: #475569;
+        }}
         .doc-list {{
             list-style: none;
         }}
@@ -320,17 +385,25 @@ for section in sorted(df['Contract_Section'].unique()):
             html += f"""
                     <div class="category-group">
                         <div class="category-header">{category} ({len(cat_docs)} deliverables)</div>
-                        <ul class="doc-list">
 """
 
-            for _, doc in cat_docs.iterrows():
-                review_status = doc['Review_Status']
-                status_class = 'reviewed' if review_status == 'Reviewed' else 'needs-review'
-                doc_name = doc['Document_Name']
-                doc_num = doc['Doc_Number']
-                notes = doc.get('Notes', '')
+            # Group by appendix code within category
+            appendix_groups = cat_docs.groupby('Appendix_Code', dropna=False)
 
-                html += f"""
+            for appendix_code, appendix_docs in appendix_groups:
+                # For documents without appendix code (Standard docs), show directly
+                if pd.isna(appendix_code):
+                    html += """
+                        <ul class="doc-list">
+"""
+                    for _, doc in appendix_docs.iterrows():
+                        review_status = doc['Review_Status']
+                        status_class = 'reviewed' if review_status == 'Reviewed' else 'needs-review'
+                        doc_name = doc['Document_Name']
+                        doc_num = doc['Doc_Number']
+                        notes = doc.get('Notes', '')
+
+                        html += f"""
                             <li class="doc-item {status_class}">
                                 <div class="doc-item-header">
                                     <div style="display: flex; align-items: center; flex: 1;">
@@ -340,16 +413,65 @@ for section in sorted(df['Contract_Section'].unique()):
                                     <span class="status-badge {status_class}">{review_status}</span>
                                 </div>"""
 
-                if notes and str(notes).strip():
-                    html += f"""
+                        if notes and str(notes).strip():
+                            html += f"""
                                 <div class="doc-notes">{notes}</div>"""
 
-                html += """
+                        html += """
                             </li>
+"""
+                    html += """
+                        </ul>
+"""
+                else:
+                    # For appendices, create collapsible groups
+                    appendix_id = f"{section_id}-{category.replace(' ', '-').replace('(', '').replace(')', '')}-{appendix_code.replace('.', '-')}"
+
+                    # Get the first doc for the appendix title
+                    first_doc = appendix_docs.iloc[0]
+                    doc_name = first_doc['Document_Name']
+                    review_status = first_doc['Review_Status']
+                    status_class = 'reviewed' if review_status == 'Reviewed' else 'needs-review'
+
+                    html += f"""
+                        <div class="appendix-group">
+                            <div class="appendix-header" onclick="toggleAppendix('{appendix_id}')">
+                                <span class="appendix-title">Appendix {appendix_code} - {doc_name}</span>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span class="status-badge {status_class}">{review_status}</span>
+                                    <span class="expand-icon" id="icon-{appendix_id}">▶</span>
+                                </div>
+                            </div>
+                            <div class="appendix-content" id="content-{appendix_id}">
+                                <div class="appendix-details">
+"""
+
+                    # Show details for all docs in this appendix
+                    for idx, doc in appendix_docs.iterrows():
+                        rep_file = doc.get('Representative_File', '')
+                        notes = doc.get('Notes', '')
+
+                        if pd.notna(rep_file) and str(rep_file).strip():
+                            html += f"""
+                                    <div style="margin-bottom: 8px;">
+                                        <strong>File:</strong> {rep_file}
+                                    </div>
+"""
+
+                        if pd.notna(notes) and str(notes).strip():
+                            html += f"""
+                                    <div style="margin-bottom: 8px;">
+                                        <strong>Notes:</strong> {notes}
+                                    </div>
+"""
+
+                    html += """
+                                </div>
+                            </div>
+                        </div>
 """
 
             html += """
-                        </ul>
                     </div>
 """
 
@@ -373,6 +495,19 @@ html += """
         function toggleSection(sectionId) {
             const content = document.getElementById('content-' + sectionId);
             const icon = document.getElementById('icon-' + sectionId);
+
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                icon.classList.remove('active');
+            } else {
+                content.classList.add('active');
+                icon.classList.add('active');
+            }
+        }
+
+        function toggleAppendix(appendixId) {
+            const content = document.getElementById('content-' + appendixId);
+            const icon = document.getElementById('icon-' + appendixId);
 
             if (content.classList.contains('active')) {
                 content.classList.remove('active');
