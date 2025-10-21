@@ -11,7 +11,6 @@ REPO_DIR="/Users/z/Desktop/git/montlake-closeout"
 DESKTOP_DIR="/Users/z/Desktop/git"
 DOWNLOADS_DIR="/Users/z/Downloads"
 CLOSEOUT_CSV="data/current_closeout.csv"
-REVIEW_CSV="data/contract_documents_complete_tracker.csv"
 
 cd "$REPO_DIR"
 
@@ -142,7 +141,7 @@ fi
 
 # Commit changes
 echo "💾 Committing changes..."
-git add $CLOSEOUT_CSV $REVIEW_CSV scripts/closeout_dashboard_v3.py scripts/generate_documents_dashboard.py data/documents_tracker.csv index.html contractdocs.html
+git add $CLOSEOUT_CSV scripts/closeout_dashboard_v3.py scripts/generate_documents_dashboard.py data/documents_tracker.csv index.html contractdocs.html
 
 # Check if there are changes to commit
 if git diff --staged --quiet; then
