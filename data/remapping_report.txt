@@ -1,0 +1,2899 @@
+========================================================================================================================
+IMPROVED DOCUMENT MAPPING REPORT
+========================================================================================================================
+
+✓ UPDATED Doc #51: Appendices List
+  → Appendix A1 (100% confidence)
+  → File: Appendices List.pdf
+  → Reason: Exact match: 'Appendices List' == 'Appendices List'
+  → Changed from: Aerial Photo 1.pdf
+
+✓ Confirmed Doc #52: Electronic Files
+  → Appendix A2 (100% confidence)
+  → File: XL5097 Master CAD File Log A2 AD10.pdf
+  → Reason: Exact match: 'Electronic Files' == 'Electronic Files'
+
+✓ Confirmed Doc #53: Photos
+  → Appendix A3 (100% confidence)
+  → File: A3 Cover Sheet.pdf
+  → Reason: Exact match: 'Photos' == 'Photos'
+
+✓ UPDATED Doc #54: SR520 Differential Level Report
+  → Appendix A4.1 (100% confidence)
+  → File: SR520 Differential Level Report.pdf
+  → Reason: Exact match: 'SR520 Differential Level Report' == 'SR520 Differential Level Report'
+  → Changed from: Appendix A4 Cover Sheet.pdf
+
+✓ UPDATED Doc #55: SR520 GPS Control Network
+  → Appendix A4.2 (100% confidence)
+  → File: SR520 GPS Control Network.pdf
+  → Reason: Exact match: 'SR520 GPS Control Network' == 'SR520 GPS Control Network'
+  → Changed from: Appendix A4 Cover Sheet.pdf
+
+✗ NO MATCH: Doc #56: Evergreen Point Fountains
+  → Category: A-B - As-Built Plans and Construction
+
+✓ UPDATED Doc #57: FB&L As-Built Plans Volume 01
+  → Appendix A-B1.E.1 (95% confidence)
+  → File: Appendix A-B1.E.1.pdf
+  → Reason: Volume match: 01
+  → Changed from: Appendix A-B2.A.1.pdf
+
+✓ UPDATED Doc #58: FB&L As-Built Plans Volume 02
+  → Appendix A-B1.E.2 (95% confidence)
+  → File: Appendix A-B1.E.2.pdf
+  → Reason: Volume match: 02
+  → Changed from: Appendix A-B2.A.2.pdf
+
+✓ UPDATED Doc #59: FB&L As-Built Plans Volume 03
+  → Appendix A-B1.E.3 (95% confidence)
+  → File: Appendix A-B1.E.3.pdf
+  → Reason: Volume match: 03
+  → Changed from: A-B2.A.3 Cover Sheet.pdf
+
+✓ UPDATED Doc #60: FB&L As-Built Plans Volume 04
+  → Appendix A-B1.E.4 (95% confidence)
+  → File: Appendix A-B1.E.4.pdf
+  → Reason: Volume match: 04
+  → Changed from: A-B2.A.4 Cover Sheet.pdf
+
+✓ UPDATED Doc #61: FB&L As-Built Plans Volume 05
+  → Appendix A-B1.E.5 (95% confidence)
+  → File: Appendix A-B1.E.5.pdf
+  → Reason: Volume match: 05
+  → Changed from: A-B2.A.5 Cover Sheet.pdf
+
+✓ UPDATED Doc #62: FB&L As-Built Plans Volume 06
+  → Appendix A-B1.E.6 (95% confidence)
+  → File: Appendix A-B1.E.6.pdf
+  → Reason: Volume match: 06
+  → Changed from: Appendix A-B2.A.6.pdf
+
+✓ Confirmed Doc #63: FB&L As-Built Plans Volume 06a
+  → Appendix A-B2.A.7 (95% confidence)
+  → File: Appendix A-B2.A.7.pdf
+  → Reason: Volume match: 06a
+
+✓ Confirmed Doc #64: FB&L As-Built Plans Volume 06b
+  → Appendix A-B2.A.8 (95% confidence)
+  → File: A-B2.A.8 Cover Sheet.pdf
+  → Reason: Volume match: 06b
+
+✓ UPDATED Doc #65: FB&L As-Built Plans Volume 07
+  → Appendix A-B1.E.7 (95% confidence)
+  → File: Appendix A-B1.E.7.pdf
+  → Reason: Volume match: 07
+  → Changed from: Appendix A-B2.A.9.pdf
+
+✓ Confirmed Doc #66: FB&L As-Built Plans Volume 07a
+  → Appendix A-B2.A.10 (95% confidence)
+  → File: A-B2A.10 Cover Sheet.pdf
+  → Reason: Volume match: 07a
+
+✓ UPDATED Doc #67: FB&L As-Built Plans Volume 08
+  → Appendix A-B1.E.8 (95% confidence)
+  → File: Appendix A-B1.E.8.pdf
+  → Reason: Volume match: 08
+  → Changed from: Appendix A-B2.A.11.pdf
+
+✓ UPDATED Doc #68: FB&L As-Built Plans Volume 09
+  → Appendix A-B1.E.9 (95% confidence)
+  → File: Appendix A-B1.E.9.pdf
+  → Reason: Volume match: 09
+  → Changed from: A-B2.A.12 Cover Sheet.pdf
+
+✓ UPDATED Doc #69: FB&L As-Built Plans Volume 10
+  → Appendix A-B1.E.10 (95% confidence)
+  → File: Appendix A-B1.E.10.pdf
+  → Reason: Volume match: 10
+  → Changed from: A-B2.A.13 Cover Sheet.pdf
+
+✓ Confirmed Doc #70: FB&L As-Built Plans Volume 11
+  → Appendix A-B2.A.14 (95% confidence)
+  → File: A-B2.A.14 Cover Sheet.pdf
+  → Reason: Volume match: 11
+
+✓ Confirmed Doc #71: FB&L As-Built Plans Volume 12
+  → Appendix A-B2.A.15 (95% confidence)
+  → File: A-B2.A.15 Cover Sheet.pdf
+  → Reason: Volume match: 12
+
+✓ Confirmed Doc #72: FB&L As-Built Plans Volume 13
+  → Appendix A-B2.A.16 (95% confidence)
+  → File: Appendix A-B2.A.16.pdf
+  → Reason: Volume match: 13
+
+✓ Confirmed Doc #73: FB&L As-Built Plans Volume 14a
+  → Appendix A-B2.A.17 (95% confidence)
+  → File: A-B2.A.17 Cover Sheet.pdf
+  → Reason: Volume match: 14a
+
+✓ Confirmed Doc #74: FB&L As-Built Plans Volume 14b
+  → Appendix A-B2.A.18 (95% confidence)
+  → File: Appendix A-B2.A.18.pdf
+  → Reason: Volume match: 14b
+
+✓ Confirmed Doc #75: FB&L As-Built Plans Volume 14c
+  → Appendix A-B2.A.19 (95% confidence)
+  → File: Appendix A-B2.A.19.pdf
+  → Reason: Volume match: 14c
+
+✓ Confirmed Doc #76: FB&L As-Built Plans Volume 14d
+  → Appendix A-B2.A.20 (95% confidence)
+  → File: A-B2A.20 Cover Sheet.pdf
+  → Reason: Volume match: 14d
+
+✓ Confirmed Doc #77: FB&L As-Built Plans Volume 15
+  → Appendix A-B2.A.21 (95% confidence)
+  → File: A-B2.A.21 Cover Sheet.pdf
+  → Reason: Volume match: 15
+
+✓ Confirmed Doc #78: FB&L As-Built Plans Volume 15a
+  → Appendix A-B2.A.22 (95% confidence)
+  → File: Appendix A-B2.A.22.pdf
+  → Reason: Volume match: 15a
+
+✓ Confirmed Doc #79: FB&L As-Built Plans Volume 16
+  → Appendix A-B2.A.23 (95% confidence)
+  → File: Appendix A-B2.A.23.pdf
+  → Reason: Volume match: 16
+
+✓ Confirmed Doc #80: FB&L As-Built Plans Volume 17
+  → Appendix A-B2.A.24 (95% confidence)
+  → File: Appendix A-B2.A.24.pdf
+  → Reason: Volume match: 17
+
+✓ Confirmed Doc #81: FB&L As-Built Plans Volume 18
+  → Appendix A-B2.A.25 (95% confidence)
+  → File: Appendix A-B2.A.25.pdf
+  → Reason: Volume match: 18
+
+✓ Confirmed Doc #82: FB&L As-Built Plans Volume 19
+  → Appendix A-B2.A.26 (95% confidence)
+  → File: A-B2.A.26 Cover Sheet.pdf
+  → Reason: Volume match: 19
+
+✗ NO MATCH: Doc #83: Montlake Blvd & 24th Ave Bridges
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #84: Montlake Property As-Builts
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #85: SR 520 Ramps Over Arboretum
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #86: Sound Transit Horizontal Vertical Control
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #87: Sound Transit ROW Plans
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #88: Sound Transit Tunnel Plan Profile
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #89: U220 Basis of Design Report
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #90: U220 Conformed Specifications
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #91: U220 Final Calcs Tunnels
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #92: U220 GBR IFC
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #93: U220 Precast Segmental Tunnel Lining Design
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #94: U220 TBM Tunnels Final As-Builts
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #95: U220 TBM Tunnels IFC Part 1
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #96: U220 TBM Tunnels IFC Part 2
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #97: Union Bay Bridge
+  → Category: A-B - As-Built Plans and Construction
+
+✓ UPDATED Doc #98: WABN As-Built Plans Volume 01
+  → Appendix A-B1.E.1 (95% confidence)
+  → File: Appendix A-B1.E.1.pdf
+  → Reason: Volume match: 01
+  → Changed from: Appendix A-B2.A.1.pdf
+
+✓ UPDATED Doc #99: WABN As-Built Plans Volume 02
+  → Appendix A-B1.E.2 (95% confidence)
+  → File: Appendix A-B1.E.2.pdf
+  → Reason: Volume match: 02
+  → Changed from: Appendix A-B2.A.2.pdf
+
+✓ UPDATED Doc #100: WABN As-Built Plans Volume 03
+  → Appendix A-B1.E.3 (95% confidence)
+  → File: Appendix A-B1.E.3.pdf
+  → Reason: Volume match: 03
+  → Changed from: A-B2.A.3 Cover Sheet.pdf
+
+✓ UPDATED Doc #101: WABN As-Built Plans Volume 04
+  → Appendix A-B1.E.4 (95% confidence)
+  → File: Appendix A-B1.E.4.pdf
+  → Reason: Volume match: 04
+  → Changed from: A-B2.A.4 Cover Sheet.pdf
+
+✓ UPDATED Doc #102: WABN As-Built Plans Volume 05
+  → Appendix A-B1.E.5 (95% confidence)
+  → File: Appendix A-B1.E.5.pdf
+  → Reason: Volume match: 05
+  → Changed from: A-B2.A.5 Cover Sheet.pdf
+
+✓ UPDATED Doc #103: WABN As-Built Plans Volume 06
+  → Appendix A-B1.E.6 (95% confidence)
+  → File: Appendix A-B1.E.6.pdf
+  → Reason: Volume match: 06
+  → Changed from: Appendix A-B2.A.6.pdf
+
+✓ UPDATED Doc #104: WABN As-Built Plans Volume 07
+  → Appendix A-B1.E.7 (95% confidence)
+  → File: Appendix A-B1.E.7.pdf
+  → Reason: Volume match: 07
+  → Changed from: Appendix A-B2.A.9.pdf
+
+✓ UPDATED Doc #105: WABN As-Built Plans Volume 08
+  → Appendix A-B1.E.8 (95% confidence)
+  → File: Appendix A-B1.E.8.pdf
+  → Reason: Volume match: 08
+  → Changed from: Appendix A-B2.A.11.pdf
+
+✓ UPDATED Doc #106: WABN As-Built Plans Volume 09
+  → Appendix A-B1.E.9 (95% confidence)
+  → File: Appendix A-B1.E.9.pdf
+  → Reason: Volume match: 09
+  → Changed from: A-B2.A.12 Cover Sheet.pdf
+
+✓ UPDATED Doc #107: WABN As-Built Plans Volume 10
+  → Appendix A-B1.E.10 (95% confidence)
+  → File: Appendix A-B1.E.10.pdf
+  → Reason: Volume match: 10
+  → Changed from: A-B2.A.13 Cover Sheet.pdf
+
+✗ NO MATCH: Doc #108: WABN Calculations
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #109: WABN Construction Contract Plans
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #110: WABN Construction Contract Provisions
+  → Category: A-B - As-Built Plans and Construction
+
+✓ Confirmed Doc #111: WABN DCRs & IDRs Part 1
+  → Appendix A-B1.G.1 (100% confidence)
+  → File: A-B1.G.1.pdf
+  → Reason: Exact match: 'WABN DCRs & IDRs Part 1' == 'WABN DCRs & IDRs Part 1'
+
+✓ Confirmed Doc #112: WABN DCRs & IDRs Part 2
+  → Appendix A-B1.G.2 (100% confidence)
+  → File: A-B1.G.2.pdf
+  → Reason: Exact match: 'WABN DCRs & IDRs Part 2' == 'WABN DCRs & IDRs Part 2'
+
+✗ NO MATCH: Doc #113: WABN Disc Bearings
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #114: WABN Isolation Bearings
+  → Category: A-B - As-Built Plans and Construction
+
+✓ Confirmed Doc #115: WABN RFI Log
+  → Appendix A-B1.F.1 (100% confidence)
+  → File: Appendix A-B1.F.1.pdf
+  → Reason: Exact match: 'WABN RFI Log' == 'WABN RFI Log'
+
+✓ Confirmed Doc #116: WABN RFI Questions & Answers
+  → Appendix A-B1.F.2 (78% confidence)
+  → File: Appendix A-B1.F.2.pdf
+  → Reason: Fuzzy match (78%): 'WABN RFI Questions & Answers' ≈ 'WABN RFI Questions'
+
+✗ NO MATCH: Doc #117: WCB As-Built
+  → Category: A-B - As-Built Plans and Construction
+
+✗ NO MATCH: Doc #118: WCB Disc Bearings
+  → Category: A-B - As-Built Plans and Construction
+
+✓ Confirmed Doc #119: West Approach Bridge
+  → Appendix A-B1.B (100% confidence)
+  → File: A-B1.B Cover Sheet.pdf
+  → Reason: Exact match: 'West Approach Bridge' == 'West Approach Bridge'
+
+✓ UPDATED Doc #120: Amendments to Standard Specifications
+  → Appendix B1 (100% confidence)
+  → File: Appendix B1_Part3.pdf
+  → Reason: Exact match: 'Amendments to the Standard Specifications' == 'Amendments to the Standard Specifications'
+  → Changed from: Appendix B1.pdf
+
+✗ NO MATCH: Doc #121: General Special Provisions
+  → Category: B - Specifications
+
+✗ NO MATCH: Doc #122: Instructions for GSP
+  → Category: B - Specifications
+
+✓ Confirmed Doc #123: King County Metro Electrical Specification
+  → Appendix B15 (80% confidence)
+  → File: B15 Cove Sheet.pdf
+  → Reason: Fuzzy match (80%): 'King County Metro Electrical Specification' ≈ 'King County Metro Electrical'
+
+✗ NO MATCH: Doc #124: NWR Electrical GSP Instructions
+  → Category: B - Specifications
+
+✗ NO MATCH: Doc #125: NWR Electrical General Special Provisions
+  → Category: B - Specifications
+
+✗ NO MATCH: Doc #126: NWR ITS GSP
+  → Category: B - Specifications
+
+✗ NO MATCH: Doc #127: NWR ITS GSP Instructions
+  → Category: B - Specifications
+
+✗ NO MATCH: Doc #128: NWR Landscape GSP
+  → Category: B - Specifications
+
+✗ NO MATCH: Doc #129: NWR Landscape GSP Instructions
+  → Category: B - Specifications
+
+✗ NO MATCH: Doc #130: NWR Miscellaneous GSP
+  → Category: B - Specifications
+
+✗ NO MATCH: Doc #131: NWR Miscellaneous GSP Instructions
+  → Category: B - Specifications
+
+✓ Confirmed Doc #132: Seattle Standard Specifications 2017
+  → Appendix B14 (82% confidence)
+  → File: B14 Cover Sheet.pdf
+  → Reason: Fuzzy match (82%): 'Seattle Standard Specifications 2017' ≈ 'City of Seattle Standard Specifications'
+
+✗ NO MATCH: Doc #133: Standard Specifications (M 41-10)
+  → Category: B - Specifications
+
+✓ Confirmed Doc #134: Steel Escalation Cost Adjustment
+  → Appendix B16 (100% confidence)
+  → File: Appendix B16.pdf
+  → Reason: Exact match: 'Steel Escalation Cost Adjustment' == 'Steel Escalation Cost Adjustment'
+
+✓ UPDATED Doc #135: Environmental Commitments List
+  → Appendix C1 (100% confidence)
+  → File: Appendix C1.pdf
+  → Reason: Exact match: 'Environmental Commitments List' == 'Environmental Commitments List'
+  → Changed from: Appendix C1.pdf
+
+✗ NO MATCH: Doc #136: AASHTO LRFD 8th Edition 2017
+  → Category: D - Manuals
+
+✓ Confirmed Doc #137: Bridge Deck Protection System
+  → Appendix D34.B (100% confidence)
+  → File: Appendix D34.B.pdf
+  → Reason: Exact match: 'Bridge Deck Protection System' == 'Bridge Deck Protection System'
+
+✓ Confirmed Doc #138: Bridge Design Manual
+  → Appendix D1 (100% confidence)
+  → File: D1 Cover Sheet.pdf
+  → Reason: Exact match: 'Bridge Design Manual' == 'Bridge Design Manual'
+
+✓ Confirmed Doc #139: Bridge Design Minimum Requirements
+  → Appendix D34.C (100% confidence)
+  → File: Appendix D34.C.pdf
+  → Reason: Exact match: 'Bridge Design Minimum Requirements' == 'Bridge Design Minimum Requirements'
+
+✓ Confirmed Doc #140: Bridge Inspection Manual
+  → Appendix D29 (100% confidence)
+  → File: Appendix D29.pdf
+  → Reason: Exact match: 'Bridge Inspection Manual' == 'Bridge Inspection Manual'
+
+✓ Confirmed Doc #141: Bridge Paving Projects
+  → Appendix D34.F (100% confidence)
+  → File: D34.F Cover Sheet.pdf
+  → Reason: Exact match: 'Bridge Paving Projects' == 'Bridge Paving Projects'
+
+✓ Confirmed Doc #142: Communications Manual
+  → Appendix D22 (100% confidence)
+  → File: Appendix D22.pdf
+  → Reason: Exact match: 'Communications Manual' == 'Communications Manual'
+
+✓ Confirmed Doc #143: Construction Manual
+  → Appendix D2 (100% confidence)
+  → File: Appendix D2.pdf
+  → Reason: Exact match: 'Construction Manual' == 'Construction Manual'
+
+✓ Confirmed Doc #144: DOE Sewage Works Design Criteria
+  → Appendix D43 (100% confidence)
+  → File: D43 Cover Sheet.pdf
+  → Reason: Exact match: 'DOE Sewage Works Design Criteria' == 'DOE Sewage Works Design Criteria'
+
+✓ Confirmed Doc #145: DOH Water System Manual
+  → Appendix D47 (100% confidence)
+  → File: D47 Cover Sheet.pdf
+  → Reason: Exact match: 'DOH Water System Manual' == 'DOH Water System Manual'
+
+✓ UPDATED Doc #146: Design Manual
+  → Appendix D3 (100% confidence)
+  → File: D3 Cover Sheet.pdf
+  → Reason: Exact match: 'Design Manual' == 'Design Manual'
+  → Changed from: D1 Cover Sheet.pdf
+
+✓ Confirmed Doc #147: ET 31 ET Plus Guardrail Terminal Memo
+  → Appendix D40 (100% confidence)
+  → File: Appendix D40.pdf
+  → Reason: Exact match: 'ET 31 ET Plus Guardrail Terminal Memo' == 'ET 31 ET Plus Guardrail Terminal Memo'
+
+✓ Confirmed Doc #148: Electronic Engineering Data Standards
+  → Appendix D18 (100% confidence)
+  → File: D18 Cover Sheet.pdf
+  → Reason: Exact match: 'Electronic Engineering Data Standards' == 'Electronic Engineering Data Standards'
+
+✓ Confirmed Doc #149: Environmental Manual
+  → Appendix D4 (100% confidence)
+  → File: D4 Cover Sheet.pdf
+  → Reason: Exact match: 'Environmental Manual' == 'Environmental Manual'
+
+✓ Confirmed Doc #150: FHWA Flexibility In Highway Design
+  → Appendix D39 (100% confidence)
+  → File: Appendix D39.pdf
+  → Reason: Exact match: 'FHWA Flexibility In Highway Design' == 'FHWA Flexibility In Highway Design'
+
+✓ Confirmed Doc #151: FHWA MUTCD
+  → Appendix D28 (100% confidence)
+  → File: D28 Cover Sheet.pdf
+  → Reason: Exact match: 'FHWA MUTCD' == 'FHWA MUTCD'
+
+✓ Confirmed Doc #152: FHWA Traffic Control Systems Handbook
+  → Appendix D37 (100% confidence)
+  → File: D37 Cover Sheet.pdf
+  → Reason: Exact match: 'FHWA Traffic Control Systems Handbook' == 'FHWA Traffic Control Systems Handbook'
+
+✓ Confirmed Doc #153: Geotechnical Design Manual
+  → Appendix D5 (100% confidence)
+  → File: D5 Cover Sheet.pdf
+  → Reason: Exact match: 'Geotechnical Design Manual' == 'Geotechnical Design Manual'
+
+✓ Confirmed Doc #154: Highway Runoff Manual
+  → Appendix D6 (100% confidence)
+  → File: Appendix D6.pdf
+  → Reason: Exact match: 'Highway Runoff Manual' == 'Highway Runoff Manual'
+
+✓ Confirmed Doc #155: Highway Surveying Manual
+  → Appendix D23 (100% confidence)
+  → File: D23 Cover Sheet.pdf
+  → Reason: Exact match: 'Highway Surveying Manual' == 'Highway Surveying Manual'
+
+✓ Confirmed Doc #156: Hydraulics Manual
+  → Appendix D7 (100% confidence)
+  → File: Appendix D7.pdf
+  → Reason: Exact match: 'Hydraulics Manual' == 'Hydraulics Manual'
+
+✓ Confirmed Doc #157: King County Road Design Standards
+  → Appendix D46 (82% confidence)
+  → File: Appendix D46.pdf
+  → Reason: Fuzzy match (82%): 'King County Road Design Standards' ≈ 'King County Road Design'
+
+✓ Confirmed Doc #158: Local Agency Guidelines
+  → Appendix D8 (100% confidence)
+  → File: Appendix D8.pdf
+  → Reason: Exact match: 'Local Agency Guidelines' == 'Local Agency Guidelines'
+
+✓ Confirmed Doc #159: Maintenance Manual
+  → Appendix D9 (100% confidence)
+  → File: Appendix D9.pdf
+  → Reason: Exact match: 'Maintenance Manual' == 'Maintenance Manual'
+
+✓ Confirmed Doc #160: Materials Manual
+  → Appendix D10 (100% confidence)
+  → File: Appendix D10.pdf
+  → Reason: Exact match: 'Materials Manual' == 'Materials Manual'
+
+✗ NO MATCH: Doc #161: NWR Area 5 Vegetation Management Plan
+  → Category: D - Manuals
+
+✓ Confirmed Doc #162: NWR HOV Design Guide
+  → Appendix D33 (100% confidence)
+  → File: D33 Cover Sheet.pdf
+  → Reason: Exact match: 'NWR HOV Design Guide' == 'NWR HOV Design Guide'
+
+✓ Confirmed Doc #163: Organizational Conflicts of Interest Manual
+  → Appendix D13 (100% confidence)
+  → File: Appendix D13.pdf
+  → Reason: Exact match: 'Organizational Conflicts of Interest Manual' == 'Organizational Conflicts of Interest Manual'
+
+✓ Confirmed Doc #164: Pavement Surface Condition Rating Manual
+  → Appendix D11 (78% confidence)
+  → File: Appendix D11.pdf
+  → Reason: Fuzzy match (78%): 'Pavement Surface Condition Rating Manual' ≈ 'Pavement Surface Condition'
+
+✓ Confirmed Doc #165: Plans Preparation Manual
+  → Appendix D12 (100% confidence)
+  → File: Appendix D12.pdf
+  → Reason: Exact match: 'Plans Preparation Manual' == 'Plans Preparation Manual'
+
+✓ Confirmed Doc #166: Positive Moment Strand Extension
+  → Appendix D34.G (100% confidence)
+  → File: D34.G Cover Sheet.pdf
+  → Reason: Exact match: 'Positive Moment Strand Extension' == 'Positive Moment Strand Extension'
+
+✗ NO MATCH: Doc #167: Pre-Bent Stirrups Prestressed Girders
+  → Category: D - Manuals
+
+✓ Confirmed Doc #168: Right of Way Manual
+  → Appendix D14 (100% confidence)
+  → File: Appendix D14.pdf
+  → Reason: Exact match: 'Right of Way Manual' == 'Right of Way Manual'
+
+✓ Confirmed Doc #169: Roadside Classification Plan
+  → Appendix D15 (100% confidence)
+  → File: Appendix D15.pdf
+  → Reason: Exact match: 'Roadside Classification Plan' == 'Roadside Classification Plan'
+
+✓ Confirmed Doc #170: Roadside Manual
+  → Appendix D16 (100% confidence)
+  → File: Appendix D16.pdf
+  → Reason: Exact match: 'Roadside Manual' == 'Roadside Manual'
+
+✓ Confirmed Doc #171: SDOT ADA Curb Ramp Assessment Policy
+  → Appendix D48.B (89% confidence)
+  → File: Appendix D48.B.pdf
+  → Reason: Fuzzy match (89%): 'SDOT ADA Curb Ramp Assessment Policy' ≈ 'SDOT ADA Curb Ramp Assessment'
+
+✓ Confirmed Doc #172: SDOT APS Installation Requirements
+  → Appendix D48.G (100% confidence)
+  → File: Appendix D48.G.pdf
+  → Reason: Exact match: 'SDOT APS Installation Requirements' == 'SDOT APS Installation Requirements'
+
+✓ Confirmed Doc #173: SDOT Companion Ramp Requirements
+  → Appendix D48.A (74% confidence)
+  → File: D48.A Cover Sheet.pdf
+  → Reason: Fuzzy match (74%): 'SDOT Companion Ramp Requirements' ≈ 'SDOT Companion Ramp'
+
+✓ Confirmed Doc #174: SDOT Curb Ramp Construction Tolerances
+  → Appendix D48.D (100% confidence)
+  → File: Appendix D48.D Cover Sheet.pdf
+  → Reason: Exact match: 'SDOT Curb Ramp Construction Tolerances' == 'SDOT Curb Ramp Construction Tolerances'
+
+✓ Confirmed Doc #175: SDOT Curb Ramp Flares-Wings Policy
+  → Appendix D48.C (76% confidence)
+  → File: Appendix D48.C Cover Sheet.pdf
+  → Reason: Fuzzy match (76%): 'SDOT Curb Ramp Flares-Wings Policy' ≈ 'SDOT Curb Ramp Flares'
+
+✓ Confirmed Doc #176: SDOT Curb Ramps T-Intersections
+  → Appendix D48.E (100% confidence)
+  → File: Appendix D48.E.pdf
+  → Reason: Exact match: 'SDOT Curb Ramps T-Intersections' == 'SDOT Curb Ramps T-Intersections'
+
+✓ Confirmed Doc #177: SDOT MEF Documentation Curb Ramp
+  → Appendix D48.F (100% confidence)
+  → File: D48.F Cover Sheet.pdf
+  → Reason: Exact match: 'SDOT MEF Documentation Curb Ramp' == 'SDOT MEF Documentation Curb Ramp'
+
+✓ Confirmed Doc #178: SPU Design Standards
+  → Appendix D38 (100% confidence)
+  → File: Appendix D38.pdf
+  → Reason: Exact match: 'SPU Design Standards' == 'SPU Design Standards'
+
+✓ Confirmed Doc #179: Scour Requirements
+  → Appendix D34.D (100% confidence)
+  → File: Appendix D34.D.pdf
+  → Reason: Exact match: 'Scour Requirements' == 'Scour Requirements'
+
+✓ Confirmed Doc #180: Seattle CAD Manual
+  → Appendix D49 (100% confidence)
+  → File: Appendix D49.pdf
+  → Reason: Exact match: 'Seattle CAD Manual' == 'Seattle CAD Manual'
+
+✓ Confirmed Doc #181: Seattle City Light Stock Catalog
+  → Appendix D44 (100% confidence)
+  → File: D44 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle City Light Stock Catalog' == 'Seattle City Light Stock Catalog'
+
+✓ Confirmed Doc #182: Seattle ROW Improvements Manual
+  → Appendix D35 (100% confidence)
+  → File: D35 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle ROW Improvements Manual' == 'Seattle ROW Improvements Manual'
+
+✓ Confirmed Doc #183: Seattle ROWORR
+  → Appendix D30 (100% confidence)
+  → File: D30 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle ROWORR' == 'Seattle ROWORR'
+
+✓ Confirmed Doc #184: Seattle Standard Plans 2017
+  → Appendix D31 (100% confidence)
+  → File: D31 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle Standard Plans 2017' == 'Seattle Standard Plans 2017'
+
+✓ Confirmed Doc #185: Seattle Traffic Control Manual
+  → Appendix D36 (100% confidence)
+  → File: D36 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle Traffic Control Manual' == 'Seattle Traffic Control Manual'
+
+✓ Confirmed Doc #186: Sign Fabrication Manual
+  → Appendix D26 (100% confidence)
+  → File: D26 Cover Sheet.pdf
+  → Reason: Exact match: 'Sign Fabrication Manual' == 'Sign Fabrication Manual'
+
+✓ Confirmed Doc #187: Standard Plans
+  → Appendix D17 (100% confidence)
+  → File: Appendix D17.pdf
+  → Reason: Exact match: 'Standard Plans' == 'Standard Plans'
+
+✗ NO MATCH: Doc #188: Temporary Erosion Sediment Control Manual
+  → Category: D - Manuals
+
+✓ Confirmed Doc #189: Traffic Manual
+  → Appendix D19 (100% confidence)
+  → File: D19 Cover Sheet.pdf
+  → Reason: Exact match: 'Traffic Manual' == 'Traffic Manual'
+
+✓ Confirmed Doc #190: Utilities Accommodation Policy
+  → Appendix D20 (100% confidence)
+  → File: D20 Cover Sheet.pdf
+  → Reason: Exact match: 'Utilities Accommodation Policy' == 'Utilities Accommodation Policy'
+
+✓ Confirmed Doc #191: Utilities Manual
+  → Appendix D21 (100% confidence)
+  → File: Appendix D21.pdf
+  → Reason: Exact match: 'Utilities Manual' == 'Utilities Manual'
+
+✓ Confirmed Doc #192: WA MUTCD Modifications
+  → Appendix D25 (100% confidence)
+  → File: D25 Cover Sheet.pdf
+  → Reason: Exact match: 'WA MUTCD Modifications' == 'WA MUTCD Modifications'
+
+✓ Confirmed Doc #193: Wide Flange Deck Bulb Tee Girders UHPC
+  → Appendix D34.A (79% confidence)
+  → File: Appendix D34.A.pdf
+  → Reason: Fuzzy match (79%): 'Wide Flange Deck Bulb Tee Girders UHPC' ≈ 'Wide Flange Deck Bulb Tee'
+
+✓ Confirmed Doc #194: Work Zone Traffic Control Guidelines
+  → Appendix D27 (100% confidence)
+  → File: D27 Cover Sheet.pdf
+  → Reason: Exact match: 'Work Zone Traffic Control Guidelines' == 'Work Zone Traffic Control Guidelines'
+
+✓ UPDATED Doc #195: Administrative Order
+  → Appendix E38.B (100% confidence)
+  → File: Appendix E38.B.pdf
+  → Reason: Exact match: 'Administrative Order' == 'Administrative Order'
+  → Changed from: Appendix E1.A.pdf
+
+✓ Confirmed Doc #196: Administrative Order Amendment
+  → Appendix E38.C (100% confidence)
+  → File: Appendix E38.C.pdf
+  → Reason: Exact match: 'Administrative Order Amendment' == 'Administrative Order Amendment'
+
+✓ Confirmed Doc #197: Analytical Data Lab 1805-191B
+  → Appendix E36.A (100% confidence)
+  → File: Appendix E36.A.pdf
+  → Reason: Exact match: 'Analytical Data Lab 1805-191B' == 'Analytical Data Lab 1805-191B'
+
+✓ Confirmed Doc #198: Aquatic Wetland Mitigation Addendum 5
+  → Appendix E3.C (100% confidence)
+  → File: Appendix E3.C.pdf
+  → Reason: Exact match: 'Aquatic Wetland Mitigation Addendum 5' == 'Aquatic Wetland Mitigation Addendum 5'
+
+⚠ MATCHED BUT NO FILE: Doc #199: Biological Assessment
+  → Appendix E4.A (100% confidence)
+  → File not found in OneDrive structure
+
+✓ Confirmed Doc #200: Bridge 513-10 Good Faith Survey
+  → Appendix E34.A (100% confidence)
+  → File: Appendix E34.A.pdf
+  → Reason: Exact match: 'Bridge 513-10 Good Faith Survey' == 'Bridge 513-10 Good Faith Survey'
+
+✓ Confirmed Doc #201: Bridge 520 3 and 3E-N Survey
+  → Appendix E34.B (100% confidence)
+  → File: Appendix E34.B.pdf
+  → Reason: Exact match: 'Bridge 520 3 and 3E-N Survey' == 'Bridge 520 3 and 3E-N Survey'
+
+✓ Confirmed Doc #202: Bridge 520 6A and 6N-E Survey
+  → Appendix E34.E (100% confidence)
+  → File: Appendix E34.E.pdf
+  → Reason: Exact match: 'Bridge 520 6A and 6N-E Survey' == 'Bridge 520 6A and 6N-E Survey'
+
+✓ Confirmed Doc #203: Bridge 520-5 and 5A Survey
+  → Appendix E34.C (100% confidence)
+  → File: Appendix E34.C.pdf
+  → Reason: Exact match: 'Bridge 520-5 and 5A Survey' == 'Bridge 520-5 and 5A Survey'
+
+✓ Confirmed Doc #204: Bridges 520 6 7.5N 7.5 7.7S Survey
+  → Appendix E34.D (100% confidence)
+  → File: Appendix E34.D.pdf
+  → Reason: Exact match: 'Bridges 520 6 7.5N 7.5 7.7S Survey' == 'Bridges 520 6 7.5N 7.5 7.7S Survey'
+
+⚠ MATCHED BUT NO FILE: Doc #205: Bubble Curtain Plans
+  → Appendix E4.C (100% confidence)
+  → File not found in OneDrive structure
+
+✓ Confirmed Doc #206: Community Construction Management Plan
+  → Appendix E10 (100% confidence)
+  → File: Appendix E10.pdf
+  → Reason: Exact match: 'Community Construction Management Plan' == 'Community Construction Management Plan'
+
+✓ Confirmed Doc #207: Construction Noise Variance Decision
+  → Appendix E32.A (100% confidence)
+  → File: Appendix E32.A.pdf
+  → Reason: Exact match: 'Construction Noise Variance Decision' == 'Construction Noise Variance Decision'
+
+✓ Confirmed Doc #208: DOE Petroleum Remediation Guidance
+  → Appendix E20 (100% confidence)
+  → File: E20 Cover Sheet.pdf
+  → Reason: Exact match: 'DOE Petroleum Remediation Guidance' == 'DOE Petroleum Remediation Guidance'
+
+✓ Confirmed Doc #209: Environmental Constraints Plan
+  → Appendix E26 (100% confidence)
+  → File: E26 Cover Sheet.pdf
+  → Reason: Exact match: 'Environmental Constraints Plan' == 'Environmental Constraints Plan'
+
+✓ Confirmed Doc #210: Environmental Project Description
+  → Appendix E2 (100% confidence)
+  → File: Appendix E2.pdf
+  → Reason: Exact match: 'Environmental Project Description' == 'Environmental Project Description'
+
+✓ Confirmed Doc #211: FB&L Demo Test Results
+  → Appendix E35 (100% confidence)
+  → File: Appendix E35.pdf
+  → Reason: Exact match: 'FB&L Demo Test Results' == 'FB&L Demo Test Results'
+
+✓ Confirmed Doc #212: Final Aquatic Mitigation Plan
+  → Appendix E3.A (100% confidence)
+  → File: E3.A Cover Sheet.pdf
+  → Reason: Exact match: 'Final Aquatic Mitigation Plan' == 'Final Aquatic Mitigation Plan'
+
+✓ Confirmed Doc #213: Final Environmental Impact Statement
+  → Appendix E1.B (100% confidence)
+  → File: Appendix E1.B.pdf
+  → Reason: Exact match: 'Final Environmental Impact Statement' == 'Final Environmental Impact Statement'
+
+✓ Confirmed Doc #214: Final Wetland Mitigation Report
+  → Appendix E3.B (100% confidence)
+  → File: Appendix E3.B.pdf
+  → Reason: Exact match: 'Final Wetland Mitigation Report' == 'Final Wetland Mitigation Report'
+
+✓ Confirmed Doc #215: Fish Exclusion Protocols Standards
+  → Appendix E18 (100% confidence)
+  → File: E18_Cover_Sheet.pdf
+  → Reason: Exact match: 'Fish Exclusion Protocols Standards' == 'Fish Exclusion Protocols Standards'
+
+✓ Confirmed Doc #216: Foster Island Treatment Plan
+  → Appendix E9 (100% confidence)
+  → File: Appendix E9.pdf
+  → Reason: Exact match: 'Foster Island Treatment Plan' == 'Foster Island Treatment Plan'
+
+✓ Confirmed Doc #217: Hazardous Materials Baseline Report
+  → Appendix E21 (100% confidence)
+  → File: Appendix E21.pdf
+  → Reason: Exact match: 'Hazardous Materials Baseline Report' == 'Hazardous Materials Baseline Report'
+
+✓ Confirmed Doc #218: Hazardous Materials Report Addendum
+  → Appendix E28 (100% confidence)
+  → File: E28 Cover Sheet.pdf
+  → Reason: Exact match: 'Hazardous Materials Report Addendum' == 'Hazardous Materials Report Addendum'
+
+✓ Confirmed Doc #219: Historic Properties Archaeologically Sensitive Areas
+  → Appendix E7 (100% confidence)
+  → File: Appendix E7.pdf
+  → Reason: Exact match: 'Historic Properties Archaeologically Sensitive Areas' == 'Historic Properties Archaeologically Sensitive Areas'
+
+✓ Confirmed Doc #220: MTCA Exceedances WABN Geotechnical
+  → Appendix E22 (100% confidence)
+  → File: Appendix E22.pdf
+  → Reason: Exact match: 'MTCA Exceedances WABN Geotechnical' == 'MTCA Exceedances WABN Geotechnical'
+
+✓ Confirmed Doc #221: Montlake Phase Noise Variance Application
+  → Appendix E32.B.1 (77% confidence)
+  → File: E32.B.1_Cover_Sheet.pdf
+  → Reason: Fuzzy match (77%): 'Montlake Phase Noise Variance Application' ≈ 'Noise Variance Application'
+
+✗ NO MATCH: Doc #222: NEPA FB&L Reevaluation
+  → Category: E - Environmental
+
+✓ Confirmed Doc #223: NEPA-SEPA Additional Moorage Buoys
+  → Appendix E1.W (82% confidence)
+  → File: Appendix E1.W.pdf
+  → Reason: Fuzzy match (82%): 'NEPA-SEPA Additional Moorage Buoys' ≈ 'Additional Moorage Buoys'
+
+✓ Confirmed Doc #224: NEPA-SEPA Channel Marker Repair
+  → Appendix E1.Z (80% confidence)
+  → File: Appendix E1.Z.pdf
+  → Reason: Fuzzy match (80%): 'NEPA-SEPA Channel Marker Repair' ≈ 'Channel Marker Repair'
+
+✓ Confirmed Doc #225: NEPA-SEPA Construction Truck Trips
+  → Appendix E1.U (82% confidence)
+  → File: Appendix E1.U.pdf
+  → Reason: Fuzzy match (82%): 'NEPA-SEPA Construction Truck Trips' ≈ 'Construction Truck Trips'
+
+✓ Confirmed Doc #226: NEPA-SEPA Eastside Haul Routes
+  → Appendix E1.KK (80% confidence)
+  → File: Appendix E1.KK.pdf
+  → Reason: Fuzzy match (80%): 'NEPA-SEPA Eastside Haul Routes' ≈ 'Eastside Haul Routes'
+
+✓ Confirmed Doc #227: NEPA-SEPA Eastside Staging Area
+  → Appendix E1.S (80% confidence)
+  → File: Appendix E1.S.pdf
+  → Reason: Fuzzy match (80%): 'NEPA-SEPA Eastside Staging Area' ≈ 'Eastside Staging Area'
+
+✓ Confirmed Doc #228: NEPA-SEPA FB&L Construction Changes
+  → Appendix E1.Q (83% confidence)
+  → File: Appendix E1.Q.pdf
+  → Reason: Fuzzy match (83%): 'NEPA-SEPA FB&L Construction Changes' ≈ 'FB&L Construction Changes'
+
+✓ Confirmed Doc #229: NEPA-SEPA FB&L Final Design Features
+  → Appendix E1.K (83% confidence)
+  → File: Appendix E1.K.pdf
+  → Reason: Fuzzy match (83%): 'NEPA-SEPA FB&L Final Design Features' ≈ 'FB&L Final Design Features'
+
+✓ Confirmed Doc #230: NEPA-SEPA FB&L Final Design Features
+  → Appendix E1.K (83% confidence)
+  → File: Appendix E1.K.pdf
+  → Reason: Fuzzy match (83%): 'NEPA-SEPA FB&L Final Design Features' ≈ 'FB&L Final Design Features'
+
+✓ Confirmed Doc #231: NEPA-SEPA Floating Bridge Demolition
+  → Appendix E1.N (83% confidence)
+  → File: Appendix E1.N.pdf
+  → Reason: Fuzzy match (83%): 'NEPA-SEPA Floating Bridge Demolition' ≈ 'Floating Bridge Demolition'
+
+✓ Confirmed Doc #232: NEPA-SEPA Geotechnical Investigation
+  → Appendix E1.LL (83% confidence)
+  → File: Appendix E1.LL.pdf
+  → Reason: Fuzzy match (83%): 'NEPA-SEPA Geotechnical Investigation' ≈ 'Geotechnical Investigation'
+
+✓ Confirmed Doc #233: NEPA-SEPA Geotechnical Investigations
+  → Appendix E1.T (84% confidence)
+  → File: Appendix E1.T.pdf
+  → Reason: Fuzzy match (84%): 'NEPA-SEPA Geotechnical Investigations' ≈ 'Geotechnical Investigations'
+
+✗ NO MATCH: Doc #234: NEPA-SEPA Kenmore Yard Reevaluation
+  → Category: E - Environmental
+
+✓ Confirmed Doc #235: NEPA-SEPA Kenmore Yard Update
+  → Appendix E1.J (79% confidence)
+  → File: Appendix E1.J.pdf
+  → Reason: Fuzzy match (79%): 'NEPA-SEPA Kenmore Yard Update' ≈ 'Kenmore Yard Update'
+
+✓ Confirmed Doc #236: NEPA-SEPA Kenmore Yard Update
+  → Appendix E1.J (79% confidence)
+  → File: Appendix E1.J.pdf
+  → Reason: Fuzzy match (79%): 'NEPA-SEPA Kenmore Yard Update' ≈ 'Kenmore Yard Update'
+
+✓ Confirmed Doc #237: NEPA-SEPA Montlake Construction Limits
+  → Appendix E1.AA (84% confidence)
+  → File: Appendix E1.AA.pdf
+  → Reason: Fuzzy match (84%): 'NEPA-SEPA Montlake Construction Limits' ≈ 'Montlake Construction Limits'
+
+✓ Confirmed Doc #238: NEPA-SEPA Montlake Market Closure
+  → Appendix E1.OO (82% confidence)
+  → File: Appendix E1.OO.pdf
+  → Reason: Fuzzy match (82%): 'NEPA-SEPA Montlake Market Closure' ≈ 'Montlake Market Closure'
+
+✓ Confirmed Doc #239: NEPA-SEPA PATON Buoy Strings
+  → Appendix E1.Y (78% confidence)
+  → File: Appendix E1.Y.pdf
+  → Reason: Fuzzy match (78%): 'NEPA-SEPA PATON Buoy Strings' ≈ 'PATON Buoy Strings'
+
+✓ Confirmed Doc #240: NEPA-SEPA Pontoon Repairs Coffer Cell
+  → Appendix E1.FF (84% confidence)
+  → File: Appendix E1.FF.pdf
+  → Reason: Fuzzy match (84%): 'NEPA-SEPA Pontoon Repairs Coffer Cell' ≈ 'Pontoon Repairs Coffer Cell'
+
+✓ Confirmed Doc #241: NEPA-SEPA Pontoon Repairs Vigor
+  → Appendix E1.CC (80% confidence)
+  → File: Appendix E1.CC.pdf
+  → Reason: Fuzzy match (80%): 'NEPA-SEPA Pontoon Repairs Vigor' ≈ 'Pontoon Repairs Vigor'
+
+✓ Confirmed Doc #242: NEPA-SEPA Pontoon Tacoma Blair Berth
+  → Appendix E1.P (71% confidence)
+  → File: Appendix E1.P.pdf
+  → Reason: Fuzzy match (71%): 'NEPA-SEPA Pontoon Tacoma Blair Berth' ≈ 'Pontoon Tacoma Blair'
+
+✓ Confirmed Doc #243: NEPA-SEPA Pontoon Tacoma Terminal 7
+  → Appendix E1.DD (83% confidence)
+  → File: Appendix E1.DD.pdf
+  → Reason: Fuzzy match (83%): 'NEPA-SEPA Pontoon Tacoma Terminal 7' ≈ 'Pontoon Tacoma Terminal 7'
+
+✓ Confirmed Doc #244: NEPA-SEPA Rescind Stormwater Changes
+  → Appendix E1.X (83% confidence)
+  → File: Appendix E1.X.pdf
+  → Reason: Fuzzy match (83%): 'NEPA-SEPA Rescind Stormwater Changes' ≈ 'Rescind Stormwater Changes'
+
+✓ UPDATED Doc #245: NEPA-SEPA Section 106 Amendment
+  → Appendix E1.MM (80% confidence)
+  → File: Appendix E1.MM.pdf
+  → Reason: Fuzzy match (80%): 'NEPA-SEPA Section 106 Amendment' ≈ 'Section 106 Amendment'
+  → Changed from: E5.A Cover Sheet.pdf
+
+✓ Confirmed Doc #246: NEPA-SEPA Tolling Equipment
+  → Appendix E1.JJ (77% confidence)
+  → File: Appendix E1.JJ.pdf
+  → Reason: Fuzzy match (77%): 'NEPA-SEPA Tolling Equipment' ≈ 'Tolling Equipment'
+
+✓ Confirmed Doc #247: NEPA-SEPA Tolling Equipment Installation
+  → Appendix E1.NN (85% confidence)
+  → File: Appendix E1.NN.pdf
+  → Reason: Fuzzy match (85%): 'NEPA-SEPA Tolling Equipment Installation' ≈ 'Tolling Equipment Installation'
+
+✗ NO MATCH: Doc #248: NEPA-SEPA WABN
+  → Category: E - Environmental
+
+✓ Confirmed Doc #249: NEPA-SEPA WABN Foster Island Design
+  → Appendix E1.II (83% confidence)
+  → File: Appendix E1.II.pdf
+  → Reason: Fuzzy match (83%): 'NEPA-SEPA WABN Foster Island Design' ≈ 'WABN Foster Island Design'
+
+✓ Confirmed Doc #250: NEPA-SEPA WABN Foster Island Refinements
+  → Appendix E1.HH (85% confidence)
+  → File: Appendix E1.HH.pdf
+  → Reason: Fuzzy match (85%): 'NEPA-SEPA WABN Foster Island Refinements' ≈ 'WABN Foster Island Refinements'
+
+✓ Confirmed Doc #251: NEPA-SEPA WABS Montlake Lid
+  → Appendix E1.O (77% confidence)
+  → File: E1.O Cover Sheet.pdf
+  → Reason: Fuzzy match (77%): 'NEPA-SEPA WABS Montlake Lid' ≈ 'WABS Montlake Lid'
+
+✗ NO MATCH: Doc #252: NEPA-SEPA WCB Reevaluation
+  → Category: E - Environmental
+
+✓ Confirmed Doc #253: NEPA-SEPA Westside Staging Area
+  → Appendix E1.L (80% confidence)
+  → File: Appendix E1.L.pdf
+  → Reason: Fuzzy match (80%): 'NEPA-SEPA Westside Staging Area' ≈ 'Westside Staging Area'
+
+✓ UPDATED Doc #254: NEPA-SEPA Wetland Mitigation Addendum
+  → Appendix E1.BB (84% confidence)
+  → File: Appendix E1.BB.pdf
+  → Reason: Fuzzy match (84%): 'NEPA-SEPA Wetland Mitigation Addendum' ≈ 'Wetland Mitigation Addendum'
+  → Changed from: Appendix E3.B.pdf
+
+✓ Confirmed Doc #255: NPDES Construction Stormwater Permit
+  → Appendix E38.A (100% confidence)
+  → File: Appendix E38.A.pdf
+  → Reason: Exact match: 'NPDES Construction Stormwater Permit' == 'NPDES Construction Stormwater Permit'
+
+✓ Confirmed Doc #256: Neighborhood Traffic Management Plan
+  → Appendix E12 (100% confidence)
+  → File: E12 Cover Sheet.pdf
+  → Reason: Exact match: 'Neighborhood Traffic Management Plan' == 'Neighborhood Traffic Management Plan'
+
+✓ Confirmed Doc #257: Noise Variance Notification Map
+  → Appendix E32.B.3 (100% confidence)
+  → File: E32.B.3_Cover_Sheet.pdf
+  → Reason: Exact match: 'Noise Variance Notification Map' == 'Noise Variance Notification Map'
+
+✓ Confirmed Doc #258: Permit Plans - Coast Guard
+  → Appendix E3.F (100% confidence)
+  → File: E3.F Cover Sheet.pdf
+  → Reason: Exact match: 'Permit Plans - Coast Guard' == 'Permit Plans - Coast Guard'
+
+✓ Confirmed Doc #259: Permit Plans - Corps
+  → Appendix E3.D (100% confidence)
+  → File: Appendix E3.D.pdf
+  → Reason: Exact match: 'Permit Plans - Corps' == 'Permit Plans - Corps'
+
+✓ Confirmed Doc #260: Permit Plans - Seattle Shoreline
+  → Appendix E3.E (100% confidence)
+  → File: Appendix E3.E.pdf
+  → Reason: Exact match: 'Permit Plans - Seattle Shoreline' == 'Permit Plans - Seattle Shoreline'
+
+✓ Confirmed Doc #261: Permit Plans - WDFW Ecology
+  → Appendix E3.G (100% confidence)
+  → File: E3.G Cover Sheet.pdf
+  → Reason: Exact match: 'Permit Plans - WDFW Ecology' == 'Permit Plans - WDFW Ecology'
+
+✓ Confirmed Doc #262: Phase I ESA Montlake Gas Station
+  → Appendix E23 (100% confidence)
+  → File: Appendix E23.pdf
+  → Reason: Exact match: 'Phase I ESA Montlake Gas Station' == 'Phase I ESA Montlake Gas Station'
+
+✓ Confirmed Doc #263: Phase II ESA - Exterior
+  → Appendix E29 (100% confidence)
+  → File: Appendix E29.pdf
+  → Reason: Exact match: 'Phase II ESA - Exterior' == 'Phase II ESA - Exterior'
+
+✓ Confirmed Doc #264: Phase II ESA East Montlake Place
+  → Appendix E36 (100% confidence)
+  → File: Appendix E36.pdf
+  → Reason: Exact match: 'Phase II ESA East Montlake Place' == 'Phase II ESA East Montlake Place'
+
+✓ Confirmed Doc #265: Phase II ESA Eastbound Off-Ramp
+  → Appendix E27 (100% confidence)
+  → File: E27 Cover Sheet.pdf
+  → Reason: Exact match: 'Phase II ESA Eastbound Off-Ramp' == 'Phase II ESA Eastbound Off-Ramp'
+
+⚠ MATCHED BUT NO FILE: Doc #266: Pile Driving Flow Chart
+  → Appendix E4.D (100% confidence)
+  → File not found in OneDrive structure
+
+✓ Confirmed Doc #267: Record of Decision
+  → Appendix E1.A (100% confidence)
+  → File: E1.A Cover Sheet.pdf
+  → Reason: Exact match: 'Record of Decision' == 'Record of Decision'
+
+✓ Confirmed Doc #268: Recycled Concrete Aggregate PCCP
+  → Appendix E19 (100% confidence)
+  → File: E19 Cover Sheet.pdf
+  → Reason: Exact match: 'Recycled Concrete Aggregate PCCP' == 'Recycled Concrete Aggregate PCCP'
+
+✗ NO MATCH: Doc #269: SEPA FB&L Addendum
+  → Category: E - Environmental
+
+✓ Confirmed Doc #270: SEPA Public Place Authorization
+  → Appendix E1.C.2 (100% confidence)
+  → File: E1.C.2 Cover Sheet.pdf
+  → Reason: Exact match: 'SEPA Public Place Authorization' == 'SEPA Public Place Authorization'
+
+✓ Confirmed Doc #271: SEPA Public Place Designation
+  → Appendix E1.C.1 (100% confidence)
+  → File: Appendix E1.C.1 Cover Sheet.pdf
+  → Reason: Exact match: 'SEPA Public Place Designation' == 'SEPA Public Place Designation'
+
+✓ UPDATED Doc #272: Seattle Noise Variance Application Attachment
+  → Appendix E32.B.2 (84% confidence)
+  → File: E32.B.2_Cover_Sheet.pdf
+  → Reason: Fuzzy match (84%): 'Seattle Noise Variance Application Attachment' ≈ 'Seattle Noise Variance Attachment'
+  → Changed from: E32.B.1_Cover_Sheet.pdf
+
+✓ Confirmed Doc #273: Seattle Olmsted Park Furniture Standards
+  → Appendix E33 (100% confidence)
+  → File: Appendix E33.pdf
+  → Reason: Exact match: 'Seattle Olmsted Park Furniture Standards' == 'Seattle Olmsted Park Furniture Standards'
+
+✓ Confirmed Doc #274: Section 106 Agreement Amendment 1
+  → Appendix E5.B (100% confidence)
+  → File: Appendix E5.B.pdf
+  → Reason: Exact match: 'Section 106 Agreement Amendment 1' == 'Section 106 Agreement Amendment 1'
+
+✓ Confirmed Doc #275: Section 106 Programmatic Agreement
+  → Appendix E5.A (100% confidence)
+  → File: E5.A Cover Sheet.pdf
+  → Reason: Exact match: 'Section 106 Programmatic Agreement' == 'Section 106 Programmatic Agreement'
+
+✓ Confirmed Doc #276: Sustainability Performance Relationships
+  → Appendix E15 (100% confidence)
+  → File: E15 Cover Sheet.pdf
+  → Reason: Exact match: 'Sustainability Performance Relationships' == 'Sustainability Performance Relationships'
+
+✓ Confirmed Doc #277: TESC Plan Narrative Template
+  → Appendix E14 (100% confidence)
+  → File: Appendix E14.pdf
+  → Reason: Exact match: 'TESC Plan Narrative Template' == 'TESC Plan Narrative Template'
+
+✓ Confirmed Doc #278: Tree Vegetation Management Protection Plan
+  → Appendix E11 (100% confidence)
+  → File: Appendix E11.pdf
+  → Reason: Exact match: 'Tree Vegetation Management Protection Plan' == 'Tree Vegetation Management Protection Plan'
+
+✓ Confirmed Doc #279: Unanticipated Discovery Plan
+  → Appendix E6 (100% confidence)
+  → File: Appendix E6.pdf
+  → Reason: Exact match: 'Unanticipated Discovery Plan' == 'Unanticipated Discovery Plan'
+
+✓ Confirmed Doc #280: WABN Construction Testing Results
+  → Appendix E24 (100% confidence)
+  → File: E24 Cover Sheet.pdf
+  → Reason: Exact match: 'WABN Construction Testing Results' == 'WABN Construction Testing Results'
+
+✓ Confirmed Doc #281: WABN Gas Monitoring Report 5
+  → Appendix E25 (100% confidence)
+  → File: Appendix E25.pdf
+  → Reason: Exact match: 'WABN Gas Monitoring Report 5' == 'WABN Gas Monitoring Report 5'
+
+✓ Confirmed Doc #282: WABN Landfill Gas Monitoring Logs
+  → Appendix E31 (100% confidence)
+  → File: E31 Cover Sheet.pdf
+  → Reason: Exact match: 'WABN Landfill Gas Monitoring Logs' == 'WABN Landfill Gas Monitoring Logs'
+
+⚠ MATCHED BUT NO FILE: Doc #283: West Approach ESA Reinitiation
+  → Appendix E4.B (100% confidence)
+  → File not found in OneDrive structure
+
+✓ Confirmed Doc #284: West Approach Salmonid Migration Zone
+  → Appendix E37 (100% confidence)
+  → File: Appendix E37.pdf
+  → Reason: Exact match: 'West Approach Salmonid Migration Zone' == 'West Approach Salmonid Migration Zone'
+
+✓ UPDATED Doc #285: Wetland Aquatic Mitigation Addendum 7&4
+  → Appendix E3.H (85% confidence)
+  → File: Appendix E3.H.pdf
+  → Reason: Fuzzy match (85%): 'Wetland Aquatic Mitigation Addendum 7&4' ≈ 'Wetland Mitigation Addendum 7'
+  → Changed from: E3.A Cover Sheet.pdf
+
+✓ UPDATED Doc #286: Chemical Treatment Form
+  → Appendix F4 (100% confidence)
+  → File: Appendix F4.pdf
+  → Reason: Exact match: 'Chemical Treatment Form' == 'Chemical Treatment Form'
+  → Changed from: Appendix F Cover_Sheet.pdf
+
+✓ Confirmed Doc #287: Contract Bond Form
+  → Appendix F2 (100% confidence)
+  → File: Appendix F2.pdf
+  → Reason: Exact match: 'Contract Bond Form' == 'Contract Bond Form'
+
+✓ Confirmed Doc #288: DRB Administrative Procedures
+  → Appendix F5.A (100% confidence)
+  → File: Appendix F5.A.pdf
+  → Reason: Exact match: 'DRB Administrative Procedures' == 'DRB Administrative Procedures'
+
+✓ Confirmed Doc #289: DRB State Member Scope
+  → Appendix F5.B (100% confidence)
+  → File: Appendix F5B.pdf
+  → Reason: Exact match: 'DRB State Member Scope' == 'DRB State Member Scope'
+
+✗ NO MATCH: Doc #290: Environmental Site Assessment Form
+  → Category: F - Forms
+
+✓ Confirmed Doc #291: Manufacturer Certificate Compliance Form
+  → Appendix F6 (100% confidence)
+  → File: F6 Cover Sheet.pdf
+  → Reason: Exact match: 'Manufacturer Certificate Compliance Form' == 'Manufacturer Certificate Compliance Form'
+
+✓ Confirmed Doc #292: ROM Sample
+  → Appendix F8 (100% confidence)
+  → File: F8 Cover Sheet.pdf
+  → Reason: Exact match: 'ROM Sample' == 'ROM Sample'
+
+✓ Confirmed Doc #293: Report of Survey Mark Form
+  → Appendix F3 (100% confidence)
+  → File: Appendix F3.pdf
+  → Reason: Exact match: 'Report of Survey Mark Form' == 'Report of Survey Mark Form'
+
+✓ Confirmed Doc #294: Traffic Control Daily Log
+  → Appendix F7.B (100% confidence)
+  → File: Appendix F7.B.pdf
+  → Reason: Exact match: 'Traffic Control Daily Log' == 'Traffic Control Daily Log'
+
+✓ Confirmed Doc #295: Traffic Control Daily Report Summary
+  → Appendix F7.A (100% confidence)
+  → File: F7.A Cover Sheet.pdf
+  → Reason: Exact match: 'Traffic Control Daily Report Summary' == 'Traffic Control Daily Report Summary'
+
+✓ UPDATED Doc #296: Earthquake Ground Motions Seismic Design
+  → Appendix G3 (100% confidence)
+  → File: Appendix G3.pdf
+  → Reason: Exact match: 'Earthquake Ground Motions Seismic Design' == 'Earthquake Ground Motions Seismic Design'
+  → Changed from: Appendix G1.pdf
+
+✓ Confirmed Doc #297: Existing Geotechnical Data Report
+  → Appendix G17 (100% confidence)
+  → File: Appendix G17.pdf
+  → Reason: Exact match: 'Existing Geotechnical Data Report' == 'Existing Geotechnical Data Report'
+
+✓ Confirmed Doc #298: Geotechnical Baseline Report
+  → Appendix G1 (100% confidence)
+  → File: Appendix G1.pdf
+  → Reason: Exact match: 'Geotechnical Baseline Report' == 'Geotechnical Baseline Report'
+
+✓ Confirmed Doc #299: Geotechnical Data Report
+  → Appendix G2 (100% confidence)
+  → File: Appendix G2.pdf
+  → Reason: Exact match: 'Geotechnical Data Report' == 'Geotechnical Data Report'
+
+✓ Confirmed Doc #300: Geotechnical Data Report Addendum
+  → Appendix G20 (100% confidence)
+  → File: G20 Cover Sheet.pdf
+  → Reason: Exact match: 'Geotechnical Data Report Addendum' == 'Geotechnical Data Report Addendum'
+
+✓ UPDATED Doc #301: Geotechnical Documents Limitations
+  → Appendix G18 (73% confidence)
+  → File: Appendix G18.pdf
+  → Reason: Fuzzy match (73%): 'Limitations of Geotechnical Documents Technical Memorandum' ≈ 'Limitations Geotechnical Documents'
+
+✓ Confirmed Doc #302: Montlake WABN Condition Survey
+  → Appendix G22 (100% confidence)
+  → File: Appendix G22.pdf
+  → Reason: Exact match: 'Montlake WABN Condition Survey' == 'Montlake WABN Condition Survey'
+
+✓ Confirmed Doc #303: Revised Seismic Ground Motions
+  → Appendix G9 (100% confidence)
+  → File: G9 Cover Sheet.pdf
+  → Reason: Exact match: 'Revised Seismic Ground Motions' == 'Revised Seismic Ground Motions'
+
+✓ Confirmed Doc #304: Seattle Yacht Club Bulkhead Inspection
+  → Appendix G25 (100% confidence)
+  → File: Appendix G25.pdf
+  → Reason: Exact match: 'Seattle Yacht Club Bulkhead Inspection' == 'Seattle Yacht Club Bulkhead Inspection'
+
+✓ Confirmed Doc #305: Seismic Design Technical Memorandum
+  → Appendix G4 (100% confidence)
+  → File: Appendix G4.pdf
+  → Reason: Exact match: 'Seismic Design Technical Memorandum' == 'Seismic Design Technical Memorandum'
+
+✓ Confirmed Doc #306: Summary Previous Construction Activities
+  → Appendix G8 (100% confidence)
+  → File: G8 Cover Sheet.pdf
+  → Reason: Exact match: 'Summary Previous Construction Activities' == 'Summary Previous Construction Activities'
+
+✓ Confirmed Doc #307: Supplemental Preliminary Engineering Memo
+  → Appendix G5 (100% confidence)
+  → File: Appendix G5.pdf
+  → Reason: Exact match: 'Supplemental Preliminary Engineering Memo' == 'Supplemental Preliminary Engineering Memo'
+
+✓ Confirmed Doc #308: Test Pile Geotechnical Data Report
+  → Appendix G16 (100% confidence)
+  → File: Appendix G16.pdf
+  → Reason: Exact match: 'Test Pile Geotechnical Data Report' == 'Test Pile Geotechnical Data Report'
+
+✓ Confirmed Doc #309: U-Link Moment-Thrust Capacity Calculations
+  → Appendix G24 (100% confidence)
+  → File: Appendix G24.pdf
+  → Reason: Exact match: 'U-Link Moment-Thrust Capacity Calculations' == 'U-Link Moment-Thrust Capacity Calculations'
+
+✓ Confirmed Doc #310: Union Bay Bridge Pile Driving Info
+  → Appendix G21.B (100% confidence)
+  → File: Appendix G21.B.pdf
+  → Reason: Exact match: 'Union Bay Bridge Pile Driving Info' == 'Union Bay Bridge Pile Driving Info'
+
+✓ Confirmed Doc #311: WAB South Frame 5 Soil-Structure Modeling
+  → Appendix G15 (100% confidence)
+  → File: Appendix G15.pdf
+  → Reason: Exact match: 'WAB South Frame 5 Soil-Structure Modeling' == 'WAB South Frame 5 Soil-Structure Modeling'
+
+✓ Confirmed Doc #312: WABN 24th Ave Field Reports
+  → Appendix G23.A (100% confidence)
+  → File: Appendix G23.A.pdf
+  → Reason: Exact match: 'WABN 24th Ave Field Reports' == 'WABN 24th Ave Field Reports'
+
+⚠ MATCHED BUT NO FILE: Doc #313: WABN 24th Ave Shoring Plan
+  → Appendix G23.D (100% confidence)
+  → File not found in OneDrive structure
+
+✓ Confirmed Doc #314: WABN Change Order 44
+  → Appendix G23.B (96% confidence)
+  → File: Appendix G23.B.pdf
+  → Reason: Fuzzy match (96%): 'Change Order #44' ≈ 'Change Order 44'
+
+✓ Confirmed Doc #315: WABN Construction Photos
+  → Appendix G23.C (100% confidence)
+  → File: Appendix G23.C.pdf
+  → Reason: Exact match: 'Construction Photos' == 'Construction Photos'
+
+✓ Confirmed Doc #316: WABN Geotechnical Attach F App B
+  → Appendix G14.A (100% confidence)
+  → File: G14.A Cover_Sheet.pdf
+  → Reason: Exact match: 'WABN Geotechnical Attach F App B' == 'WABN Geotechnical Attach F App B'
+
+✓ Confirmed Doc #317: WABN Geotechnical Attach F App D
+  → Appendix G14.B (100% confidence)
+  → File: G14.B Cove Sheet.pdf
+  → Reason: Exact match: 'WABN Geotechnical Attach F App D' == 'WABN Geotechnical Attach F App D'
+
+✓ Confirmed Doc #318: WABN Geotechnical Attach F App E
+  → Appendix G14.C (100% confidence)
+  → File: G14.C Cover Sheet.pdf
+  → Reason: Exact match: 'WABN Geotechnical Attach F App E' == 'WABN Geotechnical Attach F App E'
+
+✓ Confirmed Doc #319: WABN Geotechnical Engineering Report
+  → Appendix G14 (100% confidence)
+  → File: G14 Cover Sheet.pdf
+  → Reason: Exact match: 'WABN Geotechnical Engineering Report' == 'WABN Geotechnical Engineering Report'
+
+✓ Confirmed Doc #320: WABN Geotechnical Report Addendum
+  → Appendix G10 (100% confidence)
+  → File: Appendix G10.pdf
+  → Reason: Exact match: 'WABN Geotechnical Report Addendum' == 'WABN Geotechnical Report Addendum'
+
+✓ UPDATED Doc #321: WCB Geotechnical Report
+  → Appendix G19 (82% confidence)
+  → File: Appendix G19.pdf
+  → Reason: Fuzzy match (82%): 'WCB Geotechnical Report' ≈ 'Geotechnical Report WCB'
+
+✓ Confirmed Doc #322: West Approach Bridge Pile Driving Info
+  → Appendix G21.A (100% confidence)
+  → File: Appendix G21.A.pdf
+  → Reason: Exact match: 'West Approach Bridge Pile Driving Info' == 'West Approach Bridge Pile Driving Info'
+
+✓ Confirmed Doc #323: West Approach Geologic Characterization
+  → Appendix G6 (100% confidence)
+  → File: G6 Cover Sheet.pdf
+  → Reason: Exact match: 'West Approach Geologic Characterization' == 'West Approach Geologic Characterization'
+
+✓ Confirmed Doc #324: West Approach Geologic Characterization Addendum
+  → Appendix G7 (100% confidence)
+  → File: G7 Cover Sheet.pdf
+  → Reason: Exact match: 'West Approach Geologic Characterization Addendum' == 'West Approach Geologic Characterization Addendum'
+
+✓ UPDATED Doc #325: Westside Bike-Pedestrian Facilities Memo
+  → Appendix G12 (89% confidence)
+  → File: G12 Cover Sheet.pdf
+  → Reason: Fuzzy match (89%): 'Westside Bike-Pedestrian Facilities Memo' ≈ 'Westside Montlake Bike-Pedestrian Facilities Memo'
+
+✓ Confirmed Doc #326: Westside Montlake Lid Land Bridge Memo
+  → Appendix G13 (100% confidence)
+  → File: G13 Cover Sheet.pdf
+  → Reason: Exact match: 'Westside Montlake Lid Land Bridge Memo' == 'Westside Montlake Lid Land Bridge Memo'
+
+✓ Confirmed Doc #327: Westside Stormwater Facilities Memo
+  → Appendix G11 (100% confidence)
+  → File: Appendix G11.pdf
+  → Reason: Exact match: 'Westside Stormwater Facilities Memo' == 'Westside Stormwater Facilities Memo'
+
+✓ UPDATED Doc #328: ACPA Concrete Pipe Design Manual
+  → Appendix H13 (100% confidence)
+  → File: H13 Cover Sheet.pdf
+  → Reason: Exact match: 'ACPA Concrete Pipe Design Manual' == 'ACPA Concrete Pipe Design Manual'
+  → Changed from: Appendix H12.pdf
+
+✓ Confirmed Doc #329: Conceptual Supplemental Hydraulic Report
+  → Appendix H1 (100% confidence)
+  → File: H1 Cover Sheet.pdf
+  → Reason: Exact match: 'Conceptual Supplemental Hydraulic Report' == 'Conceptual Supplemental Hydraulic Report'
+
+✓ Confirmed Doc #330: DIPRA Ductile Iron Pipe Supports
+  → Appendix H15 (100% confidence)
+  → File: Appendix H15.pdf
+  → Reason: Exact match: 'DIPRA Ductile Iron Pipe Supports' == 'DIPRA Ductile Iron Pipe Supports'
+
+✓ Confirmed Doc #331: Drainage Maintenance Manual Plan Sheets
+  → Appendix H12 (100% confidence)
+  → File: H12 Cover Sheet.pdf
+  → Reason: Exact match: 'Drainage Maintenance Manual Plan Sheets' == 'Drainage Maintenance Manual Plan Sheets'
+
+✓ UPDATED Doc #332: FB&L As-Built Hydraulic Report
+  → Appendix H4 (94% confidence)
+  → File: Appendix H4.pdf
+  → Reason: Fuzzy match (94%): 'Final As-Built Hydraulic Report for FB&L' ≈ 'Final As-Built Hydraulic Report FB&L'
+
+✓ Confirmed Doc #333: Hydraulic Report Template
+  → Appendix H2 (100% confidence)
+  → File: Appendix H2.pdf
+  → Reason: Exact match: 'Hydraulic Report Template' == 'Hydraulic Report Template'
+
+✓ Confirmed Doc #334: Program Level Hydraulic Report
+  → Appendix H6 (100% confidence)
+  → File: H6 Cover Sheet.pdf
+  → Reason: Exact match: 'Program Level Hydraulic Report' == 'Program Level Hydraulic Report'
+
+✓ Confirmed Doc #335: SPU Client Assistance Memo 1180
+  → Appendix H16 (100% confidence)
+  → File: H16 Cover Sheet.pdf
+  → Reason: Exact match: 'SPU Client Assistance Memo 1180' == 'SPU Client Assistance Memo 1180'
+
+✓ Confirmed Doc #336: Seattle Stormwater Manual
+  → Appendix H9 (100% confidence)
+  → File: Appendix H9.pdf
+  → Reason: Exact match: 'Seattle Stormwater Manual' == 'Seattle Stormwater Manual'
+
+✓ UPDATED Doc #337: WABN Hydraulic Report
+  → Appendix H3 (91% confidence)
+  → File: H3 Cover Sheet.pdf
+  → Reason: Fuzzy match (91%): 'Hydraulic Report for WABN' ≈ 'Hydraulic Report WABN'
+
+✓ Confirmed Doc #338: WABN Supplemental Hydraulic Report
+  → Appendix H5 (100% confidence)
+  → File: Appendix H5.pdf
+  → Reason: Exact match: 'WABN Supplemental Hydraulic Report' == 'WABN Supplemental Hydraulic Report'
+
+✓ UPDATED Doc #339: AGi32 Basics Highway Lighting
+  → Appendix I6 (90% confidence)
+  → File: I6 Cover Sheet.pdf
+  → Reason: Fuzzy match (90%): 'AGi32 Basics Highway Lighting' ≈ 'AGi32 Basics WSDOT Highway Lighting'
+  → Changed from: Appendix I1.pdf
+
+✓ Confirmed Doc #340: Advanced Inspection Illumination Signal Training
+  → Appendix I7 (100% confidence)
+  → File: I7 Cover Sheet.pdf
+  → Reason: Exact match: 'Advanced Inspection Illumination Signal Training' == 'Advanced Inspection Illumination Signal Training'
+
+✓ Confirmed Doc #341: Corridor Fiber Optic Communication Plan
+  → Appendix I22 (100% confidence)
+  → File: Appendix I22.pdf
+  → Reason: Exact match: 'Corridor Fiber Optic Communication Plan' == 'Corridor Fiber Optic Communication Plan'
+
+✓ Confirmed Doc #342: Design of Outdoor Lighting
+  → Appendix I16 (100% confidence)
+  → File: Appendix I16.pdf
+  → Reason: Exact match: 'Design of Outdoor Lighting' == 'Design of Outdoor Lighting'
+
+✓ Confirmed Doc #343: Illumination Design Supplement
+  → Appendix I5 (100% confidence)
+  → File: I5 Cover Sheet.pdf
+  → Reason: Exact match: 'Illumination Design Supplement' == 'Illumination Design Supplement'
+
+✓ Confirmed Doc #344: NWR Electrical Design Practices
+  → Appendix I1 (100% confidence)
+  → File: Appendix I1.pdf
+  → Reason: Exact match: 'NWR Electrical Design Practices' == 'NWR Electrical Design Practices'
+
+✓ Confirmed Doc #345: NWR ITS Design Requirements
+  → Appendix I8 (100% confidence)
+  → File: Appendix I8.pdf
+  → Reason: Exact match: 'NWR ITS Design Requirements' == 'NWR ITS Design Requirements'
+
+✓ Confirmed Doc #346: NWR ITS Details
+  → Appendix I3 (100% confidence)
+  → File: Appendix I3.pdf
+  → Reason: Exact match: 'NWR ITS Details' == 'NWR ITS Details'
+
+✓ Confirmed Doc #347: NWR Illumination Signal Details
+  → Appendix I2 (100% confidence)
+  → File: Appendix I2.pdf
+  → Reason: Exact match: 'NWR Illumination Signal Details' == 'NWR Illumination Signal Details'
+
+✓ Confirmed Doc #348: Power System Design
+  → Appendix I4 (100% confidence)
+  → File: Appendix I4.pdf
+  → Reason: Exact match: 'Power System Design' == 'Power System Design'
+
+✓ Confirmed Doc #349: SPR Electrical System Design Standard
+  → Appendix I19 (100% confidence)
+  → File: Appendix I19.pdf
+  → Reason: Exact match: 'SPR Electrical System Design Standard' == 'SPR Electrical System Design Standard'
+
+✓ Confirmed Doc #350: Seattle City Light Construction Standards
+  → Appendix I12 (100% confidence)
+  → File: Appendix I12.pdf
+  → Reason: Exact match: 'Seattle City Light Construction Standards' == 'Seattle City Light Construction Standards'
+
+✓ Confirmed Doc #351: Seattle City Light Material Standards
+  → Appendix I15 (100% confidence)
+  → File: Appendix I15.pdf
+  → Reason: Exact match: 'Seattle City Light Material Standards' == 'Seattle City Light Material Standards'
+
+✓ Confirmed Doc #352: Seattle City Light Service Connection Requirements
+  → Appendix I13 (100% confidence)
+  → File: Appendix I13.pdf
+  → Reason: Exact match: 'Seattle City Light Service Connection Requirements' == 'Seattle City Light Service Connection Requirements'
+
+✓ Confirmed Doc #353: Seattle City Light Service Standards
+  → Appendix I23 (100% confidence)
+  → File: I23 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle City Light Service Standards' == 'Seattle City Light Service Standards'
+
+✓ Confirmed Doc #354: Seattle Electrical Code
+  → Appendix I10 (100% confidence)
+  → File: I10 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle Electrical Code' == 'Seattle Electrical Code'
+
+✓ Confirmed Doc #355: Seattle ROW Lighting Design Guidelines
+  → Appendix I14 (100% confidence)
+  → File: Appendix I14.pdf
+  → Reason: Exact match: 'Seattle ROW Lighting Design Guidelines' == 'Seattle ROW Lighting Design Guidelines'
+
+✓ UPDATED Doc #356: Montlake Phase Pavement Design Report
+  → Appendix J2 (75% confidence)
+  → File: Appendix J2.pdf
+  → Reason: Fuzzy match (75%): 'Montlake Phase Pavement Design Report' ≈ 'WABN Pavement Design Report'
+  → Changed from: Appendix J1.pdf
+
+✓ Confirmed Doc #357: Pavement Policy
+  → Appendix J3 (100% confidence)
+  → File: J3 Cover Sheet.pdf
+  → Reason: Exact match: 'Pavement Policy' == 'Pavement Policy'
+
+✓ Confirmed Doc #358: Pavement Project Specifications
+  → Appendix J4 (100% confidence)
+  → File: J4 Cover Sheet.pdf
+  → Reason: Exact match: 'Pavement Project Specifications' == 'Pavement Project Specifications'
+
+✓ Confirmed Doc #359: WABN Pavement Design Report
+  → Appendix J2 (100% confidence)
+  → File: Appendix J2.pdf
+  → Reason: Exact match: 'WABN Pavement Design Report' == 'WABN Pavement Design Report'
+
+⚠ MATCHED BUT NO FILE: Doc #360: Benefit Code Key
+  → Appendix K2.C (100% confidence)
+  → File not found in OneDrive structure
+
+⚠ MATCHED BUT NO FILE: Doc #361: Supplemental to Wages
+  → Appendix K2.B (100% confidence)
+  → File not found in OneDrive structure
+
+⚠ MATCHED BUT NO FILE: Doc #362: WA Prevailing Wages King County
+  → Appendix K2.A (100% confidence)
+  → File not found in OneDrive structure
+
+✓ UPDATED Doc #363: American Standard Nursery Stock
+  → Appendix L3 (100% confidence)
+  → File: Appendix L3.pdf
+  → Reason: Exact match: 'American Standard Nursery Stock' == 'American Standard Nursery Stock'
+  → Changed from: Appendix L10.pdf
+
+✓ Confirmed Doc #364: GCB 1895
+  → Appendix L12 (100% confidence)
+  → File: Appendix L12.pdf
+  → Reason: Exact match: 'GCB 1895' == 'GCB 1895'
+
+✓ Confirmed Doc #365: Landscape Maintenance Water Use Form
+  → Appendix L4 (100% confidence)
+  → File: Appendix L4.pdf
+  → Reason: Exact match: 'Landscape Maintenance Water Use Form' == 'Landscape Maintenance Water Use Form'
+
+✓ Confirmed Doc #366: Seattle Bicycle Guide Sign Practice
+  → Appendix L9 (100% confidence)
+  → File: L9 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle Bicycle Guide Sign Practice' == 'Seattle Bicycle Guide Sign Practice'
+
+✓ Confirmed Doc #367: Seattle Design Commission Report
+  → Appendix L2 (100% confidence)
+  → File: Appendix L2.pdf
+  → Reason: Exact match: 'Seattle Design Commission Report' == 'Seattle Design Commission Report'
+
+✓ Confirmed Doc #368: Seattle Parks Maintenance Utility Impact
+  → Appendix L8 (100% confidence)
+  → File: L8 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle Parks Maintenance Utility Impact' == 'Seattle Parks Maintenance Utility Impact'
+
+✓ Confirmed Doc #369: Seattle Parks Standard Details Plans
+  → Appendix L7 (100% confidence)
+  → File: Appendix L7.pdf
+  → Reason: Exact match: 'Seattle Parks Standard Details Plans' == 'Seattle Parks Standard Details Plans'
+
+✓ Confirmed Doc #370: Seattle Parks Technical Specifications
+  → Appendix L6 (100% confidence)
+  → File: Appendix L6.pdf
+  → Reason: Exact match: 'Seattle Parks Technical Specifications' == 'Seattle Parks Technical Specifications'
+
+✓ Confirmed Doc #371: Seattle Pedestrian Wayfinding Symbols
+  → Appendix L5 (100% confidence)
+  → File: Appendix L5.pdf
+  → Reason: Exact match: 'Seattle Pedestrian Wayfinding Symbols' == 'Seattle Pedestrian Wayfinding Symbols'
+
+✓ Confirmed Doc #372: Seattle Street Tree Manual
+  → Appendix L11 (100% confidence)
+  → File: L11 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle Street Tree Manual' == 'Seattle Street Tree Manual'
+
+✓ Confirmed Doc #373: Seattle Tree Replacement Executive Order
+  → Appendix L13 (100% confidence)
+  → File: L13 Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle Tree Replacement Executive Order' == 'Seattle Tree Replacement Executive Order'
+
+✓ Confirmed Doc #374: UW Irrigation Design Guide
+  → Appendix L10 (100% confidence)
+  → File: L10 Cover Sheet.pdf
+  → Reason: Exact match: 'UW Irrigation Design Guide' == 'UW Irrigation Design Guide'
+
+✓ Confirmed Doc #375: UW Technical Specifications
+  → Appendix L14 (100% confidence)
+  → File: L14 Cover Sheet.pdf
+  → Reason: Exact match: 'UW Technical Specifications' == 'UW Technical Specifications'
+
+✓ Confirmed Doc #376: Urban Design Exhibits
+  → Appendix L1 (100% confidence)
+  → File: Appendix L1.pdf
+  → Reason: Exact match: 'Urban Design Exhibits' == 'Urban Design Exhibits'
+
+✓ UPDATED Doc #377: Bascule Bridge Conceptual Plans
+  → Appendix M18 (100% confidence)
+  → File: M18 Cover Sheet.pdf
+  → Reason: Exact match: 'Bascule Bridge Conceptual Plans' == 'Bascule Bridge Conceptual Plans'
+  → Changed from: Appendix M10.pdf
+
+✓ Confirmed Doc #378: Conceptual Plans Volume 0
+  → Appendix M1 (78% confidence)
+  → File: M1 Cover Sheet.pdf
+  → Reason: Fuzzy match (78%): 'Conceptual Plans Volume 0' ≈ 'Conceptual Plans'
+
+✓ Confirmed Doc #379: Conceptual Plans Volume I
+  → Appendix M1 (78% confidence)
+  → File: M1 Cover Sheet.pdf
+  → Reason: Fuzzy match (78%): 'Conceptual Plans Volume I' ≈ 'Conceptual Plans'
+
+✓ Confirmed Doc #380: Conceptual Plans Volume II
+  → Appendix M1 (76% confidence)
+  → File: M1 Cover Sheet.pdf
+  → Reason: Fuzzy match (76%): 'Conceptual Plans Volume II' ≈ 'Conceptual Plans'
+
+✓ Confirmed Doc #381: Existing Bridge Demolition Plans
+  → Appendix M8 (100% confidence)
+  → File: M8 Cover Sheet.pdf
+  → Reason: Exact match: 'Existing Bridge Demolition Plans' == 'Existing Bridge Demolition Plans'
+
+✓ Confirmed Doc #382: Existing Walls to Remain Plan
+  → Appendix M9 (100% confidence)
+  → File: M9 Cover Sheet.pdf
+  → Reason: Exact match: 'Existing Walls to Remain Plan' == 'Existing Walls to Remain Plan'
+
+✓ Confirmed Doc #383: Future Four-Lane Plus Two HCT
+  → Appendix M11 (100% confidence)
+  → File: M11 Cover Sheet.pdf
+  → Reason: Exact match: 'Future Four-Lane Plus Two HCT' == 'Future Four-Lane Plus Two HCT'
+
+✓ Confirmed Doc #384: Future Six-Lane Plus Two HCT
+  → Appendix M12 (100% confidence)
+  → File: Appendix M12.pdf
+  → Reason: Exact match: 'Future Six-Lane Plus Two HCT' == 'Future Six-Lane Plus Two HCT'
+
+✓ Confirmed Doc #385: North Transit Facility Diagram
+  → Appendix M22 (100% confidence)
+  → File: Appendix M22.pdf
+  → Reason: Exact match: 'North Transit Facility Diagram' == 'North Transit Facility Diagram'
+
+✓ Confirmed Doc #386: Noxious Weed Infestation Map
+  → Appendix M21 (100% confidence)
+  → File: Appendix M21.pdf
+  → Reason: Exact match: 'Noxious Weed Infestation Map' == 'Noxious Weed Infestation Map'
+
+✓ Confirmed Doc #387: Permanent Barrier Modification Plan
+  → Appendix M16 (100% confidence)
+  → File: M16 Cover Sheet.pdf
+  → Reason: Exact match: 'Permanent Barrier Modification Plan' == 'Permanent Barrier Modification Plan'
+
+✓ Confirmed Doc #388: Portage Bay Bridge Conceptual Plans
+  → Appendix M19 (100% confidence)
+  → File: M19 Cover Sheet.pdf
+  → Reason: Exact match: 'Portage Bay Bridge Conceptual Plans' == 'Portage Bay Bridge Conceptual Plans'
+
+✓ Confirmed Doc #389: Sign Structure Connection Details
+  → Appendix M15 (100% confidence)
+  → File: Appendix M15.pdf
+  → Reason: Exact match: 'Sign Structure Connection Details' == 'Sign Structure Connection Details'
+
+✓ Confirmed Doc #390: WAB Pier Layouts Clearance Requirements
+  → Appendix M7 (100% confidence)
+  → File: Appendix M7.pdf
+  → Reason: Exact match: 'WAB Pier Layouts Clearance Requirements' == 'WAB Pier Layouts Clearance Requirements'
+
+✓ Confirmed Doc #391: West Approach Architectural Standards
+  → Appendix M14 (100% confidence)
+  → File: M14 Cover Sheet.pdf
+  → Reason: Exact match: 'West Approach Architectural Standards' == 'West Approach Architectural Standards'
+
+✓ Confirmed Doc #392: Work Access Pile Restriction Plan
+  → Appendix M10 (100% confidence)
+  → File: M10 Cover Sheet.pdf
+  → Reason: Exact match: 'Work Access Pile Restriction Plan' == 'Work Access Pile Restriction Plan'
+
+✓ UPDATED Doc #393: Maintenance and Operation Areas
+  → Appendix N2 (100% confidence)
+  → File: Appendix N2.pdf
+  → Reason: Exact match: 'Maintenance and Operation Areas' == 'Maintenance and Operation Areas'
+  → Changed from: Appendix N2.pdf
+
+✓ Confirmed Doc #394: Seattle Design-Build Agreement
+  → Appendix N3 (100% confidence)
+  → File: Appendix N3.pdf
+  → Reason: Exact match: 'Seattle Design-Build Agreement' == 'Seattle Design-Build Agreement'
+
+✓ Confirmed Doc #395: Street Use Permit General Conditions
+  → Appendix N4 (100% confidence)
+  → File: Appendix N4.pdf
+  → Reason: Exact match: 'Street Use Permit General Conditions' == 'Street Use Permit General Conditions'
+
+✓ Confirmed Doc #396: Street Use Permit Special Conditions
+  → Appendix N4.A (100% confidence)
+  → File: Appendix N4.A.pdf
+  → Reason: Exact match: 'Street Use Permit Special Conditions' == 'Street Use Permit Special Conditions'
+
+✓ UPDATED Doc #397: Contract File Index
+  → Appendix O15 (100% confidence)
+  → File: Appendix O15.pdf
+  → Reason: Exact match: 'Contract File Index' == 'Contract File Index'
+  → Changed from: Appendix O1.pdf
+
+✓ Confirmed Doc #398: Design Analysis 1
+  → Appendix O8.A (100% confidence)
+  → File: O8.A Cover Sheet.pdf
+  → Reason: Exact match: 'Design Analysis 1' == 'Design Analysis 1'
+
+✓ Confirmed Doc #399: Design Analysis 10
+  → Appendix O8.J (100% confidence)
+  → File: Appendix O8.J.pdf
+  → Reason: Exact match: 'Design Analysis 10' == 'Design Analysis 10'
+
+✓ Confirmed Doc #400: Design Analysis 12
+  → Appendix O8.L (100% confidence)
+  → File: Appendix O8.L.pdf
+  → Reason: Exact match: 'Design Analysis 12' == 'Design Analysis 12'
+
+✓ Confirmed Doc #401: Design Analysis 13
+  → Appendix O8.M (100% confidence)
+  → File: O8.M_Cover_Sheet.pdf
+  → Reason: Exact match: 'Design Analysis 13' == 'Design Analysis 13'
+
+✓ Confirmed Doc #402: Design Analysis 2
+  → Appendix O8.B (100% confidence)
+  → File: Appendix O8.B.pdf
+  → Reason: Exact match: 'Design Analysis 2' == 'Design Analysis 2'
+
+✓ Confirmed Doc #403: Design Analysis 3 Revisions 1
+  → Appendix O8.C (100% confidence)
+  → File: Appendix O8.C.pdf
+  → Reason: Exact match: 'Design Analysis 3 Revisions 1' == 'Design Analysis 3 Revisions 1'
+
+✓ Confirmed Doc #404: Design Analysis 4
+  → Appendix O8.D (100% confidence)
+  → File: Appendix O8.D.pdf
+  → Reason: Exact match: 'Design Analysis 4' == 'Design Analysis 4'
+
+✓ Confirmed Doc #405: Design Analysis 5 Revisions 1
+  → Appendix O8.E (100% confidence)
+  → File: Appendix O8.E.pdf
+  → Reason: Exact match: 'Design Analysis 5 Revisions 1' == 'Design Analysis 5 Revisions 1'
+
+✓ Confirmed Doc #406: Design Analysis 6
+  → Appendix O8.F (100% confidence)
+  → File: O8.F Cover Sheet.pdf
+  → Reason: Exact match: 'Design Analysis 6' == 'Design Analysis 6'
+
+✓ Confirmed Doc #407: Design Analysis 7
+  → Appendix O8.G (100% confidence)
+  → File: Appendix O8.G.pdf
+  → Reason: Exact match: 'Design Analysis 7' == 'Design Analysis 7'
+
+✓ Confirmed Doc #408: Design Analysis 8
+  → Appendix O8.H (100% confidence)
+  → File: O8.H Cover Sheet.pdf
+  → Reason: Exact match: 'Design Analysis 8' == 'Design Analysis 8'
+
+✓ Confirmed Doc #409: Design Analysis 9
+  → Appendix O8.I (100% confidence)
+  → File: O8.I Cover Sheet.pdf
+  → Reason: Exact match: 'Design Analysis 9' == 'Design Analysis 9'
+
+✓ Confirmed Doc #410: Design Analysis Decision Template
+  → Appendix O3 (100% confidence)
+  → File: O3 Cover Sheet.pdf
+  → Reason: Exact match: 'Design Analysis Decision Template' == 'Design Analysis Decision Template'
+
+✓ Confirmed Doc #411: Design Approval Package
+  → Appendix O7 (100% confidence)
+  → File: O7 Cover Sheet.pdf
+  → Reason: Exact match: 'Design Approval Package' == 'Design Approval Package'
+
+✓ Confirmed Doc #412: Design Decision 24th Ave E
+  → Appendix O11.D (100% confidence)
+  → File: O11.D Cover Sheet.pdf
+  → Reason: Exact match: 'Design Decision 24th Ave E' == 'Design Decision 24th Ave E'
+
+✓ Confirmed Doc #413: Design Decision Direct Access Connector
+  → Appendix O11.E (100% confidence)
+  → File: Appendix O11.E.pdf
+  → Reason: Exact match: 'Design Decision Direct Access Connector' == 'Design Decision Direct Access Connector'
+
+✓ Confirmed Doc #414: Design Decision E Lake Washington Blvd
+  → Appendix O11.F (100% confidence)
+  → File: Appendix O11.F.pdf
+  → Reason: Exact match: 'Design Decision E Lake Washington Blvd' == 'Design Decision E Lake Washington Blvd'
+
+✓ Confirmed Doc #415: Design Decision WB Lane Reduction
+  → Appendix O11.C (100% confidence)
+  → File: O11.C Cover Sheet.pdf
+  → Reason: Exact match: 'Design Decision WB Lane Reduction' == 'Design Decision WB Lane Reduction'
+
+✓ Confirmed Doc #416: Design Decision WB Off-Ramp 24th Ave
+  → Appendix O11.B (100% confidence)
+  → File: O11.B Cover Sheet.pdf
+  → Reason: Exact match: 'Design Decision WB Off-Ramp 24th Ave' == 'Design Decision WB Off-Ramp 24th Ave'
+
+✓ Confirmed Doc #417: Design Decision WB Off-Ramp Montlake
+  → Appendix O11.A (100% confidence)
+  → File: Appendix O11.A.pdf
+  → Reason: Exact match: 'Design Decision WB Off-Ramp Montlake' == 'Design Decision WB Off-Ramp Montlake'
+
+✓ Confirmed Doc #418: Design Documentation Package Checklist
+  → Appendix O1 (100% confidence)
+  → File: O1 Cover Sheet.pdf
+  → Reason: Exact match: 'Design Documentation Package Checklist' == 'Design Documentation Package Checklist'
+
+✓ Confirmed Doc #419: Design Parameter Template
+  → Appendix O6 (100% confidence)
+  → File: O6 Cover Sheet.pdf
+  → Reason: Exact match: 'Design Parameter Template' == 'Design Parameter Template'
+
+✓ Confirmed Doc #420: MEF Template
+  → Appendix O12 (100% confidence)
+  → File: O12 Cover Sheet.pdf
+  → Reason: Exact match: 'MEF Template' == 'MEF Template'
+
+✓ Confirmed Doc #421: MEF Worksheet
+  → Appendix O13 (100% confidence)
+  → File: Appendix O13.pdf
+  → Reason: Exact match: 'MEF Worksheet' == 'MEF Worksheet'
+
+✓ Confirmed Doc #422: NWR Channelization Plan Checklist
+  → Appendix O10 (100% confidence)
+  → File: O10 Cover Sheet.pdf
+  → Reason: Exact match: 'NWR Channelization Plan Checklist' == 'NWR Channelization Plan Checklist'
+
+✓ Confirmed Doc #423: PIF 1 Appendices Combined
+  → Appendix O5.B (100% confidence)
+  → File: O5.B Cover Sheet.pdf
+  → Reason: Exact match: 'PIF 1 Appendices Combined' == 'PIF 1 Appendices Combined'
+
+✓ Confirmed Doc #424: PIF 1 Mageba Expansion Joints
+  → Appendix O5.A (100% confidence)
+  → File: Appendix O5.A.pdf
+  → Reason: Exact match: 'PIF 1 Mageba Expansion Joints' == 'PIF 1 Mageba Expansion Joints'
+
+✓ Confirmed Doc #425: Project File Checklist
+  → Appendix O2 (100% confidence)
+  → File: O2 Cover Sheet.pdf
+  → Reason: Exact match: 'Project File Checklist' == 'Project File Checklist'
+
+✓ Confirmed Doc #426: Proprietary Items Memo 1
+  → Appendix O9.A (100% confidence)
+  → File: O9.A Cover Sheet.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 1' == 'Proprietary Items Memo 1'
+
+✓ Confirmed Doc #427: Proprietary Items Memo 1 Appendices
+  → Appendix O9.B (100% confidence)
+  → File: Appendix O9.B.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 1 Appendices' == 'Proprietary Items Memo 1 Appendices'
+
+✓ Confirmed Doc #428: Proprietary Items Memo 2
+  → Appendix O9.C (100% confidence)
+  → File: Appendix O9.C.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 2' == 'Proprietary Items Memo 2'
+
+✓ Confirmed Doc #429: Proprietary Items Memo 2 Appendices
+  → Appendix O9.D (100% confidence)
+  → File: Appendix O9.D.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 2 Appendices' == 'Proprietary Items Memo 2 Appendices'
+
+✓ Confirmed Doc #430: Proprietary Items Memo 3
+  → Appendix O9.E (100% confidence)
+  → File: Appendix O9.E.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 3' == 'Proprietary Items Memo 3'
+
+✓ Confirmed Doc #431: Proprietary Items Memo 3 Appendices
+  → Appendix O9.F (100% confidence)
+  → File: Appendix O9.F.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 3 Appendices' == 'Proprietary Items Memo 3 Appendices'
+
+✓ Confirmed Doc #432: Proprietary Items Memo 4
+  → Appendix O9.G (100% confidence)
+  → File: Appendix O9.G.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 4' == 'Proprietary Items Memo 4'
+
+✓ Confirmed Doc #433: Proprietary Items Memo 4 Appendices
+  → Appendix O9.H (100% confidence)
+  → File: O9.H Cover Sheet.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 4 Appendices' == 'Proprietary Items Memo 4 Appendices'
+
+✓ Confirmed Doc #434: Proprietary Items Memo 5
+  → Appendix O9.I (100% confidence)
+  → File: O9.I Cover Sheet.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 5' == 'Proprietary Items Memo 5'
+
+✓ Confirmed Doc #435: Proprietary Items Memo 5 Appendices
+  → Appendix O9.J (100% confidence)
+  → File: Appendix O9.J Cover_Sheet.pdf
+  → Reason: Exact match: 'Proprietary Items Memo 5 Appendices' == 'Proprietary Items Memo 5 Appendices'
+
+✓ Confirmed Doc #436: State Furnished Signal Equipment Attachment
+  → Appendix O14.B (100% confidence)
+  → File: Appendix O14.B.pdf
+  → Reason: Exact match: 'State Furnished Signal Equipment Attachment' == 'State Furnished Signal Equipment Attachment'
+
+✓ Confirmed Doc #437: State Furnished Signal Equipment Memo
+  → Appendix O14.A (100% confidence)
+  → File: Appendix O14.A.pdf
+  → Reason: Exact match: 'State Furnished Signal Equipment Memo' == 'State Furnished Signal Equipment Memo'
+
+✓ UPDATED Doc #438: Coastal Zone Management Consistency
+  → Appendix P3 (100% confidence)
+  → File: P3 Cover Sheet.pdf
+  → Reason: Exact match: 'Coastal Zone Management Consistency' == 'Coastal Zone Management Consistency'
+  → Changed from: 02_Appendix P1.A_Corps Permit (DA permit) Modification.pdf
+
+✓ Confirmed Doc #439: Corps Permit Modification
+  → Appendix P4.H (100% confidence)
+  → File: Appendix P4.H.pdf
+  → Reason: Exact match: 'Corps Permit Modification' == 'Corps Permit Modification'
+
+✗ NO MATCH: Doc #440: Corps Section 404 Permit
+  → Category: P - Permits and Approvals
+
+✓ Confirmed Doc #441: NMFS Biological Opinion
+  → Appendix P7.A (100% confidence)
+  → File: Appendix P7.A.pdf
+  → Reason: Exact match: 'NMFS Biological Opinion' == 'NMFS Biological Opinion'
+
+✓ Confirmed Doc #442: NMFS R001
+  → Appendix P7.B (100% confidence)
+  → File: Appendix P7.B.pdf
+  → Reason: Exact match: 'NMFS R001' == 'NMFS R001'
+
+✓ Confirmed Doc #443: NMFS R002
+  → Appendix P7.C (100% confidence)
+  → File: Appendix P7.C.pdf
+  → Reason: Exact match: 'NMFS R002' == 'NMFS R002'
+
+✓ Confirmed Doc #444: NMFS R003
+  → Appendix P7.D (100% confidence)
+  → File: P7.D Cover Sheet.pdf
+  → Reason: Exact match: 'NMFS R003' == 'NMFS R003'
+
+✓ Confirmed Doc #445: NMFS R004
+  → Appendix P7.E (100% confidence)
+  → File: Appendix P7.E.pdf
+  → Reason: Exact match: 'NMFS R004' == 'NMFS R004'
+
+✓ Confirmed Doc #446: NMFS R005
+  → Appendix P7.F (100% confidence)
+  → File: Appendix P7.F.pdf
+  → Reason: Exact match: 'NMFS R005' == 'NMFS R005'
+
+✓ Confirmed Doc #447: NMFS R006
+  → Appendix P7.G (100% confidence)
+  → File: Appendix P7.G.pdf
+  → Reason: Exact match: 'NMFS R006' == 'NMFS R006'
+
+✓ Confirmed Doc #448: Seattle Master Use Permit WAB
+  → Appendix P6.B (100% confidence)
+  → File: Appendix P6.B.pdf
+  → Reason: Exact match: 'Seattle Master Use Permit WAB' == 'Seattle Master Use Permit WAB'
+
+✓ Confirmed Doc #449: USCG Bridge Permit Amendment
+  → Appendix P2.B (100% confidence)
+  → File: P2.B Cover Sheet.pdf
+  → Reason: Exact match: 'USCG Bridge Permit Amendment' == 'USCG Bridge Permit Amendment'
+
+✓ Confirmed Doc #450: USCG General Bridge Permit
+  → Appendix P2.A (100% confidence)
+  → File: Appendix P2.A.pdf
+  → Reason: Exact match: 'USCG General Bridge Permit' == 'USCG General Bridge Permit'
+
+✓ Confirmed Doc #451: USFWS Biological Opinion
+  → Appendix P7.H (100% confidence)
+  → File: P7.H Cover Sheet.pdf
+  → Reason: Exact match: 'USFWS Biological Opinion' == 'USFWS Biological Opinion'
+
+✓ Confirmed Doc #452: USFWS R001
+  → Appendix P7.I (100% confidence)
+  → File: Appendix P7.I.pdf
+  → Reason: Exact match: 'USFWS R001' == 'USFWS R001'
+
+✓ Confirmed Doc #453: USFWS R002
+  → Appendix P7.J (100% confidence)
+  → File: P7.J Cover Sheet.pdf
+  → Reason: Exact match: 'USFWS R002' == 'USFWS R002'
+
+✓ Confirmed Doc #454: USFWS R003
+  → Appendix P7.K (100% confidence)
+  → File: P7.K Cover Sheet.pdf
+  → Reason: Exact match: 'USFWS R003' == 'USFWS R003'
+
+✓ Confirmed Doc #455: USFWS R004
+  → Appendix P7.L (100% confidence)
+  → File: P7.L Cover Sheet.pdf
+  → Reason: Exact match: 'USFWS R004' == 'USFWS R004'
+
+✓ Confirmed Doc #456: USFWS R005
+  → Appendix P7.M (100% confidence)
+  → File: P7.M Cover Sheet.pdf
+  → Reason: Exact match: 'USFWS R005' == 'USFWS R005'
+
+✓ Confirmed Doc #457: USFWS R006
+  → Appendix P7.N (100% confidence)
+  → File: P7.N Cover Sheet.pdf
+  → Reason: Exact match: 'USFWS R006' == 'USFWS R006'
+
+✓ Confirmed Doc #458: USFWS R007
+  → Appendix P7.O (100% confidence)
+  → File: P7.O Cover Sheet.pdf
+  → Reason: Exact match: 'USFWS R007' == 'USFWS R007'
+
+✓ Confirmed Doc #459: WDFW Hydraulic Project Approval
+  → Appendix P5 (100% confidence)
+  → File: Appendix P5.pdf
+  → Reason: Exact match: 'WDFW Hydraulic Project Approval' == 'WDFW Hydraulic Project Approval'
+
+✓ Confirmed Doc #460: Water Quality Cert Amendment 1
+  → Appendix P4.B (100% confidence)
+  → File: P4.B Cover Sheet.pdf
+  → Reason: Exact match: 'Water Quality Cert Amendment 1' == 'Water Quality Cert Amendment 1'
+
+✓ Confirmed Doc #461: Water Quality Cert Amendment 2
+  → Appendix P4.C (100% confidence)
+  → File: Appendix P4.C.pdf
+  → Reason: Exact match: 'Water Quality Cert Amendment 2' == 'Water Quality Cert Amendment 2'
+
+✓ Confirmed Doc #462: Water Quality Cert Amendment 3
+  → Appendix P4.D (100% confidence)
+  → File: Appendix P4.D.pdf
+  → Reason: Exact match: 'Water Quality Cert Amendment 3' == 'Water Quality Cert Amendment 3'
+
+✓ Confirmed Doc #463: Water Quality Cert Amendment 4
+  → Appendix P4.E (100% confidence)
+  → File: P4.E Cover Sheet.pdf
+  → Reason: Exact match: 'Water Quality Cert Amendment 4' == 'Water Quality Cert Amendment 4'
+
+✓ Confirmed Doc #464: Water Quality Cert Amendment 5
+  → Appendix P4.F (100% confidence)
+  → File: Appendix P4.F.pdf
+  → Reason: Exact match: 'Water Quality Cert Amendment 5' == 'Water Quality Cert Amendment 5'
+
+✓ Confirmed Doc #465: Water Quality Cert Amendment 6
+  → Appendix P4.G (100% confidence)
+  → File: Appendix P4.G.pdf
+  → Reason: Exact match: 'Water Quality Cert Amendment 6' == 'Water Quality Cert Amendment 6'
+
+✓ UPDATED Doc #466: Water Quality Certification
+  → Appendix P1.A (100% confidence)
+  → File: Appendix P1.A.pdf
+  → Reason: Exact match: 'Water Quality Certification' == 'Water Quality Certification'
+  → Changed from: 04_Appendix P4.H_Water Quality Certification Amendment 7.pdf
+
+✓ UPDATED Doc #467: Water Quality Certification Order 9011
+  → Appendix P1.A (100% confidence)
+  → File: Appendix P1.A.pdf
+  → Reason: Exact match: 'Water Quality Certification' == 'Water Quality Certification'
+  → Changed from: Appendix P4.A.pdf
+
+✓ Confirmed Doc #468: West Approach Shoreline Development Permit
+  → Appendix P6.A (100% confidence)
+  → File: Appendix P6.A.pdf
+  → Reason: Exact match: 'West Approach Shoreline Development Permit' == 'West Approach Shoreline Development Permit'
+
+✓ UPDATED Doc #469: Aquatic Easement
+  → Appendix R5.H (100% confidence)
+  → File: R5.H Cover Sheet.pdf
+  → Reason: Exact match: 'Aquatic Easement' == 'Aquatic Easement'
+  → Changed from: 09_Appendix_R2.C.pdf
+
+✓ Confirmed Doc #470: Aquatic Easement Amendment
+  → Appendix R5.I (100% confidence)
+  → File: R5.I Cover Sheet.pdf
+  → Reason: Exact match: 'Aquatic Easement Amendment' == 'Aquatic Easement Amendment'
+
+✓ UPDATED Doc #471: Arboretum Deed
+  → Appendix R5.O (100% confidence)
+  → File: R5.O Cover Sheet.pdf
+  → Reason: Exact match: 'Arboretum Deed' == 'Arboretum Deed'
+  → Changed from: R5.N Cover Sheet.pdf
+
+✓ Confirmed Doc #472: Arboretum E Montlake Park Deed
+  → Appendix R5.G (100% confidence)
+  → File: Appendix R5.G.pdf
+  → Reason: Exact match: 'Arboretum E Montlake Park Deed' == 'Arboretum E Montlake Park Deed'
+
+✓ Confirmed Doc #473: Foster Island Arboretum Deed
+  → Appendix R5.N (100% confidence)
+  → File: R5.N Cover Sheet.pdf
+  → Reason: Exact match: 'Foster Island Arboretum Deed' == 'Foster Island Arboretum Deed'
+
+✓ Confirmed Doc #474: Foster Island Easement
+  → Appendix R5.P (100% confidence)
+  → File: Appendix R5.P.pdf
+  → Reason: Exact match: 'Foster Island Easement' == 'Foster Island Easement'
+
+✓ Confirmed Doc #475: Grant W-04299
+  → Appendix R3 (100% confidence)
+  → File: Appendix R3.pdf
+  → Reason: Exact match: 'Grant W-04299' == 'Grant W-04299'
+
+✓ Confirmed Doc #476: Illegal Encampments ROW
+  → Appendix R1 (100% confidence)
+  → File: R1 Cover Sheet.pdf
+  → Reason: Exact match: 'Illegal Encampments ROW' == 'Illegal Encampments ROW'
+
+✓ Confirmed Doc #477: McCurdy E Montlake Park Deed
+  → Appendix R5.J (100% confidence)
+  → File: Appendix R5.J.pdf
+  → Reason: Exact match: 'McCurdy E Montlake Park Deed' == 'McCurdy E Montlake Park Deed'
+
+✓ Confirmed Doc #478: McCurdy E Montlake Park Deed
+  → Appendix R5.J (100% confidence)
+  → File: Appendix R5.J.pdf
+  → Reason: Exact match: 'McCurdy E Montlake Park Deed' == 'McCurdy E Montlake Park Deed'
+
+✓ Confirmed Doc #479: McCurdy E Montlake Park Deed
+  → Appendix R5.J (100% confidence)
+  → File: Appendix R5.J.pdf
+  → Reason: Exact match: 'McCurdy E Montlake Park Deed' == 'McCurdy E Montlake Park Deed'
+
+✓ Confirmed Doc #480: McCurdy Park Deed
+  → Appendix R5.L (100% confidence)
+  → File: R5.L Cover Sheet.pdf
+  → Reason: Exact match: 'McCurdy Park Deed' == 'McCurdy Park Deed'
+
+✓ Confirmed Doc #481: Old Canal Reserve Deed
+  → Appendix R5.B (100% confidence)
+  → File: Appendix R5.B.pdf
+  → Reason: Exact match: 'Old Canal Reserve Deed' == 'Old Canal Reserve Deed'
+
+✓ Confirmed Doc #482: RUP E Montlake Park
+  → Appendix R7.F (100% confidence)
+  → File: Appendix R7.F.pdf
+  → Reason: Exact match: 'RUP E Montlake Park' == 'RUP E Montlake Park'
+
+✓ Confirmed Doc #483: RUP Lake Washington Blvd
+  → Appendix R7.I (100% confidence)
+  → File: Appendix R7.I.pdf
+  → Reason: Exact match: 'RUP Lake Washington Blvd' == 'RUP Lake Washington Blvd'
+
+✓ Confirmed Doc #484: RUP Washington Park Arboretum
+  → Appendix R7.G (100% confidence)
+  → File: Appendix R7.G.pdf
+  → Reason: Exact match: 'RUP Washington Park Arboretum' == 'RUP Washington Park Arboretum'
+
+⚠ MATCHED BUT NO FILE: Doc #485: RUP Washington Park Arboretum WABN
+  → Appendix R7.H (100% confidence)
+  → File not found in OneDrive structure
+
+✓ Confirmed Doc #486: Reports Survey Marks Primary Monumentation
+  → Appendix R11 (100% confidence)
+  → File: R11 Cover Sheet.pdf
+  → Reason: Exact match: 'Reports Survey Marks Primary Monumentation' == 'Reports Survey Marks Primary Monumentation'
+
+✓ Confirmed Doc #487: SR 5 Record of Survey
+  → Appendix R6.A (100% confidence)
+  → File: R6.A Cover Sheet.pdf
+  → Reason: Exact match: 'SR 5 Record of Survey' == 'SR 5 Record of Survey'
+
+✓ Confirmed Doc #488: SR 513 Record of Survey
+  → Appendix R6.C (100% confidence)
+  → File: R6.C Cover Sheet.pdf
+  → Reason: Exact match: 'SR 513 Record of Survey' == 'SR 513 Record of Survey'
+
+✓ Confirmed Doc #489: SR 513 SR 520 to NE 45th ROW
+  → Appendix R2.D (100% confidence)
+  → File: Appendix R2.D.pdf
+  → Reason: Exact match: 'SR 513 SR 520 to NE 45th ROW' == 'SR 513 SR 520 to NE 45th ROW'
+
+✓ Confirmed Doc #490: SR 520 Evergreen Point Bridge ROW
+  → Appendix R2.B (100% confidence)
+  → File: Appendix R2.B.pdf
+  → Reason: Exact match: 'SR 520 Evergreen Point Bridge' == 'SR 520 Evergreen Point Bridge'
+
+✓ Confirmed Doc #491: SR 520 I-5 to Montlake ROW
+  → Appendix R2.F (100% confidence)
+  → File: Appendix R2.F.pdf
+  → Reason: Exact match: 'SR 520 I-5 to Montlake ROW' == 'SR 520 I-5 to Montlake ROW'
+
+✓ Confirmed Doc #492: SR 520 Montlake Vicinity Deed
+  → Appendix R5.F (100% confidence)
+  → File: Appendix R5.F.pdf
+  → Reason: Exact match: 'SR 520 Montlake Vicinity Deed' == 'SR 520 Montlake Vicinity Deed'
+
+✓ Confirmed Doc #493: SR 520 Montlake to Arboretum ROW
+  → Appendix R2.C (100% confidence)
+  → File: Appendix R2.C.pdf
+  → Reason: Exact match: 'SR 520 Montlake to Arboretum ROW' == 'SR 520 Montlake to Arboretum ROW'
+
+✓ Confirmed Doc #494: SR 520 Record of Survey
+  → Appendix R6.B (100% confidence)
+  → File: R6.B Cover Sheet.pdf
+  → Reason: Exact match: 'SR 520 Record of Survey' == 'SR 520 Record of Survey'
+
+✓ Confirmed Doc #495: SR 520 SR 5 to 513 Record of Survey
+  → Appendix R6.D (100% confidence)
+  → File: R6.D Cover Sheet.pdf
+  → Reason: Exact match: 'SR 520 SR 5 to 513 Record of Survey' == 'SR 520 SR 5 to 513 Record of Survey'
+
+✓ UPDATED Doc #496: SR 520 SR 5 to Evergreen Point ROW
+  → Appendix R2.A (90% confidence)
+  → File: Appendix R2.A.pdf
+  → Reason: Fuzzy match (90%): 'SR 520 SR 5 to Evergreen Point ROW' ≈ 'SR 520 SR 5 to Evergreen Point Bridge'
+
+✓ Confirmed Doc #497: Section 6F Record of Survey
+  → Appendix R6.E (100% confidence)
+  → File: Appendix R6.E.pdf
+  → Reason: Exact match: 'Section 6F Record of Survey' == 'Section 6F Record of Survey'
+
+✓ Confirmed Doc #498: Sound Transit Easement Montlake
+  → Appendix R5.D (100% confidence)
+  → File: Appendix R5.D.pdf
+  → Reason: Exact match: 'Sound Transit Easement Montlake' == 'Sound Transit Easement Montlake'
+
+✓ Confirmed Doc #499: Sound Transit Easement Old Canal Reserve
+  → Appendix R5.C (100% confidence)
+  → File: Appendix R5.C.pdf
+  → Reason: Exact match: 'Sound Transit Easement Old Canal Reserve' == 'Sound Transit Easement Old Canal Reserve'
+
+✓ Confirmed Doc #500: Sound Transit Light Rail Accommodation
+  → Appendix R5.E (100% confidence)
+  → File: Appendix R5.E.pdf
+  → Reason: Exact match: 'Sound Transit Light Rail Accommodation' == 'Sound Transit Light Rail Accommodation'
+
+✓ Confirmed Doc #501: Staging Areas Exhibit
+  → Appendix R13 (100% confidence)
+  → File: Appendix R13.pdf
+  → Reason: Exact match: 'Staging Areas Exhibit' == 'Staging Areas Exhibit'
+
+✓ Confirmed Doc #502: State Sales Tax Rule 170 171 Map
+  → Appendix R14 (100% confidence)
+  → File: R14 Cover Sheet.pdf
+  → Reason: Exact match: 'State Sales Tax Rule 170 171 Map' == 'State Sales Tax Rule 170 171 Map'
+
+✓ Confirmed Doc #503: TCE Construction Memo
+  → Appendix R7.B.1 (100% confidence)
+  → File: Appendix R7.B.1.pdf
+  → Reason: Exact match: 'TCE Construction Memo' == 'TCE Construction Memo'
+
+✓ Confirmed Doc #504: TCE Leigh
+  → Appendix R7.B (100% confidence)
+  → File: Appendix R7.B.pdf
+  → Reason: Exact match: 'TCE Leigh' == 'TCE Leigh'
+
+✓ Confirmed Doc #505: WSDOT Sound Transit Airspace Lease
+  → Appendix R5.A (100% confidence)
+  → File: Appendix R5.A.pdf
+  → Reason: Exact match: 'WSDOT Sound Transit Airspace Lease' == 'WSDOT Sound Transit Airspace Lease'
+
+✓ UPDATED Doc #506: Bridges Light Rail Transit Loading Criteria
+  → Appendix S3 (75% confidence)
+  → File: Appendix S3.pdf
+  → Reason: Fuzzy match (75%): 'Bridges Light Rail Transit Loading Criteria' ≈ 'Light Rail Transit Loading'
+  → Changed from: Appendix S1.pdf
+
+✓ Confirmed Doc #507: Design Criteria Essential Bridges
+  → Appendix S1 (100% confidence)
+  → File: Appendix S1.pdf
+  → Reason: Exact match: 'Design Criteria Essential Bridges' == 'Design Criteria Essential Bridges'
+
+✓ Confirmed Doc #508: Existing Structural Elements Requirements
+  → Appendix S12 (100% confidence)
+  → File: Appendix S12.pdf
+  → Reason: Exact match: 'Existing Structural Elements Requirements' == 'Existing Structural Elements Requirements'
+
+✓ Confirmed Doc #509: Light Rail Ready White Paper
+  → Appendix S7 (100% confidence)
+  → File: S7 Cover Sheet.pdf
+  → Reason: Exact match: 'Light Rail Ready White Paper' == 'Light Rail Ready White Paper'
+
+✓ Confirmed Doc #510: Seismic Design Criteria Lid Bridges
+  → Appendix S2 (100% confidence)
+  → File: Appendix S2.pdf
+  → Reason: Exact match: 'Seismic Design Criteria Lid Bridges' == 'Seismic Design Criteria Lid Bridges'
+
+✓ Confirmed Doc #511: Seismic Isolation Design Criteria
+  → Appendix S5 (100% confidence)
+  → File: Appendix S5.pdf
+  → Reason: Exact match: 'Seismic Isolation Design Criteria' == 'Seismic Isolation Design Criteria'
+
+✓ Confirmed Doc #512: Sound Transit Design Criteria Manual
+  → Appendix S4 (100% confidence)
+  → File: Appendix S4.pdf
+  → Reason: Exact match: 'Sound Transit Design Criteria Manual' == 'Sound Transit Design Criteria Manual'
+
+✓ Confirmed Doc #513: Structures Project Specifications
+  → Appendix S11 (100% confidence)
+  → File: S11 Cover Sheet.pdf
+  → Reason: Exact match: 'Structures Project Specifications' == 'Structures Project Specifications'
+
+✓ Confirmed Doc #514: USCG Bridge Permit Application Guide
+  → Appendix S10 (100% confidence)
+  → File: S10 Cover Sheet.pdf
+  → Reason: Exact match: 'USCG Bridge Permit Application Guide' == 'USCG Bridge Permit Application Guide'
+
+✓ Confirmed Doc #515: Underwater Sound Levels Pile Driving
+  → Appendix S9 (100% confidence)
+  → File: S9 Cover Sheet.pdf
+  → Reason: Exact match: 'Underwater Sound Levels Pile Driving' == 'Underwater Sound Levels Pile Driving'
+
+✓ Confirmed Doc #516: Vessel Collision Data
+  → Appendix S6 (100% confidence)
+  → File: Appendix S6.pdf
+  → Reason: Exact match: 'Vessel Collision Data' == 'Vessel Collision Data'
+
+✓ Confirmed Doc #517: WABN Global Analysis Summary
+  → Appendix S8 (100% confidence)
+  → File: S8 Cover Sheet.pdf
+  → Reason: Exact match: 'WABN Global Analysis Summary' == 'WABN Global Analysis Summary'
+
+✓ UPDATED Doc #518: Approved Traffic Signal Permits
+  → Appendix T4 (100% confidence)
+  → File: Appendix T4.pdf
+  → Reason: Exact match: 'Approved Traffic Signal Permits' == 'Approved Traffic Signal Permits'
+  → Changed from: 12_Appendix_T4.A.pdf
+
+✓ Confirmed Doc #519: FHWA TMP Work Zones
+  → Appendix T10 (100% confidence)
+  → File: T10 Cover Sheet.pdf
+  → Reason: Exact match: 'FHWA TMP Work Zones' == 'FHWA TMP Work Zones'
+
+✓ Confirmed Doc #520: Interchange Justification Report
+  → Appendix T1 (100% confidence)
+  → File: Appendix T1.pdf
+  → Reason: Exact match: 'Interchange Justification Report' == 'Interchange Justification Report'
+
+✓ Confirmed Doc #521: King County Metro ITS Requirements
+  → Appendix T18 (100% confidence)
+  → File: Appendix T18.pdf
+  → Reason: Exact match: 'King County Metro ITS Requirements' == 'King County Metro ITS Requirements'
+
+✓ Confirmed Doc #522: MicroSimulation Guidelines
+  → Appendix T2 (100% confidence)
+  → File: Appendix T2.pdf
+  → Reason: Exact match: 'MicroSimulation Guidelines' == 'MicroSimulation Guidelines'
+
+✓ Confirmed Doc #523: Montlake Phase Traffic Operations Report
+  → Appendix T27 (100% confidence)
+  → File: Appendix T27.pdf
+  → Reason: Exact match: 'Montlake Phase Traffic Operations Report' == 'Montlake Phase Traffic Operations Report'
+
+✓ Confirmed Doc #524: NCHRP Report 350
+  → Appendix T9 (100% confidence)
+  → File: T9 Cover Sheet.pdf
+  → Reason: Exact match: 'NCHRP Report 350' == 'NCHRP Report 350'
+
+✓ Confirmed Doc #525: NWR Sign Design Practices Manual
+  → Appendix T12 (100% confidence)
+  → File: T12 Cover Sheet.pdf
+  → Reason: Exact match: 'NWR Sign Design Practices Manual' == 'NWR Sign Design Practices Manual'
+
+✓ Confirmed Doc #526: NWR Signing Current Practices
+  → Appendix T14 (100% confidence)
+  → File: Appendix T14.pdf
+  → Reason: Exact match: 'NWR Signing Current Practices' == 'NWR Signing Current Practices'
+
+✓ Confirmed Doc #527: NWR Traffic Operations Redbook
+  → Appendix T13 (100% confidence)
+  → File: Appendix T13.pdf
+  → Reason: Exact match: 'NWR Traffic Operations Redbook' == 'NWR Traffic Operations Redbook'
+
+✓ Confirmed Doc #528: Preferred Alternative Traffic Operations Report
+  → Appendix T28 (100% confidence)
+  → File: Appendix T28.pdf
+  → Reason: Exact match: 'Preferred Alternative Traffic Operations Report' == 'Preferred Alternative Traffic Operations Report'
+
+✓ Confirmed Doc #529: SDOT Discretionary Guide Signs
+  → Appendix T20 (100% confidence)
+  → File: Appendix T20.pdf
+  → Reason: Exact match: 'SDOT Discretionary Guide Signs' == 'SDOT Discretionary Guide Signs'
+
+✓ Confirmed Doc #530: SDOT Pedestrian Mobility Work Zones
+  → Appendix T19 (100% confidence)
+  → File: T19 Cover Sheet.pdf
+  → Reason: Exact match: 'SDOT Pedestrian Mobility Work Zones' == 'SDOT Pedestrian Mobility Work Zones'
+
+✓ Confirmed Doc #531: SDOT Sign Catalog
+  → Appendix T24 (100% confidence)
+  → File: T24 Cover Sheet.pdf
+  → Reason: Exact match: 'SDOT Sign Catalog' == 'SDOT Sign Catalog'
+
+✓ Confirmed Doc #532: SDOT VISSIM SCOOT Deployment Memo
+  → Appendix T17 (100% confidence)
+  → File: T17 Cover Sheet.pdf
+  → Reason: Exact match: 'SDOT VISSIM SCOOT Deployment Memo' == 'SDOT VISSIM SCOOT Deployment Memo'
+
+✓ Confirmed Doc #533: SIDRA Policy Settings
+  → Appendix T15 (100% confidence)
+  → File: Appendix T15.pdf
+  → Reason: Exact match: 'SIDRA Policy Settings' == 'SIDRA Policy Settings'
+
+✓ Confirmed Doc #534: Signal Turn-On Checklist
+  → Appendix T8 (100% confidence)
+  → File: Appendix T8.pdf
+  → Reason: Exact match: 'Signal Turn-On Checklist' == 'Signal Turn-On Checklist'
+
+✓ Confirmed Doc #535: Signing Inventory Form
+  → Appendix T25 (100% confidence)
+  → File: T25 Cover Sheet.pdf
+  → Reason: Exact match: 'Signing Inventory Form' == 'Signing Inventory Form'
+
+✓ Confirmed Doc #536: Speed Limit Reductions Work Zones
+  → Appendix T5 (100% confidence)
+  → File: T5 Cover Sheet.pdf
+  → Reason: Exact match: 'Speed Limit Reductions Work Zones' == 'Speed Limit Reductions Work Zones'
+
+✓ Confirmed Doc #537: State Force Work Memo 1
+  → Appendix T22 (100% confidence)
+  → File: Appendix T22.pdf
+  → Reason: Exact match: 'State Force Work Memo 1' == 'State Force Work Memo 1'
+
+✓ Confirmed Doc #538: State Force Work Memo 2
+  → Appendix T23 (100% confidence)
+  → File: T23 Cover Sheet.pdf
+  → Reason: Exact match: 'State Force Work Memo 2' == 'State Force Work Memo 2'
+
+✓ Confirmed Doc #539: VISSIM Confidence Calibration AM
+  → Appendix T26.A.1 (100% confidence)
+  → File: T26.A.1 Cover Sheet.pdf
+  → Reason: Exact match: 'VISSIM Confidence Calibration AM' == 'VISSIM Confidence Calibration AM'
+
+✓ Confirmed Doc #540: VISSIM Confidence Calibration Mid
+  → Appendix T26.A.2 (100% confidence)
+  → File: T26.A.2 Cover Sheet.pdf
+  → Reason: Exact match: 'VISSIM Confidence Calibration Mid' == 'VISSIM Confidence Calibration Mid'
+
+✓ Confirmed Doc #541: VISSIM Confidence Calibration PM
+  → Appendix T26.A.3 (100% confidence)
+  → File: T26.A.3 Cover Sheet.pdf
+  → Reason: Exact match: 'VISSIM Confidence Calibration PM' == 'VISSIM Confidence Calibration PM'
+
+✓ Confirmed Doc #542: VISSIM Confidence Calibration Report
+  → Appendix T29 (100% confidence)
+  → File: Appendix T29.pdf
+  → Reason: Exact match: 'VISSIM Confidence Calibration Report' == 'VISSIM Confidence Calibration Report'
+
+✓ Confirmed Doc #543: VISSIM Montlake Phase AM
+  → Appendix T26.B.1 (100% confidence)
+  → File: T26.B.1 Cover Sheet.pdf
+  → Reason: Exact match: 'VISSIM Montlake Phase AM' == 'VISSIM Montlake Phase AM'
+
+✓ Confirmed Doc #544: VISSIM Montlake Phase Mid
+  → Appendix T26.B.2 (100% confidence)
+  → File: T26.B.2 Cover Sheet.pdf
+  → Reason: Exact match: 'VISSIM Montlake Phase Mid' == 'VISSIM Montlake Phase Mid'
+
+✓ Confirmed Doc #545: VISSIM Montlake Phase PM
+  → Appendix T26.B.3 (100% confidence)
+  → File: T26.B.3 Cover Sheet.pdf
+  → Reason: Exact match: 'VISSIM Montlake Phase PM' == 'VISSIM Montlake Phase PM'
+
+✗ NO MATCH: Doc #546: VISSIM Preferred Alternative AM
+  → Category: T - Traffic
+
+✗ NO MATCH: Doc #547: VISSIM Preferred Alternative Mid
+  → Category: T - Traffic
+
+✗ NO MATCH: Doc #548: VISSIM Preferred Alternative PM
+  → Category: T - Traffic
+
+✓ Confirmed Doc #549: WSDOT VISSIM Protocol
+  → Appendix T30 (100% confidence)
+  → File: Appendix T30.pdf
+  → Reason: Exact match: 'WSDOT VISSIM Protocol' == 'WSDOT VISSIM Protocol'
+
+✓ Confirmed Doc #550: WSP Traffic Control Assistance
+  → Appendix T7 (100% confidence)
+  → File: Appendix T7.pdf
+  → Reason: Exact match: 'WSP Traffic Control Assistance' == 'WSP Traffic Control Assistance'
+
+✓ Confirmed Doc #551: Work Zone Safety and Mobility
+  → Appendix T6 (100% confidence)
+  → File: Appendix T6.pdf
+  → Reason: Exact match: 'Work Zone Safety and Mobility' == 'Work Zone Safety and Mobility'
+
+✓ UPDATED Doc #552: Metro Transit Passenger Facility Architectural
+  → Appendix TF3.A (89% confidence)
+  → File: Appendix TF3.A.pdf
+  → Reason: Fuzzy match (89%): 'Metro Transit Passenger Facility Architectural' ≈ 'Metro Transit Passenger Facility Structural'
+  → Changed from: Appendix TF2.pdf
+
+✓ Confirmed Doc #553: Metro Transit Passenger Facility Details
+  → Appendix TF3.B (100% confidence)
+  → File: Appendix TF3.B.pdf
+  → Reason: Exact match: 'Metro Transit Passenger Facility Details' == 'Metro Transit Passenger Facility Details'
+
+✓ Confirmed Doc #554: Metro Transit Passenger Facility Structural
+  → Appendix TF3.A (100% confidence)
+  → File: Appendix TF3.A.pdf
+  → Reason: Exact match: 'Metro Transit Passenger Facility Structural' == 'Metro Transit Passenger Facility Structural'
+
+✓ Confirmed Doc #555: Metro Transit Signing Standards Manual
+  → Appendix TF5 (100% confidence)
+  → File: Appendix TF5.pdf
+  → Reason: Exact match: 'Metro Transit Signing Standards Manual' == 'Metro Transit Signing Standards Manual'
+
+✓ Confirmed Doc #556: Metro Transit Trolley Overhead Standards
+  → Appendix TF4 (100% confidence)
+  → File: Appendix TF4.pdf
+  → Reason: Exact match: 'Metro Transit Trolley Overhead Standards' == 'Metro Transit Trolley Overhead Standards'
+
+✓ Confirmed Doc #557: Metro Transportation Facility Design Guidelines
+  → Appendix TF2 (100% confidence)
+  → File: Appendix TF2.pdf
+  → Reason: Exact match: 'Metro Transportation Facility Design Guidelines' == 'Metro Transportation Facility Design Guidelines'
+
+✓ UPDATED Doc #558: 108 Inch CSS CCTV Inspection
+  → Appendix U2.A.1 (100% confidence)
+  → File: U2.A.1 Cover Sheet.pdf
+  → Reason: Exact match: '108 Inch CSS CCTV Inspection' == '108 Inch CSS CCTV Inspection'
+  → Changed from: 14_Appendix_U8.D.pdf
+
+✓ UPDATED Doc #559: 108 Inch CSS CCTV Report
+  → Appendix U2.A.2 (100% confidence)
+  → File: Appendix U2.A.2.pdf
+  → Reason: Exact match: '108 Inch CSS CCTV Report' == '108 Inch CSS CCTV Report'
+  → Changed from: U2.A.1 Cover Sheet.pdf
+
+✓ Confirmed Doc #560: 114 Inch CSS CCTV Inspection
+  → Appendix U2.B.1 (100% confidence)
+  → File: U2.B.1 Cover Sheet.pdf
+  → Reason: Exact match: '114 Inch CSS CCTV Inspection' == '114 Inch CSS CCTV Inspection'
+
+✓ UPDATED Doc #561: 114 Inch CSS CCTV Report
+  → Appendix U2.B.2 (100% confidence)
+  → File: Appendix U2.B.2.pdf
+  → Reason: Exact match: '114 Inch CSS CCTV Report' == '114 Inch CSS CCTV Report'
+  → Changed from: U2.B.1 Cover Sheet.pdf
+
+✓ Confirmed Doc #562: 42 Inch CSS CCTV Inspection
+  → Appendix U2.C.1 (100% confidence)
+  → File: U2.C.1 Cover Sheet.pdf
+  → Reason: Exact match: '42 Inch CSS CCTV Inspection' == '42 Inch CSS CCTV Inspection'
+
+✓ Confirmed Doc #563: 42 Inch CSS CCTV Report
+  → Appendix U2.C.2 (100% confidence)
+  → File: Appendix U2.C.2.pdf
+  → Reason: Exact match: '42 Inch CSS CCTV Report' == '42 Inch CSS CCTV Report'
+
+✓ Confirmed Doc #564: CSS Water Line Potholing Locations
+  → Appendix U2.D.2 (100% confidence)
+  → File: U2.D Cover Sheet.pdf
+  → Reason: Exact match: 'CSS Water Line Potholing Locations' == 'CSS Water Line Potholing Locations'
+
+✓ Confirmed Doc #565: CSS Water Line Potholing Results
+  → Appendix U2.D.1 (100% confidence)
+  → File: U2.D Cover Sheet.pdf
+  → Reason: Exact match: 'CSS Water Line Potholing Results' == 'CSS Water Line Potholing Results'
+
+✓ Confirmed Doc #566: CenturyLink Fiber Optic As-Built
+  → Appendix U1.A (95% confidence)
+  → File: U1.A Cover Sheet.pdf
+  → Reason: Fuzzy match (95%): 'CenturyLink - Fiber Optic' ≈ 'CenturyLink Fiber Optic'
+
+✓ Confirmed Doc #567: CenturyLink Franchise Permits
+  → Appendix U10.A (100% confidence)
+  → File: U10.A Cover Sheet.pdf
+  → Reason: Exact match: 'CenturyLink Franchise Permits' == 'CenturyLink Franchise Permits'
+
+✓ Confirmed Doc #568: Comcast Cable Television As-Built
+  → Appendix U1.B (96% confidence)
+  → File: U1.B Cover Sheet.pdf
+  → Reason: Fuzzy match (96%): 'Comcast - Cable Television' ≈ 'Comcast Cable Television'
+
+✓ Confirmed Doc #569: Comcast Franchise Permits
+  → Appendix U10.B (100% confidence)
+  → File: U10.B Cover Sheet.pdf
+  → Reason: Exact match: 'Comcast Franchise Permits' == 'Comcast Franchise Permits'
+
+✓ Confirmed Doc #570: Comcast MOU
+  → Appendix U9.A (100% confidence)
+  → File: Appendix U9.A.pdf
+  → Reason: Exact match: 'Comcast MOU' == 'Comcast MOU'
+
+✓ Confirmed Doc #571: FreshChoice Franchise
+  → Appendix U10.C (100% confidence)
+  → File: U10.C Cover Sheet.pdf
+  → Reason: Exact match: 'FreshChoice Franchise' == 'FreshChoice Franchise'
+
+✓ Confirmed Doc #572: Integra Telecom Franchise Permits
+  → Appendix U10.D (100% confidence)
+  → File: U10.D Cover Sheet.pdf
+  → Reason: Exact match: 'Integra Telecom Franchise Permits' == 'Integra Telecom Franchise Permits'
+
+✓ Confirmed Doc #573: KCWTD Design-Build Agreement
+  → Appendix U8.A (100% confidence)
+  → File: Appendix U8.A.pdf
+  → Reason: Exact match: 'KCWTD Design-Build Agreement' == 'KCWTD Design-Build Agreement'
+
+✓ Confirmed Doc #574: KCWTD Feasibility Study
+  → Appendix U6 (100% confidence)
+  → File: Appendix U6.pdf
+  → Reason: Exact match: 'KCWTD Feasibility Study' == 'KCWTD Feasibility Study'
+
+✓ Confirmed Doc #575: King County Metro As-Built
+  → Appendix U1.D (100% confidence)
+  → File: U1.D Cover Sheet.pdf
+  → Reason: Exact match: 'King County Metro' == 'King County Metro'
+
+✓ Confirmed Doc #576: King County Metro Design-Build Agreement
+  → Appendix U8.E (100% confidence)
+  → File: Appendix U8.E.pdf
+  → Reason: Exact match: 'King County Metro Design-Build Agreement' == 'King County Metro Design-Build Agreement'
+
+✓ Confirmed Doc #577: King County Metro Franchise Permits
+  → Appendix U10.E (100% confidence)
+  → File: U10.E Cover Sheet.pdf
+  → Reason: Exact match: 'King County Metro Franchise Permits' == 'King County Metro Franchise Permits'
+
+✓ Confirmed Doc #578: King County Sewer Siphon As-Built
+  → Appendix U1.E.2 (100% confidence)
+  → File: Appendix U1.E.2.pdf
+  → Reason: Exact match: 'King County Sewer Siphon As-Built' == 'King County Sewer Siphon As-Built'
+
+✓ Confirmed Doc #579: King County Sewer Siphon Photos
+  → Appendix U1.E.1 (100% confidence)
+  → File: Appendix U1.E.1.pdf
+  → Reason: Exact match: 'King County Sewer Siphon Photos' == 'King County Sewer Siphon Photos'
+
+✓ Confirmed Doc #580: LTS 360 Networks Franchise Permits
+  → Appendix U10.F (100% confidence)
+  → File: U10.F Cover Sheet.pdf
+  → Reason: Exact match: 'LTS 360 Networks Franchise Permits' == 'LTS 360 Networks Franchise Permits'
+
+✓ Confirmed Doc #581: PSE 24th Ave Franchise
+  → Appendix U10.G.1 (100% confidence)
+  → File: U10.G.1 Cover Sheet.pdf
+  → Reason: Exact match: 'PSE 24th Ave Franchise' == 'PSE 24th Ave Franchise'
+
+✓ Confirmed Doc #582: PSE Franchise Permits
+  → Appendix U10.G (100% confidence)
+  → File: Appendix U10.G.pdf
+  → Reason: Exact match: 'PSE Franchise Permits' == 'PSE Franchise Permits'
+
+✓ Confirmed Doc #583: Puget Sound Energy Gas As-Built
+  → Appendix U1.F (95% confidence)
+  → File: Appendix U1.F.pdf
+  → Reason: Fuzzy match (95%): 'Puget Sound Energy - Gas' ≈ 'Puget Sound Energy Gas'
+
+✓ Confirmed Doc #584: Puget Sound Energy MOU
+  → Appendix U9.B (100% confidence)
+  → File: U9.B_Cover_Sheet.pdf
+  → Reason: Exact match: 'PSE MOU' == 'PSE MOU'
+
+✓ Confirmed Doc #585: R2016 GM381 Utility Agreement
+  → Appendix U1.C.1 (100% confidence)
+  → File: U1.C.1 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 GM381 Utility Agreement' == 'R2016 GM381 Utility Agreement'
+
+✓ Confirmed Doc #586: R2016 SAS 5573 Utility Agreement
+  → Appendix U1.C.2 (100% confidence)
+  → File: Appendix U1.C.2.pdf
+  → Reason: Exact match: 'R2016 SAS 5573' == 'R2016 SAS 5573'
+
+✓ Confirmed Doc #587: R2016 SAU 5571 Utility Agreement
+  → Appendix U1.C.3 (100% confidence)
+  → File: Appendix U1.C.3.pdf
+  → Reason: Exact match: 'R2016 SAU 5571' == 'R2016 SAU 5571'
+
+✓ Confirmed Doc #588: R2016 SAU 5572 Utility Agreement
+  → Appendix U1.C.4 (100% confidence)
+  → File: Appendix U1.C.4.pdf
+  → Reason: Exact match: 'R2016 SAU 5572' == 'R2016 SAU 5572'
+
+✓ Confirmed Doc #589: R2016 SAU 5574 Utility Agreement
+  → Appendix U1.C.5 (100% confidence)
+  → File: Appendix U1.C.5.pdf
+  → Reason: Exact match: 'R2016 SAU 5574' == 'R2016 SAU 5574'
+
+✓ Confirmed Doc #590: R2016 SAU 5595 Utility Agreement
+  → Appendix U1.C.6 (100% confidence)
+  → File: Appendix U1.C.6.pdf
+  → Reason: Exact match: 'R2016 SAU 5595' == 'R2016 SAU 5595'
+
+✓ Confirmed Doc #591: R2016 SAU 5596 Utility Agreement
+  → Appendix U1.C.7 (100% confidence)
+  → File: U1.C.7 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 SAU 5596' == 'R2016 SAU 5596'
+
+✓ Confirmed Doc #592: R2016 SUA 645-S2 647-S1
+  → Appendix U1.C.8 (100% confidence)
+  → File: U1.C.8 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 SUA 645-S2 647-S1' == 'R2016 SUA 645-S2 647-S1'
+
+✓ Confirmed Doc #593: R2016 SUA 657 Sup1
+  → Appendix U1.C.9 (100% confidence)
+  → File: U1.C.9 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 SUA 657 Sup1' == 'R2016 SUA 657 Sup1'
+
+✓ Confirmed Doc #594: R2016 SUA 658 5594
+  → Appendix U1.C.10 (100% confidence)
+  → File: U1.C.10 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 SUA 658 5594' == 'R2016 SUA 658 5594'
+
+✓ Confirmed Doc #595: R2016 SUA 658 Sup1
+  → Appendix U1.C.11 (100% confidence)
+  → File: U1.C.11 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 SUA 658 Sup1' == 'R2016 SUA 658 Sup1'
+
+✓ Confirmed Doc #596: R2016 SUA 658 Sup2
+  → Appendix U1.C.12 (100% confidence)
+  → File: U1.C.12 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 SUA 658 Sup2' == 'R2016 SUA 658 Sup2'
+
+✓ Confirmed Doc #597: R2016 UTB1141 Utility Agreement
+  → Appendix U1.C.13 (100% confidence)
+  → File: U1.C.13 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 UTB1141' == 'R2016 UTB1141'
+
+✓ Confirmed Doc #598: R2016 UTB1169 Utility Agreement
+  → Appendix U1.C.14 (100% confidence)
+  → File: U1.C.14 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 UTB1169' == 'R2016 UTB1169'
+
+✓ Confirmed Doc #599: R2016 UTB1170 Utility Agreement
+  → Appendix U1.C.15 (100% confidence)
+  → File: U1.C.15 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 UTB1170' == 'R2016 UTB1170'
+
+✓ Confirmed Doc #600: R2016 Westside SUA Locations
+  → Appendix U1.C.16 (100% confidence)
+  → File: U1.C.16 Cover Sheet.pdf
+  → Reason: Exact match: 'R2016 Westside SUA Locations' == 'R2016 Westside SUA Locations'
+
+✓ Confirmed Doc #601: SAU 5690 Utility Agreement
+  → Appendix U1.C.17 (100% confidence)
+  → File: Appendix U1.C.17.pdf
+  → Reason: Exact match: 'SAU 5690 Utility Agreement' == 'SAU 5690 Utility Agreement'
+
+✓ Confirmed Doc #602: SAU 5691 Utility Agreement
+  → Appendix U1.C.18 (100% confidence)
+  → File: Appendix U1.C.18.pdf
+  → Reason: Exact match: 'SAU 5691 Utility Agreement' == 'SAU 5691 Utility Agreement'
+
+✓ Confirmed Doc #603: SPU 12-inch Distribution Main As-Built
+  → Appendix U1.I (86% confidence)
+  → File: Appendix U1.I.pdf
+  → Reason: Fuzzy match (86%): 'SPU 12-inch Distribution Main As-Built' ≈ 'SPU 12-inch Distribution Main'
+
+✓ Confirmed Doc #604: SPU 54-inch Transmission Main As-Built
+  → Appendix U1.J (86% confidence)
+  → File: Appendix U1.J.pdf
+  → Reason: Fuzzy match (86%): 'SPU 54-inch Transmission Main As-Built' ≈ 'SPU 54-inch Transmission Main'
+
+✓ Confirmed Doc #605: SPU Design-Build Agreement
+  → Appendix U8.D (100% confidence)
+  → File: Appendix U8.D.pdf
+  → Reason: Exact match: 'SPU Design-Build Agreement' == 'SPU Design-Build Agreement'
+
+✓ Confirmed Doc #606: SPU Feasibility Study
+  → Appendix U7 (100% confidence)
+  → File: Appendix U7.pdf
+  → Reason: Exact match: 'SPU Feasibility Study' == 'SPU Feasibility Study'
+
+✓ Confirmed Doc #607: SPU Franchise Permits
+  → Appendix U10.J (100% confidence)
+  → File: U10.J Cover Sheet.pdf
+  → Reason: Exact match: 'SPU Franchise Permits' == 'SPU Franchise Permits'
+
+✓ Confirmed Doc #608: SPU Special Provisions
+  → Appendix U11 (100% confidence)
+  → File: Appendix U11.pdf
+  → Reason: Exact match: 'SPU Special Provisions' == 'SPU Special Provisions'
+
+✓ UPDATED Doc #609: Seattle City Light Design-Build Agreement
+  → Appendix U8.C (89% confidence)
+  → File: Appendix U8.C.pdf
+  → Reason: Fuzzy match (89%): 'Seattle City Light Design-Build Agreement' ≈ 'Seattle IT Design-Build Agreement'
+
+✓ Confirmed Doc #610: Seattle City Light Electrical As-Built
+  → Appendix U1.G (100% confidence)
+  → File: U1.G Cover Sheet.pdf
+  → Reason: Exact match: 'Seattle City Light Electrical As-Built' == 'Seattle City Light Electrical As-Built'
+
+✓ Confirmed Doc #611: Seattle City Light Permits Franchises
+  → Appendix U10.H (100% confidence)
+  → File: Appendix U10.H.pdf
+  → Reason: Exact match: 'Seattle City Light Permits Franchises' == 'Seattle City Light Permits Franchises'
+
+✓ Confirmed Doc #612: Seattle DOT Franchise Permits
+  → Appendix U10.I (100% confidence)
+  → File: Appendix U10.I.pdf
+  → Reason: Exact match: 'Seattle DOT Franchise Permits' == 'Seattle DOT Franchise Permits'
+
+✓ Confirmed Doc #613: Seattle IT Design-Build Agreement
+  → Appendix U8.C (100% confidence)
+  → File: Appendix U8.C.pdf
+  → Reason: Exact match: 'Seattle IT Design-Build Agreement' == 'Seattle IT Design-Build Agreement'
+
+✓ Confirmed Doc #614: Seattle IT Fiber Optic As-Built
+  → Appendix U1.H (100% confidence)
+  → File: Appendix U1.H.pdf
+  → Reason: Exact match: 'Seattle IT Fiber Optic As-Built' == 'Seattle IT Fiber Optic As-Built'
+
+✓ Confirmed Doc #615: Sewer Line Min Cover Waterline Main
+  → Appendix U12 (100% confidence)
+  → File: U12 Cover Sheet.pdf
+  → Reason: Exact match: 'Sewer Line Min Cover Waterline Main' == 'Sewer Line Min Cover Waterline Main'
+
+✓ Confirmed Doc #616: Sound Transit Franchise Permits
+  → Appendix U10.K (100% confidence)
+  → File: Appendix U10.K.pdf
+  → Reason: Exact match: 'Sound Transit Franchise Permits' == 'Sound Transit Franchise Permits'
+
+✓ Confirmed Doc #617: Sprint Nextel Franchise Permits
+  → Appendix U10.L (100% confidence)
+  → File: U10.L Cover Sheet.pdf
+  → Reason: Exact match: 'Sprint Nextel Franchise Permits' == 'Sprint Nextel Franchise Permits'
+
+✓ Confirmed Doc #618: T-Mobile Permit UP17579
+  → Appendix U10.M (100% confidence)
+  → File: U10.M Cover Sheet.pdf
+  → Reason: Exact match: 'T-Mobile Permit UP17579' == 'T-Mobile Permit UP17579'
+
+✓ Confirmed Doc #619: Traylor Frontier Kemper Permit
+  → Appendix U10.N (100% confidence)
+  → File: Appendix U10.N.pdf
+  → Reason: Exact match: 'Traylor Frontier Kemper Permit' == 'Traylor Frontier Kemper Permit'
+
+✓ Confirmed Doc #620: Utility Assignment of Rights
+  → Appendix U5 (100% confidence)
+  → File: Appendix U5.pdf
+  → Reason: Exact match: 'Utility Assignment of Rights' == 'Utility Assignment of Rights'
+
+✓ Confirmed Doc #621: Utility Conflict Matrix
+  → Appendix U3.B (100% confidence)
+  → File: U3.B Cover Sheet.pdf
+  → Reason: Exact match: 'Utility Conflict Matrix' == 'Utility Conflict Matrix'
+
+✓ Confirmed Doc #622: Utility Contact List
+  → Appendix U4 (100% confidence)
+  → File: Appendix U4.pdf
+  → Reason: Exact match: 'Utility Contact List' == 'Utility Contact List'
+
+✓ Confirmed Doc #623: Verizon NW Franchise Permits
+  → Appendix U10.O (100% confidence)
+  → File: Appendix U10.O.pdf
+  → Reason: Exact match: 'Verizon NW Franchise Permits' == 'Verizon NW Franchise Permits'
+
+✓ Confirmed Doc #624: WSDOT Permit Franchise Database
+  → Appendix U3.A (100% confidence)
+  → File: U3.A Cover Sheet.pdf
+  → Reason: Exact match: 'WSDOT Permit Franchise Database' == 'WSDOT Permit Franchise Database'
+
+✓ Confirmed Doc #625: XO Comm Franchise Permits
+  → Appendix U10.P (100% confidence)
+  → File: U10.P Cover Sheet.pdf
+  → Reason: Exact match: 'XO Comm Franchise Permits' == 'XO Comm Franchise Permits'
+
+✓ UPDATED Doc #626: QMP Outline
+  → Appendix V2 (100% confidence)
+  → File: V2 Cover Sheet.pdf
+  → Reason: Exact match: 'QMP Outline' == 'QMP Outline'
+  → Changed from: Appendix V2.pdf
+
+✗ NO MATCH: Doc #627: FFFS Flammable Liquid Fires Study
+  → Category: X - Montlake Underlid Systems
+
+✓ UPDATED Doc #628: FLS Ventilation Corridor Study
+  → Appendix X5.C (100% confidence)
+  → File: Appendix X5.C.pdf
+  → Reason: Exact match: 'FLS Ventilation Corridor' == 'FLS Ventilation Corridor'
+  → Changed from: Appendix X5.A.pdf
+
+✓ Confirmed Doc #629: Montlake Lid Egress Study
+  → Appendix X5.B (100% confidence)
+  → File: Appendix X5.B.pdf
+  → Reason: Exact match: 'Montlake Lid Egress Study' == 'Montlake Lid Egress Study'
+
+✓ Confirmed Doc #630: Montlake Underlid Concept of Operations
+  → Appendix X4 (100% confidence)
+  → File: Appendix X4.pdf
+  → Reason: Exact match: 'Montlake Underlid Concept of Operations' == 'Montlake Underlid Concept of Operations'
+
+✓ Confirmed Doc #631: Montlake Underlid Emergency Response
+  → Appendix X2 (85% confidence)
+  → File: Appendix X2.pdf
+  → Reason: Fuzzy match (85%): 'Conceptual Emergency Response Scenarios' ≈ 'Conceptual Emergency Response'
+
+✓ Confirmed Doc #632: Montlake Underlid Fire Alarm Response
+  → Appendix X1.B (100% confidence)
+  → File: Appendix X1.B.pdf
+  → Reason: Exact match: 'Fire Alarm Response Flowchart' == 'Fire Alarm Response Flowchart'
+
+✓ Confirmed Doc #633: Montlake Underlid Simplex Control System
+  → Appendix X1.A (100% confidence)
+  → File: Appendix X1.A.pdf
+  → Reason: Exact match: 'Simplex Control System' == 'Simplex Control System'
+
+✓ Confirmed Doc #634: Seattle Fire Concurrence Letter 1
+  → Appendix X3.A (100% confidence)
+  → File: Appendix X3.A.pdf
+  → Reason: Exact match: 'Seattle Fire Concurrence Letter 1' == 'Seattle Fire Concurrence Letter 1'
+
+✓ Confirmed Doc #635: Seattle NFPA 502 Amendments
+  → Appendix X6 (100% confidence)
+  → File: Appendix X6.pdf
+  → Reason: Exact match: 'Seattle NFPA 502 Amendments' == 'Seattle NFPA 502 Amendments'
+
+✓ Confirmed Doc #636: WABN Emergency Response Plan
+  → Appendix X7 (100% confidence)
+  → File: Appendix X7.pdf
+  → Reason: Exact match: 'WABN Emergency Response Plan' == 'WABN Emergency Response Plan'
+
+✗ NO MATCH: Doc #637: SR 520 No Surprises Approach
+  → Category: Y - Communications Plan
+
+✓ UPDATED Doc #638: Community Workforce Agreement
+  → Appendix Z1 (100% confidence)
+  → File: Appendix Z1.pdf
+  → Reason: Exact match: 'Community Workforce Agreement' == 'Community Workforce Agreement'
+  → Changed from: Appendix Z1.pdf
+
+
+========================================================================================================================
+SUMMARY
+========================================================================================================================
+Total appendices processed:     588
+Successfully matched:           538
+  └─ Files found:               529
+  └─ Files not found:           9
+  └─ Low confidence matches:    18
+No match found:                 50
