@@ -1558,6 +1558,14 @@ html_footer = f"""
                 $('#drilldown').show();
                 $('#drilldown_title').text(filterValue + ' - ' + statusText + ' (' + filteredData.length + ' items)');
 
+                // Smooth scroll so the title is at the top of the screen
+                setTimeout(function() {{
+                    var titleElement = document.getElementById('drilldown_title');
+                    if (titleElement) {{
+                        titleElement.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+                    }}
+                }}, 100);
+
                 // Destroy existing table if it exists
                 if ($.fn.DataTable.isDataTable('#drilldown_table')) {{
                     $('#drilldown_table').DataTable().destroy();

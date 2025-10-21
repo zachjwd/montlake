@@ -558,7 +558,7 @@
 <body>
     <div class="header">
         <h1>MONTLAKE PROJECT CLOSEOUT DASHBOARD</h1>
-        <p>Executive Summary - Generated October 21, 2025 at 09:51 <a href="contractdocs.html" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Contract Documents Dashboard">AM</a></p>
+        <p>Executive Summary - Generated October 21, 2025 at 10:18 <a href="contractdocs.html" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Contract Documents Dashboard">AM</a></p>
         <div class="project-timeline">
             <div class="timeline-container">
                 <div class="timeline-line"></div>
@@ -964,6 +964,14 @@
                 // Show the drilldown section
                 $('#drilldown').show();
                 $('#drilldown_title').text(filterValue + ' - ' + statusText + ' (' + filteredData.length + ' items)');
+
+                // Smooth scroll so the title is at the top of the screen
+                setTimeout(function() {
+                    var titleElement = document.getElementById('drilldown_title');
+                    if (titleElement) {
+                        titleElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 100);
 
                 // Destroy existing table if it exists
                 if ($.fn.DataTable.isDataTable('#drilldown_table')) {
