@@ -198,6 +198,23 @@ html = f"""<!DOCTYPE html>
             color: #475569;
             margin-bottom: 10px;
             font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            padding: 8px 10px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }}
+        .category-header:hover {{
+            background: #f1f5f9;
+        }}
+        .category-content {{
+            display: none;
+        }}
+        .category-content.active {{
+            display: block;
         }}
         .appendix-group {{
             margin: 8px 0;
@@ -382,9 +399,16 @@ for section in sorted(df['Contract_Section'].unique()):
         cat_docs = section_docs_copy[section_docs_copy['Category'] == category]
 
         if len(cat_docs) > 0:
+            # Create a safe id for the category within this section
+            cat_key = re.sub(r'[^A-Za-z0-9\-]', '', category.replace(' ', '-').replace('(', '').replace(')', ''))
+            category_id = f"{section_id}-{cat_key}"
             html += f"""
                     <div class="category-group">
-                        <div class="category-header">{category} ({len(cat_docs)} deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('{category_id}')">
+                            <span>{category} ({len(cat_docs)} deliverables)</span>
+                            <span class="expand-icon" id="icon-{category_id}">▶</span>
+                        </div>
+                        <div class="category-content" id="content-{category_id}">
 """
 
             # Group by appendix code within category
@@ -472,6 +496,7 @@ for section in sorted(df['Contract_Section'].unique()):
 """
 
             html += """
+                        </div>
                     </div>
 """
 
@@ -492,6 +517,19 @@ html += """
     <div style="height: 60px;"></div>
 
     <script>
+        function toggleCategory(categoryId) {
+            const content = document.getElementById('content-' + categoryId);
+            const icon = document.getElementById('icon-' + categoryId);
+            if (!content || !icon) return;
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                icon.classList.remove('active');
+            } else {
+                content.classList.add('active');
+                icon.classList.add('active');
+            }
+        }
+
         function toggleSection(sectionId) {
             const content = document.getElementById('content-' + sectionId);
             const icon = document.getElementById('icon-' + sectionId);

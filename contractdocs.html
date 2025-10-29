@@ -125,6 +125,23 @@
             color: #475569;
             margin-bottom: 10px;
             font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            padding: 8px 10px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .category-header:hover {
+            background: #f1f5f9;
+        }
+        .category-content {
+            display: none;
+        }
+        .category-content.active {
+            display: block;
         }
         .appendix-group {
             margin: 8px 0;
@@ -239,7 +256,7 @@
 <body>
     <div class="header">
         <h1>MONTLAKE CLOSEOUT - CONTRACT DOCUMENTS REVIEW</h1>
-        <p>Tracking 784 Documents | Updated October 28, 2025 at 02:16 <a href="index.html" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Closeout Dashboard">PM</a></p>
+        <p>Tracking 784 Documents | Updated October 28, 2025 at 05:33 <a href="index.html" style="color:inherit; text-decoration:none; cursor:pointer;" title="Go to Closeout Dashboard">PM</a></p>
     </div>
 
     <div class="container">
@@ -255,17 +272,17 @@
 
             <div class="stat-card">
                 <div class="label">Documents Reviewed</div>
-                <div class="value">259/784</div>
-                <div class="detail">33.0% of all documents</div>
+                <div class="value">260/784</div>
+                <div class="detail">33.2% of all documents</div>
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width: 33.0%"></div>
+                    <div class="progress-fill" style="width: 33.2%"></div>
                 </div>
             </div>
 
             <div class="stat-card">
                 <div class="label">Review Status</div>
-                <div class="value">524</div>
-                <div class="detail">Not Started | 1 In Progress | 259 Reviewed</div>
+                <div class="value">523</div>
+                <div class="detail">Not Started | 1 In Progress | 260 Reviewed</div>
             </div>
         </div>
 
@@ -287,7 +304,11 @@
                 <div class="section-content" id="content-1-Change-Orders-and-Supplemental-Agreements">
 
                     <div class="category-group">
-                        <div class="category-header">Standard Documents (189 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('1-Change-Orders-and-Supplemental-Agreements-Standard-Documents')">
+                            <span>Standard Documents (189 deliverables)</span>
+                            <span class="expand-icon" id="icon-1-Change-Orders-and-Supplemental-Agreements-Standard-Documents">▶</span>
+                        </div>
+                        <div class="category-content" id="content-1-Change-Orders-and-Supplemental-Agreements-Standard-Documents">
 
                         <ul class="doc-list">
 
@@ -2372,6 +2393,7 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                 </div>
@@ -2392,7 +2414,11 @@
                 <div class="section-content" id="content-2-Design-Build-Contract-Contract-Form">
 
                     <div class="category-group">
-                        <div class="category-header">Standard Documents (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('2-Design-Build-Contract-Contract-Form-Standard-Documents')">
+                            <span>Standard Documents (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-2-Design-Build-Contract-Contract-Form-Standard-Documents">▶</span>
+                        </div>
+                        <div class="category-content" id="content-2-Design-Build-Contract-Contract-Form-Standard-Documents">
 
                         <ul class="doc-list">
 
@@ -2409,6 +2435,7 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                 </div>
@@ -2429,7 +2456,11 @@
                 <div class="section-content" id="content-3-WSDOT-Identified-Betterments-Exhibit-B">
 
                     <div class="category-group">
-                        <div class="category-header">Standard Documents (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('3-WSDOT-Identified-Betterments-Exhibit-B-Standard-Documents')">
+                            <span>Standard Documents (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-3-WSDOT-Identified-Betterments-Exhibit-B-Standard-Documents">▶</span>
+                        </div>
+                        <div class="category-content" id="content-3-WSDOT-Identified-Betterments-Exhibit-B-Standard-Documents">
 
                         <ul class="doc-list">
 
@@ -2446,6 +2477,7 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                 </div>
@@ -2466,7 +2498,11 @@
                 <div class="section-content" id="content-4-General-Provisions-RFP-Chapter-1">
 
                     <div class="category-group">
-                        <div class="category-header">Standard Documents (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('4-General-Provisions-RFP-Chapter-1-Standard-Documents')">
+                            <span>Standard Documents (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-4-General-Provisions-RFP-Chapter-1-Standard-Documents">▶</span>
+                        </div>
+                        <div class="category-content" id="content-4-General-Provisions-RFP-Chapter-1-Standard-Documents">
 
                         <ul class="doc-list">
 
@@ -2483,6 +2519,7 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                 </div>
@@ -2503,7 +2540,11 @@
                 <div class="section-content" id="content-5-Community-Workforce-Agreement-CWA">
 
                     <div class="category-group">
-                        <div class="category-header">Standard Documents (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('5-Community-Workforce-Agreement-CWA-Standard-Documents')">
+                            <span>Standard Documents (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-5-Community-Workforce-Agreement-CWA-Standard-Documents">▶</span>
+                        </div>
+                        <div class="category-content" id="content-5-Community-Workforce-Agreement-CWA-Standard-Documents">
 
                         <ul class="doc-list">
 
@@ -2520,6 +2561,7 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                 </div>
@@ -2540,7 +2582,11 @@
                 <div class="section-content" id="content-6-Technical-Requirements-RFP-Chapter-2">
 
                     <div class="category-group">
-                        <div class="category-header">Standard Documents (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('6-Technical-Requirements-RFP-Chapter-2-Standard-Documents')">
+                            <span>Standard Documents (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-6-Technical-Requirements-RFP-Chapter-2-Standard-Documents">▶</span>
+                        </div>
+                        <div class="category-content" id="content-6-Technical-Requirements-RFP-Chapter-2-Standard-Documents">
 
                         <ul class="doc-list">
 
@@ -2557,6 +2603,7 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                 </div>
@@ -2568,16 +2615,20 @@
                         <div class="section-title">7. RFP Appendices (Contract Documents)</div>
                     </div>
                     <div class="section-stats">
-                        <span>67/589 reviewed (11%)</span>
+                        <span>68/589 reviewed (12%)</span>
                         <span>|</span>
-                        <span>522 not reviewed</span>
+                        <span>521 not reviewed</span>
                         <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents">▶</span>
                     </div>
                 </div>
                 <div class="section-content" id="content-7-RFP-Appendices-Contract-Documents">
 
                     <div class="category-group">
-                        <div class="category-header">A - Project Files (5 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-A---Project-Files')">
+                            <span>A - Project Files (5 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-A---Project-Files">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-A---Project-Files">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-A---Project-Files-A1')">
@@ -2678,10 +2729,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">A-B - As-Built Plans and Construction (64 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-A-B---As-Built-Plans-and-Construction')">
+                            <span>A-B - As-Built Plans and Construction (64 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-A-B---As-Built-Plans-and-Construction">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-A-B---As-Built-Plans-and-Construction">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-A-B---As-Built-Plans-and-Construction-A-B1-B')">
@@ -3748,10 +3804,15 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">B - Specifications (15 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-B---Specifications')">
+                            <span>B - Specifications (15 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-B---Specifications">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-B---Specifications">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-B---Specifications-B1')">
@@ -3945,23 +4006,28 @@
                                 <div class="doc-notes">nan</div>
                             </li>
 
-                            <li class="doc-item needs-review">
+                            <li class="doc-item reviewed">
                                 <div class="doc-item-header">
                                     <div style="display: flex; align-items: center; flex: 1;">
                                         <span class="doc-number">[133]</span>
                                         <span class="doc-name">Standard Specifications (M 41-10)</span>
                                     </div>
-                                    <span class="status-badge needs-review">Not Started</span>
+                                    <span class="status-badge reviewed">Reviewed</span>
                                 </div>
-                                <div class="doc-notes">nan</div>
+                                <div class="doc-notes">Completion requirements are incorporated into the RFP chapter 1 and 2.</div>
                             </li>
 
                         </ul>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">C - Commitments List (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-C---Commitments-List')">
+                            <span>C - Commitments List (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-C---Commitments-List">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-C---Commitments-List">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-C---Commitments-List-C1-')">
@@ -3982,10 +4048,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">D - Manuals (59 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-D---Manuals')">
+                            <span>D - Manuals (59 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-D---Manuals">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-D---Manuals">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-D---Manuals-D1')">
@@ -5108,10 +5179,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">E - Environmental (91 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-E---Environmental')">
+                            <span>E - Environmental (91 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-E---Environmental">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-E---Environmental">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-E---Environmental-E1-A')">
@@ -6769,10 +6845,15 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">F - Forms (10 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-F---Forms')">
+                            <span>F - Forms (10 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-F---Forms">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-F---Forms">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-F---Forms-F2-')">
@@ -6960,10 +7041,15 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">G - Geotechnical (32 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-G---Geotechnical')">
+                            <span>G - Geotechnical (32 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-G---Geotechnical">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-G---Geotechnical">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-G---Geotechnical-G1-')">
@@ -7569,10 +7655,15 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">H - Hydraulics (11 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-H---Hydraulics')">
+                            <span>H - Hydraulics (11 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-H---Hydraulics">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-H---Hydraulics">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-H---Hydraulics-H1')">
@@ -7783,10 +7874,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">I - Illumination, Electrical & ITS (17 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-I---Illumination-Electrical--ITS')">
+                            <span>I - Illumination, Electrical & ITS (17 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-I---Illumination-Electrical--ITS">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-I---Illumination-Electrical--ITS">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-I---Illumination,-Electrical-&-ITS-I1-')">
@@ -8111,10 +8207,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">J - Pavement (4 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-J---Pavement')">
+                            <span>J - Pavement (4 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-J---Pavement">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-J---Pavement">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-J---Pavement-J2-')">
@@ -8177,10 +8278,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">K - Prevailing Wages (3 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-K---Prevailing-Wages')">
+                            <span>K - Prevailing Wages (3 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-K---Prevailing-Wages">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-K---Prevailing-Wages">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-K---Prevailing-Wages-K2-A-')">
@@ -8227,10 +8333,15 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">L - Landscape and Urban Design (14 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-L---Landscape-and-Urban-Design')">
+                            <span>L - Landscape and Urban Design (14 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-L---Landscape-and-Urban-Design">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-L---Landscape-and-Urban-Design">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-L---Landscape-and-Urban-Design-L1-')">
@@ -8498,10 +8609,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">M - Conceptual Plans (16 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-M---Conceptual-Plans')">
+                            <span>M - Conceptual Plans (16 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-M---Conceptual-Plans">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-M---Conceptual-Plans">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-M---Conceptual-Plans-M1')">
@@ -8777,10 +8893,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">N - Local Agency Agreements (4 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-N---Local-Agency-Agreements')">
+                            <span>N - Local Agency Agreements (4 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-N---Local-Agency-Agreements">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-N---Local-Agency-Agreements">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-N---Local-Agency-Agreements-N2-')">
@@ -8858,10 +8979,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">O - Design Documentation (41 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-O---Design-Documentation')">
+                            <span>O - Design Documentation (41 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-O---Design-Documentation">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-O---Design-Documentation">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-O---Design-Documentation-O1')">
@@ -9642,10 +9768,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">P - Permits and Approvals (31 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-P---Permits-and-Approvals')">
+                            <span>P - Permits and Approvals (31 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-P---Permits-and-Approvals">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-P---Permits-and-Approvals">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-P---Permits-and-Approvals-P1-A-')">
@@ -10221,10 +10352,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">R - Right-of-Way (37 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-R---Right-of-Way')">
+                            <span>R - Right-of-Way (37 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-R---Right-of-Way">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-R---Right-of-Way">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-R---Right-of-Way-R1')">
@@ -10895,10 +11031,15 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">S - Structures (12 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-S---Structures')">
+                            <span>S - Structures (12 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-S---Structures">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-S---Structures">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-S---Structures-S1-')">
@@ -11128,10 +11269,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">Standard Documents (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-Standard-Documents')">
+                            <span>Standard Documents (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-Standard-Documents">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-Standard-Documents">
 
                         <ul class="doc-list">
 
@@ -11148,10 +11294,15 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">T - Traffic (34 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-T---Traffic')">
+                            <span>T - Traffic (34 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-T---Traffic">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-T---Traffic">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-T---Traffic-T1-')">
@@ -11719,10 +11870,15 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">TF - Transit Facilities (6 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-TF---Transit-Facilities')">
+                            <span>TF - Transit Facilities (6 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-TF---Transit-Facilities">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-TF---Transit-Facilities">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-TF---Transit-Facilities-TF2-')">
@@ -11823,10 +11979,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">U - Utilities (68 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-U---Utilities')">
+                            <span>U - Utilities (68 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-U---Utilities">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-U---Utilities">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-U---Utilities-U1-A')">
@@ -13090,10 +13251,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">V - Quality Assurance (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-V---Quality-Assurance')">
+                            <span>V - Quality Assurance (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-V---Quality-Assurance">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-V---Quality-Assurance">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-V---Quality-Assurance-V2')">
@@ -13114,10 +13280,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">X - Montlake Underlid Systems (10 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-X---Montlake-Underlid-Systems')">
+                            <span>X - Montlake Underlid Systems (10 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-X---Montlake-Underlid-Systems">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-X---Montlake-Underlid-Systems">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-X---Montlake-Underlid-Systems-X1-A-')">
@@ -13294,10 +13465,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">Y - Communications Plan (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-Y---Communications-Plan')">
+                            <span>Y - Communications Plan (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-Y---Communications-Plan">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-Y---Communications-Plan">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-Y---Communications-Plan-Y1-')">
@@ -13318,10 +13494,15 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                     <div class="category-group">
-                        <div class="category-header">Z - Community Workforce Agreement (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('7-RFP-Appendices-Contract-Documents-Z---Community-Workforce-Agreement')">
+                            <span>Z - Community Workforce Agreement (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-7-RFP-Appendices-Contract-Documents-Z---Community-Workforce-Agreement">▶</span>
+                        </div>
+                        <div class="category-content" id="content-7-RFP-Appendices-Contract-Documents-Z---Community-Workforce-Agreement">
 
                         <div class="appendix-group">
                             <div class="appendix-header" onclick="toggleAppendix('7-RFP-Appendices-Contract-Documents-Z---Community-Workforce-Agreement-Z1-')">
@@ -13342,6 +13523,7 @@
                             </div>
                         </div>
 
+                        </div>
                     </div>
 
                 </div>
@@ -13362,7 +13544,11 @@
                 <div class="section-content" id="content-8-Design-Builder's-Proposal-Documents">
 
                     <div class="category-group">
-                        <div class="category-header">Standard Documents (1 deliverables)</div>
+                        <div class="category-header" onclick="toggleCategory('8-Design-Builder's-Proposal-Documents-Standard-Documents')">
+                            <span>Standard Documents (1 deliverables)</span>
+                            <span class="expand-icon" id="icon-8-Design-Builder's-Proposal-Documents-Standard-Documents">▶</span>
+                        </div>
+                        <div class="category-content" id="content-8-Design-Builder's-Proposal-Documents-Standard-Documents">
 
                         <ul class="doc-list">
 
@@ -13379,6 +13565,7 @@
 
                         </ul>
 
+                        </div>
                     </div>
 
                 </div>
@@ -13395,6 +13582,19 @@
     <div style="height: 60px;"></div>
 
     <script>
+        function toggleCategory(categoryId) {
+            const content = document.getElementById('content-' + categoryId);
+            const icon = document.getElementById('icon-' + categoryId);
+            if (!content || !icon) return;
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                icon.classList.remove('active');
+            } else {
+                content.classList.add('active');
+                icon.classList.add('active');
+            }
+        }
+
         function toggleSection(sectionId) {
             const content = document.getElementById('content-' + sectionId);
             const icon = document.getElementById('icon-' + sectionId);
