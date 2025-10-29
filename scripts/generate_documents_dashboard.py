@@ -83,6 +83,9 @@ df['Appendix_Code'] = code_from_path
 df['Appendix_Code'] = df['Appendix_Code'].where(df['Appendix_Code'].notna(), code_from_rep)
 df['Appendix_Code'] = df['Appendix_Code'].where(df['Appendix_Code'].notna(), code_from_name)
 
+# Avoid accidental appendix grouping for Change Orders (filenames like 'C9015 CO 013 ...').
+df.loc[df['Category'] == 'Change Order', 'Appendix_Code'] = pd.NA
+
 # Calculate basic stats
 total = len(df)
 reviewed = len(df[df['Review_Status'] == 'Reviewed'])
