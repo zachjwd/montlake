@@ -28,6 +28,40 @@ def extract_appendix_code(file_path):
     # Return the most specific (longest) appendix code found
     return max(matches, key=len)
 
+def extract_appendix_code_from_name(name):
+    """Fallback extractor that works on filenames like 'B14 Cover Sheet.pdf' or 'Appendix B16.pdf'."""
+    if pd.isna(name):
+        return None
+    text = str(name)
+    # Prefer explicit 'Appendix X' patterns
+    m = re.findall(r'Appendix\s+([A-Z][A-Z0-9.-]+)', text)
+    if m:
+        return max(m, key=len)
+    # Otherwise, look for leading letter + number patterns like 'B1', 'B14', 'D34.A', 'A-B1.E.3'
+    m2 = re.findall(r'\b([A-Z](?:-[A-Z0-9]+)?[0-9][A-Z0-9.-]*)\b', text)
+    if m2:
+        return max(m2, key=len)
+    return None
+
+def appendix_sort_key(code: str):
+    """Create a natural sort key for appendix codes such as 'B1', 'B14', 'D34.A', 'A-B1.E.3'.
+    - Splits into alpha and numeric tokens; numeric tokens are compared numerically.
+    - Non-alphanumeric separators are ignored but preserve token boundaries.
+    - None/NaN sorts last.
+    """
+    if code is None or (isinstance(code, float) and pd.isna(code)):
+        return (('ZZ',),)
+    s = str(code).upper()
+    # Keep only letters, numbers and split boundaries; treat other chars as separators
+    tokens = re.findall(r'[A-Z]+|\d+', s)
+    key = []
+    for t in tokens:
+        if t.isdigit():
+            key.append((1, int(t)))
+        else:
+            key.append((0, t))
+    return tuple(key)
+
 print("📊 Generating Documents Dashboard...")
 print()
 
@@ -39,8 +73,15 @@ print(f"✅ Loaded {len(df)} documents")
 df['Review_Status'] = df['Review_Status'].str.strip()
 df.loc[df['Review_Status'].str.lower() == 'in progress', 'Review_Status'] = 'In Progress'
 
-# Extract appendix codes from file paths
-df['Appendix_Code'] = df['File_Path'].apply(extract_appendix_code)
+# Determine Appendix codes without adding columns to the sheet
+# 1) Try File_Path; 2) Fallback to Representative_File; 3) As a last resort, parse Document_Name
+code_from_path = df['File_Path'].apply(extract_appendix_code)
+code_from_rep = df['Representative_File'].apply(extract_appendix_code_from_name)
+code_from_name = df['Document_Name'].apply(extract_appendix_code_from_name)
+
+df['Appendix_Code'] = code_from_path
+df['Appendix_Code'] = df['Appendix_Code'].where(df['Appendix_Code'].notna(), code_from_rep)
+df['Appendix_Code'] = df['Appendix_Code'].where(df['Appendix_Code'].notna(), code_from_name)
 
 # Calculate basic stats
 total = len(df)
@@ -420,14 +461,23 @@ for section in sorted(df['Contract_Section'].unique()):
 """
 
             # Group by appendix code within category
-            appendix_groups = cat_docs.groupby('Appendix_Code', dropna=False)
+            appendix_codes_for_grouping = cat_docs['Appendix_Code'].apply(lambda x: x if pd.notna(x) else '__NONE__')
+            appendix_groups = cat_docs.groupby(appendix_codes_for_grouping)
 
-            for appendix_code, appendix_docs in appendix_groups:
+            # Iterate appendices in a stable, natural order (e.g., B1, B2, ... B14, D34.A)
+            appendix_keys = list(appendix_groups.groups.keys())
+            appendix_keys_sorted = sorted(appendix_keys, key=lambda k: (1,) if k == '__NONE__' else (0,) + appendix_sort_key(k))
+
+            for appendix_key in appendix_keys_sorted:
+                appendix_docs = appendix_groups.get_group(appendix_key)
                 # For documents without appendix code (Standard docs), show directly
-                if pd.isna(appendix_code):
+                if appendix_key == '__NONE__':
                     html += """
                         <ul class="doc-list">
 """
+                    # Sort standard docs by Doc_Number if present, else keep order
+                    if 'Doc_Number' in appendix_docs.columns:
+                        appendix_docs = appendix_docs.sort_values(by=['Doc_Number'], kind='stable')
                     for _, doc in appendix_docs.iterrows():
                         review_status = doc['Review_Status']
                         status_class = 'reviewed' if review_status == 'Reviewed' else 'needs-review'
@@ -445,7 +495,8 @@ for section in sorted(df['Contract_Section'].unique()):
                                     <span class="status-badge {status_class}">{review_status}</span>
                                 </div>"""
 
-                        if notes and str(notes).strip():
+                        # Show notes only if present and not NaN
+                        if pd.notna(notes) and str(notes).strip().lower() != 'nan':
                             html += f"""
                                 <div class="doc-notes">{notes}</div>"""
 
@@ -456,6 +507,7 @@ for section in sorted(df['Contract_Section'].unique()):
                         </ul>
 """
                 else:
+                    appendix_code = appendix_key
                     # For appendices, create collapsible groups
                     appendix_id = f"{section_id}-{category.replace(' ', '-').replace('(', '').replace(')', '')}-{appendix_code.replace('.', '-')}"
 
