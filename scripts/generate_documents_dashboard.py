@@ -371,7 +371,15 @@ for section in sorted(df['Contract_Section'].unique()):
     section_not_reviewed = section_total - section_reviewed
     section_pct = (section_reviewed / section_total * 100) if section_total > 0 else 0
 
-    section_id = section.replace('.', '').replace(' ', '-').replace('(', '').replace(')', '')
+    # Build a safe section id: no spaces, parentheses, or apostrophes
+    section_id = (
+        section
+        .replace("'", '')
+        .replace('.', '')
+        .replace(' ', '-')
+        .replace('(', '')
+        .replace(')', '')
+    )
 
     html += f"""
             <div class="section-item">
