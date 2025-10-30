@@ -32,16 +32,34 @@ df = df[df['Subsection Title'] != 'VACANT']
 # Remove NO COMPLETION REQUIREMENTS IDENTIFIED sections
 df = df[df['Subsection Title'] != 'NO COMPLETION REQUIREMENTS IDENTIFIED']
 
-# Clean up Status values
-df['Status'] = df['Status'].replace({'Ongoign': 'Ongoing'})
-df['Status'] = df['Status'].fillna('Not Started')
+# Clean up and normalize Status values so charts and drilldowns align
+def normalize_status(value):
+    if pd.isna(value):
+        return 'Not Started'
+    text = str(value).strip()
+    if not text:
+        return 'Not Started'
+    # Fix common typo
+    if text == 'Ongoign':
+        text = 'Ongoing'
+    lower = text.lower()
+    # Completed synonyms
+    if lower in {'complete', 'completed', 'reviewed'}:
+        return 'Complete'
+    # Explicit not started markers
+    if lower in {'not started', 'n/a', 'na'}:
+        return 'Not Started'
+    # Everything else (e.g., 'In Progress', 'Due', 'Past Due', 'Ongoing', 'Located',
+    # and phase-coded statuses like '03-Internal Response Review') counts as In Progress
+    return 'In Progress'
 
-# Define completion status
-completed_statuses = ['Complete']
-in_progress_statuses = ['Ongoing', 'Due', 'In Progress', 'Past Due', 'Located']
-df['Is_Complete'] = df['Status'].isin(completed_statuses)
-df['Is_InProgress'] = df['Status'].isin(in_progress_statuses)
-df['Is_NotStarted'] = ~(df['Is_Complete'] | df['Is_InProgress'])
+df['Status'] = df['Status']  # preserve original column
+df['Status_Normalized'] = df['Status'].apply(normalize_status)
+
+# Define completion flags based on normalized status
+df['Is_Complete'] = df['Status_Normalized'] == 'Complete'
+df['Is_InProgress'] = df['Status_Normalized'] == 'In Progress'
+df['Is_NotStarted'] = df['Status_Normalized'] == 'Not Started'
 
 # Calculate overall metrics
 total_items = len(df)
@@ -1326,7 +1344,7 @@ for _, row in df_for_js.iterrows():
         subsection_combined += ' - ' + str(row['Subsection Title'])
 
     row_dict = {
-        'Status': str(row['Status']),
+        'Status': str(row['Status_Normalized']),
         'Source': str(row['Source']),
         'Status Notes': str(row['Status Notes']),
         'Section': str(row['Section']),
